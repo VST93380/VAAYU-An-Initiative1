@@ -1,0 +1,33 @@
+import React, { useEffect, useState } from 'react';
+import stateRanges from './indianStates.json';
+
+function Home() {
+  const [location, setLocation] = useState('');
+
+  useEffect(() => {
+    const latitude = 15.299326;
+    const longitude = 74.123996;
+    const foundState = stateRanges.find((state) => {
+      return (
+        latitude >= state.latMin &&
+        latitude <= state.latMax &&
+        longitude >= state.lonMin &&
+        longitude <= state.lonMax
+      );
+    });
+
+    if (foundState) {
+      setLocation(foundState.name);
+    } else {
+      setLocation('Location not found');
+    }
+  }, []);
+
+  return (
+    <div>
+      <p>Current Location: {location}</p>
+    </div>
+  );
+}
+
+export default Home;

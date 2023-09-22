@@ -1,11 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Mooli', sans-serif;
 }
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body{
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+section{
+  min-height: 100vh;
+}
+.navbar-expand-lg .navbar-nav{
+  padding: 7px !important;
+}
+
 .custom-navbar {
-    padding: 0;
-  background-color: rebeccapurple;
-  max-height: 60px;
+  z-index: 999;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.548);
+  background-color: rgba(0, 0, 0, 0.263);
 }
 
 .navbar-brand {
@@ -14,12 +41,54 @@
 
 .navbar-nav {
   margin-left: auto;
+  margin-right: 40px;
+  font-size: 1.3rem;
+  padding: 20px;
 }
-.navbar-brand{
-    margin: 0;
-    padding: 0;
+.navbar-nav li {
+  margin: 0 6px;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
+
 .navbar-image {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  filter: drop-shadow(0 0 8px black);
+}
+/* Home  */
+.homewelcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+.homewelcome h1{
+  /* mix-blend-mode: overlay; */
+  text-shadow: 0 0 7px black;
+  font-weight: 900 !important;
+}
+.homewelcome p{
+  text-shadow: 0 0 7px black;
+  font-weight: 600;
+  font-size: 2.3rem;
+}
+@media (max-width: 991px) {
+  .custom-navbar {
+    backdrop-filter: blur(44px);
+  }
+  .navbar-image {
+    position: static;
     width: 60px;
-    /* mix-blend-mode: screen; */
+  }
+}
+@media (max-width: 450px) {
+  .navbar-image {
+    position: static;
+    width: 60px;
+  }
 }
