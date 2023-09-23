@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Poppins&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
 }
 html {
   font-size: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-body{
+body {
   background-image: url("./assets/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,10 +21,10 @@ body{
 ::-webkit-scrollbar {
   display: none;
 }
-section{
+section {
   min-height: 100vh;
 }
-.navbar-expand-lg .navbar-nav{
+.navbar-expand-lg .navbar-nav {
   padding: 7px !important;
 }
 
@@ -58,7 +58,7 @@ section{
   filter: drop-shadow(0 0 8px black);
 }
 /* Home  */
-.homewelcome{
+.homewelcome {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,15 +67,15 @@ section{
   height: 100vh;
   color: white;
 }
-.homewelcome h1{
+.homewelcome h1 {
   /* mix-blend-mode: overlay; */
   text-shadow: 0 0 7px black;
   font-weight: 900 !important;
 }
-.homewelcome p{
+.homewelcome p {
   text-shadow: 0 0 7px black;
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
 }
 @media (max-width: 991px) {
   .custom-navbar {
@@ -84,6 +84,9 @@ section{
   .navbar-image {
     position: static;
     width: 60px;
+  }
+  .homewelcome p {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 450px) {
