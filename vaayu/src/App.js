@@ -1,10 +1,15 @@
 import './App.css';
+import './login.css';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
+      <Home />
     </>
   );
 }

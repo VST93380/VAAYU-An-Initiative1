@@ -1,0 +1,144 @@
+.hmvid {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+.hmvid video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.loginbtn {
+  padding: 0.15em 1.3em;
+  border: 2px solid white;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.loginbtn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-loginbtn 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+@keyframes glowing-loginbtn {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.loginbtn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(62, 0, 71), rgb(0, 0, 70));
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+.loginbtn:hover {
+  border: 2px solid rgb(9, 255, 0);
+}
+
+.explorehome{
+  transition: all ease 0.2s;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.explorehome:hover{
+  transition: all ease 0.2s;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.con {
+  z-index: 2;
+}
+
+.scroll-to-top-btn {
+  z-index: 999;
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 2px solid transparent;
+  border-radius: 50px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  outline: transparent;
+  padding: 0 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.scroll-to-top-btn:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.scroll-to-top-btn:not([disabled]):hover {
+  border: 2px solid white;
+  box-shadow: 0 0 12px rgb(224, 224, 224);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.modal{
+  backdrop-filter: blur(22px);
+  border: none !important;
+}
+.modal-content{
+  background-color: transparent;
+  border: none !important;
+}
