@@ -77,6 +77,29 @@ section {
   font-weight: 600;
   font-size: 2.2rem;
 }
+
+.welcomehome{
+  margin-top: 3%;
+  color: white;
+}
+.welcomehome h2{
+  color: white;
+  font-family: "Croissant One", cursive;
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.welcomehome .featured{
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.38);
+  padding: 23px 40px;
+  margin: 20px auto;
+  border: 2px solid white;
+}
+
 @media (max-width: 991px) {
   .custom-navbar {
     backdrop-filter: blur(44px);
@@ -84,6 +107,9 @@ section {
   .navbar-image {
     position: static;
     width: 60px;
+  }
+  .navbar-toggler i{
+    font-size: 2.2rem;
   }
   .homewelcome p {
     font-size: 1.2rem;

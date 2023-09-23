@@ -71,14 +71,12 @@ export default function Home() {
         </a>
       </div>
 
-      <section id="welcomehome">
+      <section id="welcomehome" className="welcomehome">
         {/* Featured Destinations */}
-        <div className="container">
-          <FeaturedDestination />
-        </div>
+          <FeaturedDestination state = {userLocation} />
 
         {/* About Us */}
-        <div className="container">
+        <div className="container featured">
           <div className="row">
             <div className="col-md-6">
               <h2>About Us</h2>

@@ -1,24 +1,29 @@
-import React from 'react';
+import React from "react";
 
-const FeaturedDestination = () => {
-  // Sample data for featured destinations
+const FeaturedDestination = (props) => {
+  const userState = props.state;
+
   const destinations = [
     {
-      name: 'Destination 1',
-      image: 'https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2814,w_4241,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_400068991_qpukq2.jpg',
-      description: 'Explore the beauty of Destination 1.',
+      name: "Destination 1",
+      image:
+        "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2814,w_4241,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_400068991_qpukq2.jpg",
+      description: "Explore the beauty of Destination 1.",
     },
     {
-      name: 'Destination 2',
-      image: 'https://th.bing.com/th/id/OIP.j4g2NjMig_bpdVkpxF0vjwHaHa?pid=ImgDet&rs=1',
-      description: 'Discover the wonders of Destination 2.',
+      name: "Destination 2",
+      image:
+        "https://th.bing.com/th/id/OIP.j4g2NjMig_bpdVkpxF0vjwHaHa?pid=ImgDet&rs=1",
+      description: "Discover the wonders of Destination 2.",
     },
     // Add more destinations here
   ];
 
   return (
-    <div className="container">
-      <h2 className="mt-4">Featured Destinations</h2>
+    <div className="container featured">
+      <h2 className="mt-4">
+        Featured Destinations {userState && <>Of {userState}</>}
+      </h2>
       <div className="row">
         {destinations.map((destination, index) => (
           <div key={index} className="col-lg-4 col-md-6 mb-4">
