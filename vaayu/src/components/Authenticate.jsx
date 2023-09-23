@@ -1,11 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 //import { useNavigate } from "react-router-dom";
+// import{ useState } from "react";
 export default function Authenticate() {
 
   //const navigate = useNavigate();
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    axios
+      .post('http://localhost:5000/api/register', {
+        username: data.get("reguser").split(" ").join("").toLowerCase(),
+        email: data.get("regemail"),
+        phone: data.get("regphone"),
+        password: data.get("regpassword"),
+      })
+      .then((response) => {
 
+        if (response.data === "userexist") {
+          toast.info("Username taken", {
+            position: "bottom-right",
+          });
+        }
+        else if (response.data === "phoneexist") {
+          toast.info("Phone number already is in use", {
+            position: "bottom-right",
+          });
+        }
+        else if (response.data === "emailexist") {
+          toast.info("Email already taken", {
+            position: "bottom-right",
+          });
+        }
+        else {
+          toast.info("Registration Successfull", {
+            position: "bottom-right",
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error("Server not started, Please wait", {
+          position: "bottom-right",
+        })
+      });
+  };
+
+  //login
   const loginAction = async (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
@@ -40,6 +82,8 @@ export default function Authenticate() {
       toast.error("An error occurred during login", { position: "bottom-right", theme: "dark" });
     }
   };
+
+
 
 
   return (
@@ -114,14 +158,14 @@ export default function Authenticate() {
                           </form>
                         </div>
                         <div className="card-back">
-                          <form>
+                          <form onSubmit={handleRegister}>
                             <div className="center-wrap">
                               <div className="section text-center">
                                 <h4 className="mb-4 pb-3">Sign Up</h4>
                                 <div className="form-group">
                                   <input
                                     type="text"
-                                    name="logname"
+                                    name="reguser"
                                     className="form-style"
                                     placeholder="Your Full Name"
                                     id="logname"
@@ -133,11 +177,10 @@ export default function Authenticate() {
                                 <div className="form-group mt-2">
                                   <input
                                     type="tel"
-                                    name="logphone"
+                                    name="regphone"
                                     className="form-style"
                                     placeholder="Your Phone Number"
                                     id="logphone"
-                                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                                     autocomplete="off"
                                     required
                                   />
@@ -146,7 +189,7 @@ export default function Authenticate() {
                                 <div className="form-group mt-2">
                                   <input
                                     type="email"
-                                    name="logemail"
+                                    name="regemail"
                                     className="form-style"
                                     placeholder="Your Email"
                                     id="logemail"
@@ -158,7 +201,7 @@ export default function Authenticate() {
                                 <div className="form-group mt-2">
                                   <input
                                     type="password"
-                                    name="logpass"
+                                    name="regpassword"
                                     className="form-style"
                                     placeholder="Your Password"
                                     id="logpass"
@@ -167,7 +210,7 @@ export default function Authenticate() {
                                   />
                                   <i className="input-icon uil uil-lock-alt"></i>
                                 </div>
-                                <button href="#" className="loginbtn loginmb mt-4">
+                                <button className="loginbtn loginmb mt-4">
                                   Submit
                                 </button>
                               </div>

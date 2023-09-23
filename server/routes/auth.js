@@ -21,7 +21,6 @@ router.post("/register", async (req, res) => {
             email: req.body.email,
             phone: req.body.phone,
             password: securepassword,
-            gender: req.body.gender,
         });
         signupuser
             .save()
@@ -33,10 +32,10 @@ router.post("/register", async (req, res) => {
             });
     } else if (usercheck != null) {
         res.send("userexist");
+    }  else if (phonecheck != null) {
+        res.send("phoneexist");
     } else if (emailcheck != null) {
         res.send("emailexist");
-    } else if (phonecheck != null) {
-        res.send("phoneexist");
     }
 });
 
@@ -62,7 +61,6 @@ router.post("/login", async (req, res) => {
         }
 
     } catch (error) {
-        // Handle unexpected errors
         console.error("Error during login:", error);
         res.status(500).send({
             message: "Internal Server Error",
