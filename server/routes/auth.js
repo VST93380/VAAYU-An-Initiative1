@@ -42,59 +42,32 @@ router.post("/register", async (req, res) => {
 
 //login
 router.post("/login", async (req, res) => {
-    const usercheck = await regtemp.findOne({ username: req.body.username });
-    if (usercheck == null) {
-        res.send("newuser");
-    } else {
-        const validate = await bcrypt.compare(
-            req.body.password,
-            usercheck.password
-        );
-        if (!validate) {
-            res.send("invalid");
-        } else {
-            regtemp
-                .findOne({ username: req.body.username })
-                // if email exists
-                .then((user) => {
-                    // compare the password entered and the hashed password found
-                    bcrypt
-                        .compare(req.body.password, user.password)
-                        // if the passwords match
-                        .then((passwordCheck) => {
-                            // check if password matches
-                            if (!passwordCheck) {
-                                return res.status(400).send({
-                                    message: "Passwords does not match",
-                                    error,
-                                });
-                            }
-                            //   return success response
-                            res.status(200).send({
-                                message: "Login Successful",
-                                username: user.username,
-                                role: user.role,
+    try {
+        const user = await regtemp.findOne({ phone: req.body.phone });
 
-                            });
-                        })
-                        // catch error if password does not match
-                        .catch((error) => {
-                            res.status(400).send({
-                                message: "Passwords does not match",
-                                error,
-                            });
-                        });
-                })
-                // catch error if email does not exist
-                .catch((e) => {
-                    res.status(404).send({
-                        message: "Email not found",
-                        e,
-                    });
-                });
+        if (!user) {
+            return res.send("newuser");
         }
+        const passwordCheck = await bcrypt.compare(req.body.password, user.password);
+        console.log(passwordCheck);
+        if (!passwordCheck) {
+            return res.send("invalid");
+        }
+        else {
+            res.status(200).send({
+                message: "Login Successful",
+                username: user.username,
+                role: user.role,
+            });
+        }
+
+    } catch (error) {
+        // Handle unexpected errors
+        console.error("Error during login:", error);
+        res.status(500).send({
+            message: "Internal Server Error",
+        });
     }
 });
-
 
 module.exports = router;

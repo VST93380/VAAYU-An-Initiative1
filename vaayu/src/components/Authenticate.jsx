@@ -1,6 +1,47 @@
-import React from "react";
-
+import React, { useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
+//import { useNavigate } from "react-router-dom";
 export default function Authenticate() {
+
+  //const navigate = useNavigate();
+
+  const loginAction = async (e) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', {
+        phone: data.get('phone'),
+        password: data.get('password'),
+      });
+      if (response.data === "invalid") {
+        console.log(response.data);
+        toast.info("Enter correct password", { position: "bottom-right" });
+      }
+      else if (response.data === "newuser") {
+        console.log(response.data);
+        toast.error("Please register to Vaayu", { position: "bottom-right" });
+      }
+      else if (response.status === 200) {
+        localStorage.setItem('user', response.data.username);
+        localStorage.setItem('role', response.data.role);
+
+        console.log(response.data);
+
+        if (response.data.role === "Customer" || response.data.role === "Admin") {
+          toast.success("Login Successful", { position: "bottom-right", theme: "dark" });
+        }
+
+      }
+
+    } catch (error) {
+      console.error("Error during login:", error);
+      toast.error("An error occurred during login", { position: "bottom-right", theme: "dark" });
+    }
+  };
+
+
   return (
     <>
       <div
@@ -31,18 +72,18 @@ export default function Authenticate() {
                     <div className="card-3d-wrap mx-auto">
                       <div className="card-3d-wrapper">
                         <div className="card-front">
-                          <form>
+                          <form onSubmit={loginAction}            >
                             <div className="center-wrap">
                               <div className="section text-center">
                                 <h4 className="mb-4 pb-3">Log In</h4>
                                 <div className="form-group mt-2">
                                   <input
                                     type="tel"
-                                    name="logphone"
+                                    name="phone"
                                     className="form-style"
                                     placeholder="Your Phone Number"
                                     id="logphone"
-                                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+
                                     autocomplete="off"
                                     required
                                   />
@@ -51,7 +92,7 @@ export default function Authenticate() {
                                 <div className="form-group mt-2">
                                   <input
                                     type="password"
-                                    name="logpass"
+                                    name="password"
                                     className="form-style"
                                     placeholder="Your Password"
                                     id="logpass"
