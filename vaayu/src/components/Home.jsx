@@ -4,6 +4,7 @@ import FeaturedDestination from "./FeaturedDestination";
 import greetingsData from './Json/Greetings.json';
 import axios from "axios";
 
+
 export default function Home() {
   const [longitude, setLongitude] = useState(null);
   const [latitude, setLatitude] = useState(null);

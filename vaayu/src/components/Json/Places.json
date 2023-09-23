@@ -1,0 +1,3142 @@
+[
+    {
+        "name": "Tirupati Venkateswara Temple",
+        "image_url": "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/07/Tirupati-Temple-at-night.jpg",
+        "state": "Andhra Pradesh",
+        "category": "Religious",
+        "description": "The Tirupati Venkateswara Temple is one of the richest and most visited Hindu temples dedicated to Lord Venkateswara.",
+        "city": "Tirupati",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "3:00 AM - 11:00 PM",
+        "best_time_to_visit": "Year-round",
+        "facilities": [
+            "Darshan Queue System",
+            "Prasadam Distribution",
+            "Accommodation"
+        ]
+    },
+    {
+        "name": "Araku Valley",
+        "image_url": "https://images.livemint.com/img/2019/02/22/original/f742cc08-302b-11e9-a3a6-a848e1731c8d_1550829795829.jpg",
+        "state": "Andhra Pradesh",
+        "category": "Hill Station",
+        "description": "Araku Valley is a picturesque hill station known for its lush greenery, coffee plantations, and tribal culture.",
+        "city": "Araku",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Open year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Scenic Train Rides",
+            "Trekking Trails",
+            "Local Handicrafts"
+        ]
+    },
+    {
+        "name": "Vizag Beaches",
+        "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/01/e0/7d/awasome-virgin-beach.jpg?w=500&h=400&s=1",
+        "state": "Andhra Pradesh",
+        "category": "Beaches",
+        "description": "Vishakhapatnam (Vizag) is known for its beautiful beaches, including Ramakrishna Beach and Rushikonda Beach.",
+        "city": "Vishakhapatnam",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by beach",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Water Sports",
+            "Beachfront Cafes",
+            "Sunset Views"
+        ]
+    },
+    {
+        "name": "Borra Caves",
+        "image_url": "https://2.bp.blogspot.com/-ZZOuUndVS-E/UTXwl4CH69I/AAAAAAAABTs/Re88L6Ml2yQ/s1600/borra-caves-visakhapatnam-andhrapradesh.jpg",
+        "state": "Andhra Pradesh",
+        "category": "Caves",
+        "description": "Borra Caves are stunning limestone caves located in the Anantagiri Hills, known for impressive stalactites and stalagmites formations.",
+        "city": "Visakhapatnam",
+        "rating": 4.7,
+        "entrance_fee": "Varies by age",
+        "open_hours": "9:00 AM - 5:00 PM",
+        "best_time_to_visit": "Year-round",
+        "facilities": [
+            "Guided Tours",
+            "Cafeteria",
+            "Souvenir Shop"
+        ]
+    },
+    {
+        "name": "Amaravati",
+        "image_url": "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-t2kejd5ck053mqpje4ts54v785-20191213022818.Medi.jpeg",
+        "state": "Andhra Pradesh",
+        "category": "Historical",
+        "description": "Amaravati is home to the famous Amaravati Stupa, an ancient Buddhist monument, and the Amaravati Archaeological Museum.",
+        "city": "Guntur",
+        "rating": 4.5,
+        "entrance_fee": "Varies by site",
+        "open_hours": "9:00 AM - 5:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Museum Exhibits",
+            "Information Center"
+        ]
+    },
+    {
+        "name": "Kondapalli Fort",
+        "image_url": "https://assets.thehansindia.com/hansindia-bucket/Kondapalli-Fort-2_1680.jpg",
+        "state": "Andhra Pradesh",
+        "category": "Historical",
+        "description": "Kondapalli Fort is a historic fort known for its architecture and panoramic views of the surrounding area.",
+        "city": "Vijayawada",
+        "rating": 4.4,
+        "entrance_fee": "Free",
+        "open_hours": "10:00 AM - 5:00 PM",
+        "best_time_to_visit": "Year-round",
+        "facilities": [
+            "Scenic Views",
+            "Historical Significance"
+        ]
+    },
+    {
+        "name": "Lepakshi",
+        "image_url": "https://assets.thehansindia.com/h-upload/2020/02/23/728250-lepakshi.jpg",
+        "state": "Andhra Pradesh",
+        "category": "Historical",
+        "description": "Lepakshi is famous for its Veerabhadra Temple, known for stunning architecture and intricate stone carvings.",
+        "city": "Anantapur",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "Year-round",
+        "facilities": [
+            "Historical Site",
+            "Artistic Carvings"
+        ]
+    },
+    {
+        "name": "Tawang Monastery",
+        "image_url": "https://travelogyindia.b-cdn.net/storage/app/upload/tawang-monastery-1.jpg",
+        "state": "Arunachal Pradesh",
+        "category": "Spiritual",
+        "description": "Tawang Monastery is the largest Buddhist monastery in India and offers breathtaking views of the Tawang Valley.",
+        "city": "Tawang",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "9:00 AM - 6:00 PM",
+        "best_time_to_visit": "April to October",
+        "facilities": [
+            "Monastery Museum",
+            "Gonpa Chenam",
+            "Trekking"
+        ]
+    },
+    {
+        "name": "Ziro Valley",
+        "image_url": "https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20201111094047/iStock-1178712785-scaled.jpg",
+        "state": "Arunachal Pradesh",
+        "category": "Hill Station",
+        "description": "Ziro Valley is known for its picturesque landscapes, rice fields, and the unique Apatani tribal culture.",
+        "city": "Ziro",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "March to October",
+        "facilities": [
+            "Trekking",
+            "Cultural Tours",
+            "Homestays"
+        ]
+    },
+    {
+        "name": "Bomdila",
+        "image_url": "https://www.tourism-of-india.com/pictures/travel_guide/attractions/thmb/bomdila-109.jpeg",
+        "state": "Arunachal Pradesh",
+        "category": "Hill Station",
+        "description": "Bomdila is a beautiful town with monasteries, apple orchards, and opportunities for trekking.",
+        "city": "Bomdila",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "March to May, October to December",
+        "facilities": [
+            "Monastery Visits",
+            "Trekking Trails",
+            "Cafes"
+        ]
+    },
+    {
+        "name": "Parshuram Kund",
+        "image_url": "https://arunachaltimes.in/wp-content/uploads/2023/01/Over-1-lakh-devotees-to-take-part-in-Parshuram-Kund-Mela.webp",
+        "state": "Arunachal Pradesh",
+        "category": "Religious",
+        "description": "Parshuram Kund is a sacred pilgrimage site on the Brahmaputra River, believed to be the spot where Lord Parshuram washed away his sins.",
+        "city": "Parshuram Kund",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "Year-round",
+        "facilities": [
+            "Pilgrimage Site",
+            "Holy Bathing"
+        ]
+    },
+    {
+        "name": "Sangti Valley",
+        "image_url": "https://lemonicks.com/wp-content/uploads/2022/11/Sangti-Sheep-Farm-IMG-20220930-WA0012.jpg",
+        "state": "Arunachal Pradesh",
+        "category": "Nature",
+        "description": "Sangti Valley is known for its apple orchards, pristine landscapes, and the Sangti Wildlife Sanctuary.",
+        "city": "Sangti",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "April to June, October to November",
+        "facilities": [
+            "Nature Walks",
+            "Wildlife Viewing",
+            "Apple Harvest"
+        ]
+    },
+    {
+        "name": "Kaziranga National Park",
+        "image_url": "https://vidhilegalpolicy.in/wp-content/uploads/2020/04/tiger-2535888_1280.jpg",
+        "state": "Assam",
+        "category": "Wildlife Sanctuary",
+        "description": "Kaziranga National Park is home to the one-horned rhinoceros and offers wildlife safaris amid lush greenery.",
+        "city": "Golaghat",
+        "rating": 4.7,
+        "entrance_fee": "INR 1000 (Indian) / INR 2000 (Foreigner)",
+        "open_hours": "6:30 AM - 4:00 PM",
+        "best_time_to_visit": "November to April",
+        "facilities": [
+            "Jeep Safaris",
+            "Elephant Safaris",
+            "Nature Lodges"
+        ]
+    },
+    {
+        "name": "Majuli Island",
+        "image_url": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/06/Image-2-14.jpg",
+        "state": "Assam",
+        "category": "Natural Beauty",
+        "description": "Majuli is the largest river island in the Brahmaputra River, known for its unique culture, Vaishnavite monasteries, and birdwatching.",
+        "city": "Majuli",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Satras (Monasteries)",
+            "Birdwatching Tours",
+            "Cultural Performances"
+        ]
+    },
+    {
+        "name": "Dibrugarh",
+        "image_url": "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/12/shutterstock_547361101.jpg",
+        "state": "Assam",
+        "category": "City",
+        "description": "Dibrugarh is known as the 'Tea City of India' and is a gateway to Assam's tea gardens and the Brahmaputra River.",
+        "city": "Dibrugarh",
+        "rating": 4.4,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Tea Garden Tours",
+            "River Cruises",
+            "Cafes"
+        ]
+    },
+    {
+        "name": "Diphu",
+        "image_url": "https://static.wixstatic.com/media/55e023_69943f51e3f74173bccbd287a8783cc5~mv2.jpg/v1/fit/w_2500,h_1330,al_c/55e023_69943f51e3f74173bccbd287a8783cc5~mv2.jpg",
+        "state": "Assam",
+        "category": "City",
+        "description": "Diphu is known for its natural beauty, cultural diversity, and the annual Karbi Youth Festival.",
+        "city": "Diphu",
+        "rating": 4.2,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Cultural Festivals",
+            "Nature Walks",
+            "Local Cuisine"
+        ]
+    },
+    {
+        "name": "Guwahati",
+        "image_url": "https://img.freepik.com/free-photo/asian-woman-wearing-chinese-traditional-dress-ban-rak-thai-village-mae-hong-son-province-thailand_335224-1169.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=sph",
+        "state": "Assam",
+        "category": "City",
+        "description": "Guwahati is the largest city in Assam and is known for the Kamakhya Temple, Assam State Museum, and scenic Brahmaputra River views.",
+        "city": "Guwahati",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Religious Sites",
+            "Museums",
+            "River Cruises"
+        ]
+    },
+    {
+        "name": "Mahabodhi Temple",
+        "image_url": "https://drishtiias.com/images/uploads/1658304275_DrishtiIAS_English_Mahabodhi_temple_image7.jpg",
+        "state": "Bihar",
+        "category": "Religious",
+        "description": "The Mahabodhi Temple in Bodh Gaya is where Gautama Buddha attained enlightenment. It's a UNESCO World Heritage Site.",
+        "city": "Bodh Gaya",
+        "rating": 4.7,
+        "entrance_fee": "INR 50 (Indian) / INR 200 (Foreigner)",
+        "open_hours": "5:00 AM - 9:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Meditation Area",
+            "Bodhi Tree",
+            "Monasteries"
+        ]
+    },
+    {
+        "name": "Bodh Gaya",
+        "image_url": "https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/bodh-gaya/Metta%20Buddharam%20Temple.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg",
+        "state": "Bihar",
+        "category": "Religious",
+        "description": "Bodh Gaya is a UNESCO World Heritage Site and the most important Buddhist pilgrimage site where Lord Buddha is believed to have attained enlightenment.",
+        "city": "Bodh Gaya",
+        "rating": 4.9,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Buddhist Temples",
+            "Meditation Centers",
+            "Cultural Events"
+        ]
+    },
+    {
+        "name": "Vaishali",
+        "image_url": "https://chaloghumane.com/wp-content/uploads/2021/09/Vaishali.jpg",
+        "state": "Bihar",
+        "category": "Historical",
+        "description": "Vaishali is an ancient city associated with Lord Buddha and the place where he gave his last sermon.",
+        "city": "Vaishali",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Historical Sites",
+            "Religious Pilgrimage",
+            "Cultural Heritage"
+        ]
+    },
+    {
+        "name": "Rajgir",
+        "image_url": "https://www.trawell.in/admin/images/upload/175285165glass_bridge.jpg",
+        "state": "Bihar",
+        "category": "City",
+        "description": "Rajgir is known for its hot springs, historical sites like Gridhakuta Hill, and the Japanese Peace Pagoda.",
+        "city": "Rajgir",
+        "rating": 4.4,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Hot Springs",
+            "Historical Sites",
+            "Spiritual Retreats"
+        ]
+    },
+    {
+        "name": "Bastar",
+        "image_url": "https://content.jdmagicbox.com/comp/bastar/f7/9999p7782.7782.170901163946.m2f7/catalogue/bastar-haat-bastar-508a3zg2wg.jpg?clr=",
+        "state": "Chhattisgarh",
+        "category": "Tribal Culture",
+        "description": "Bastar is known for its rich tribal culture, traditional festivals, and unique handicrafts.",
+        "city": "Jagdalpur",
+        "rating": 4.5,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Tribal Villages",
+            "Festival Celebrations",
+            "Handicraft Shopping"
+        ]
+    },
+    {
+        "name": "Chitrakote Falls",
+        "image_url": "https://www.tripiwiki.com/images/places/uploads/Chitrakoot-Falls303477.jpg",
+        "state": "Chhattisgarh",
+        "category": "Natural Wonder",
+        "description": "Chitrakote Falls is often referred to as the 'Niagara Falls of India' and is a stunning natural waterfall.",
+        "city": "Jagdalpur",
+        "rating": 4.7,
+        "entrance_fee": "Nominal",
+        "open_hours": "9:00 AM - 5:00 PM",
+        "best_time_to_visit": "October to February",
+        "facilities": [
+            "Scenic Views",
+            "Boat Rides",
+            "Picnic Spots"
+        ]
+    },
+    {
+        "name": "Barnawapara Wildlife Sanctuary",
+        "image_url": "https://1.bp.blogspot.com/-XYY9CtIgrrw/YUnYPANRihI/AAAAAAAAD1k/hUw2eqUxVWwpFYHsXOJzSg15BgRusObEQCLcBGAsYHQ/s1200/baar.jpg",
+        "state": "Chhattisgarh",
+        "category": "Wildlife",
+        "description": "Barnawapara Wildlife Sanctuary is home to a variety of wildlife, including tigers, leopards, and several bird species.",
+        "city": "Mahasamund",
+        "rating": 4.6,
+        "entrance_fee": "Nominal",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "November to June",
+        "facilities": [
+            "Wildlife Safaris",
+            "Nature Trails",
+            "Bird Watching"
+        ]
+    },
+    {
+        "name": "Raipur",
+        "image_url": "https://content.jdmagicbox.com/comp/raipur-chhattisgarh/n7/9999px771.x771.110715104721.e3n7/catalogue/swami-vivekananda-airport-mana-raipur-chhattisgarh-domestic-airport-eiox9.jpg",
+        "state": "Chhattisgarh",
+        "category": "City",
+        "description": "Raipur, the capital city of Chhattisgarh, is known for its urban attractions, shopping, and cultural experiences.",
+        "city": "Raipur",
+        "rating": 4.4,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Shopping Malls",
+            "Museums",
+            "Local Cuisine"
+        ]
+    },
+    {
+        "name": "Sirpur",
+        "image_url": "https://www.outlookindia.com/traveller/wp-content/uploads/2014/11/DSC_0080-2.jpg",
+        "state": "Chhattisgarh",
+        "category": "Historical",
+        "description": "Sirpur is an archaeological site known for its ancient temples, monasteries, and historical ruins.",
+        "city": "Sirpur",
+        "rating": 4.3,
+        "entrance_fee": "Free",
+        "open_hours": "9:00 AM - 5:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Ancient Temples",
+            "Archaeological Site",
+            "Historical Exploration"
+        ]
+    },
+    {
+        "name": "Red Fort",
+        "image_url": "https://images.newindianexpress.com/uploads/user/imagelibrary/2022/8/15/w1200X800/Redfort6_PTI.jpg",
+        "state": "Delhi",
+        "category": "Historical Landmark",
+        "description": "The Red Fort is a UNESCO World Heritage Site and a symbol of India's rich history. It was built by Emperor Shah Jahan in the 17th century.",
+        "city": "Delhi",
+        "rating": 4.6,
+        "entrance_fee": "INR 250",
+        "open_hours": "9:30 AM - 4:30 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Restaurants",
+            "Museum",
+            "Sound and Light Show"
+        ]
+    },
+    {
+        "name": "Qutub Minar",
+        "image_url": "https://c8.alamy.com/comp/ED7G8M/tomb-and-cenotaph-at-iltutmishs-tomb-qutub-minar-complex-or-qutb-complex-ED7G8M.jpg",
+        "state": "Delhi",
+        "category": "Historical Landmark",
+        "description": "Qutub Minar is a UNESCO World Heritage Site and a historical monument known for its magnificent Islamic architecture.",
+        "city": "Delhi",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 500 (Foreign Nationals)",
+        "open_hours": "7:00 AM - 5:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Guided Tours",
+            "Museum",
+            "Photography Allowed"
+        ]
+    },
+    {
+        "name": "India Gate",
+        "image_url": "https://images.newindianexpress.com/uploads/user/imagelibrary/2020/11/18/w900X450/India_Gate_PTI.jpg?w=400&dpr=2.6",
+        "state": "Delhi",
+        "category": "War Memorial",
+        "description": "India Gate is a war memorial dedicated to Indian soldiers who died in World War I and is a symbol of national pride.",
+        "city": "Delhi",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "24 hours (Illuminated at night)",
+        "best_time_to_visit": "Evening",
+        "facilities": [
+            "Picnic Area",
+            "Evening Light Show",
+            "Gardens"
+        ]
+    },
+    {
+        "name": "Humayun's Tomb",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4V8NYASS8zt0fnVJVwi7LidKzh4gQ4ieW0w&usqp=CAU",
+        "state": "Delhi",
+        "category": "Historical Landmark",
+        "description": "Humayun's Tomb is a UNESCO World Heritage Site and a beautiful garden tomb showcasing Mughal architecture.",
+        "city": "Delhi",
+        "rating": 4.8,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 500 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Guided Tours",
+            "Mughal Gardens",
+            "Photography Allowed"
+        ]
+    },
+    {
+        "name": "Red Fort",
+        "image_url": "https://images.newindianexpress.com/uploads/user/imagelibrary/2022/8/15/w1200X800/Redfort6_PTI.jpg",
+        "state": "Delhi",
+        "category": "Historical Landmark",
+        "description": "The Red Fort, also known as Lal Qila, is a UNESCO World Heritage Site and a historic fort complex in Delhi.",
+        "city": "Delhi",
+        "rating": 4.7,
+        "entrance_fee": "INR 35 (Indian Nationals), INR 500 (Foreign Nationals)",
+        "open_hours": "9:30 AM - 4:30 PM (Closed on Mondays)",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Sound and Light Show",
+            "Museums",
+            "Shopping"
+        ]
+    },
+    {
+        "name": "Lotus Temple",
+        "image_url": "https://www.pandotrip.com/wp-content/uploads/2022/10/The-Lotus-Temple-a-Blossom-of-Inspiring-Architecture-in-India.jpg",
+        "state": "Delhi",
+        "category": "Religious",
+        "description": "The Lotus Temple is a Bahá'í House of Worship known for its lotus-shaped architecture and peaceful ambiance.",
+        "city": "Delhi",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "9:00 AM - 5:30 PM (Closed on Mondays)",
+        "best_time_to_visit": "Year-round",
+        "facilities": [
+            "Meditation Area",
+            "Bahá'í Information Center",
+            "Gardens"
+        ]
+    },
+    {
+        "name": "Akshardham Temple",
+        "image_url": "https://media.easemytrip.com/media/Blog/India/637116640324801740/637116640324801740NJDbTX.jpg",
+        "state": "Delhi",
+        "category": "Religious",
+        "description": "Akshardham Temple is a magnificent Hindu temple complex known for its intricate architecture, exhibitions, and cultural displays.",
+        "city": "Delhi",
+        "rating": 4.7,
+        "entrance_fee": "Free (Exhibition charges apply)",
+        "open_hours": "10:00 AM - 6:30 PM (Closed on Mondays)",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Exhibitions",
+            "Musical Fountain Show",
+            "Cafeteria"
+        ]
+    },
+    {
+        "name": "Gurudwara Bangla Sahib",
+        "image_url": "https://www.holidify.com/images/cmsuploads/compressed/BanglaSahib_20200417130034.jpg",
+        "state": "Delhi",
+        "category": "Religious",
+        "description": "Gurudwara Bangla Sahib is a prominent Sikh gurudwara known for its spirituality, langar (community kitchen), and serene atmosphere.",
+        "city": "Delhi",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "Open 24 hours",
+        "best_time_to_visit": "Year-round",
+        "facilities": [
+            "Langar Service",
+            "Prayer Hall",
+            "Sarovar (Holy Pond)"
+        ]
+    },
+    {
+        "name": "Goa Beaches",
+        "image_url": "https://www.tourmyindia.com/states/goa/image/beaches-goa.webp",
+        "state": "Goa",
+        "category": "Beach",
+        "description": "Goa is famous for its beautiful beaches, including Baga Beach, Calangute Beach, and Anjuna Beach.",
+        "city": "Goa",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "Open 24 hours",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Water Sports",
+            "Shacks",
+            "Nightlife"
+        ]
+    },
+    {
+        "name": "Dudhsagar Waterfalls",
+        "image_url": "https://i.ytimg.com/vi/RGJVvJWzcIs/maxresdefault.jpg",
+        "state": "Goa",
+        "category": "Natural Beauty",
+        "description": "Dudhsagar Waterfalls is a stunning four-tiered waterfall amidst lush greenery, accessible by jeep safari or trekking.",
+        "city": "Dudhsagar",
+        "rating": 4.7,
+        "entrance_fee": "INR 400 (Indian) / INR 600 (Foreigner)",
+        "open_hours": "6:30 AM - 5:30 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Jeep Safaris",
+            "Trekking",
+            "Natural Pools"
+        ]
+    },
+    {
+        "name": "Calangute Beach",
+        "image_url": "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1314723038_20190822145625.jpg",
+        "state": "Goa",
+        "category": "Beaches",
+        "description": "Calangute Beach is the largest beach in North Goa, known for its golden sand, water activities, and shopping options.",
+        "city": "Calangute",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "24 hours",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Water Sports",
+            "Shopping Markets",
+            "Beach Cafes"
+        ]
+    },
+    {
+        "name": "Fort Aguada",
+        "image_url": "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1065727913_20190822150731.jpg",
+        "state": "Goa",
+        "category": "Historical Landmark",
+        "description": "Fort Aguada is a well-preserved Portuguese fort overlooking the Arabian Sea, offering panoramic views and historical insights.",
+        "city": "Sinquerim",
+        "rating": 4.6,
+        "entrance_fee": "INR 25 (Indian Nationals), INR 300 (Foreign Nationals)",
+        "open_hours": "10:00 AM - 6:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Historical Tours",
+            "Scenic Views",
+            "Photography"
+        ]
+    },
+    {
+        "name": "Basilica of Bom Jesus",
+        "image_url": "https://img.itinari.com/pages/images/original/1c2b2e18-ea10-4b99-8607-3a21a77a0b36-2048px-old_goa-basilica_of_bom_jesus.jpg?ch=DPR&dpr=2.625&w=1200&h=800&s=1e01c5c930d3de5430b8e7f53aa286e4",
+        "state": "Goa",
+        "category": "Religious",
+        "description": "The Basilica of Bom Jesus is a UNESCO World Heritage Site and a historic church known for its Baroque architecture and housing the mortal remains of St. Francis Xavier.",
+        "city": "Old Goa",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "9:00 AM - 6:30 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Religious Visits",
+            "Museum",
+            "Historical Art"
+        ]
+    },
+    {
+        "name": "Dolphin Watching in Palolem",
+        "image_url": "https://ua-space-2.blr1.cdn.digitaloceanspaces.com/media/uploads/products/Dolphin_Spotting-1_R5QshSM.jpg",
+        "state": "Goa",
+        "category": "Adventure",
+        "description": "Palolem Beach offers exciting dolphin-watching boat trips where you can spot playful dolphins in their natural habitat.",
+        "city": "Palolem",
+        "rating": 4.7,
+        "entrance_fee": "Charges apply for boat tours",
+        "open_hours": "Varies by tour operator",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Boat Tours",
+            "Wildlife Sightseeing",
+            "Scenic Views"
+        ]
+    },
+    {
+        "name": "Gir National Park",
+        "image_url": "https://miro.medium.com/v2/resize:fit:1400/1*iUtgG7F6ctfXXiNEX-_jfA.jpeg",
+        "state": "Gujarat",
+        "category": "Wildlife",
+        "description": "Gir National Park is home to the Asiatic lion and is one of the most important wildlife sanctuaries in India.",
+        "city": "Sasan Gir",
+        "rating": 4.7,
+        "entrance_fee": "INR 200 (Indian Nationals), INR 1,000 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "December to March",
+        "facilities": [
+            "Safari Tours",
+            "Wildlife Photography",
+            "Nature Trails"
+        ]
+    },
+    {
+        "name": "Sabarmati Ashram",
+        "image_url": "https://images.hindustantimes.com/img/2021/07/31/1600x900/_7bb567d6-4f3b-11eb-983b-26bf3b8bba69_1627697096179.png",
+        "state": "Gujarat",
+        "category": "Historical Landmark",
+        "description": "Sabarmati Ashram, also known as Gandhi Ashram, is where Mahatma Gandhi lived and led the Dandi March during the Indian independence movement.",
+        "city": "Ahmedabad",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "8:30 AM - 6:30 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Museum",
+            "Library",
+            "Peaceful Environment"
+        ]
+    },
+    {
+        "name": "Rann of Kutch",
+        "image_url": "https://www.rannutsav.com/assets/front/new/rann-bnr-1.jpg",
+        "state": "Gujarat",
+        "category": "Natural Wonder",
+        "description": "The Rann of Kutch is a vast salt desert known for its surreal landscapes, white salt flats, and the Rann Utsav festival.",
+        "city": "Dhordo",
+        "rating": 4.5,
+        "entrance_fee": "INR 100 (Indian Nationals), INR 200 (Foreign Nationals)",
+        "open_hours": "October to March (During Rann Utsav)",
+        "best_time_to_visit": "October to February",
+        "facilities": [
+            "Rann Utsav",
+            "Camel Safari",
+            "Stargazing"
+        ]
+    },
+    {
+        "name": "Somnath Temple",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Somanath_mandir.jpg",
+        "state": "Gujarat",
+        "category": "Religious",
+        "description": "The Somnath Temple is an ancient and revered Hindu temple dedicated to Lord Shiva, situated on the Arabian Sea coast.",
+        "city": "Prabhas Patan",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "6:00 AM - 9:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Religious Worship",
+            "Aarti Ceremony",
+            "Gardens"
+        ]
+    },
+    {
+        "name": "Dwarkadhish Temple",
+        "image_url": "https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/dwarkadhish-temple/Dwarkadhish-Temple-1.jpg",
+        "state": "Gujarat",
+        "category": "Religious",
+        "description": "Dwarkadhish Temple, dedicated to Lord Krishna, is one of the Char Dham pilgrimage sites and an important religious destination.",
+        "city": "Dwarka",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "5:00 AM - 9:30 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Religious Worship",
+            "Aarti Ceremony",
+            "Prasad Distribution"
+        ]
+    },
+    {
+        "name": "Sardar Vallabhbhai Patel Statue (Statue of Unity)",
+        "image_url": "https://images.news18.com/ibnlive/uploads/2018/11/Statue-of-Unity-World%E2%80%99s-Tallest-Statue-of-Sardar-Vallabhbhai-Patel.jpg",
+        "state": "Gujarat",
+        "category": "Monument",
+        "description": "The Statue of Unity is the world's tallest statue, dedicated to Sardar Vallabhbhai Patel, India's first Deputy Prime Minister and a national icon.",
+        "city": "Kevadiya",
+        "rating": 4.8,
+        "entrance_fee": "Varies by attractions within the complex",
+        "open_hours": "8:00 AM - 6:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Observation Deck",
+            "Museum",
+            "Exhibition Hall"
+        ]
+    },
+    {
+        "name": "Sultanpur National Park",
+        "image_url": "https://www.holidify.com/images/cmsuploads/compressed/sultanpur-birds-santuary-gurgaon_20171013182929.jpg",
+        "state": "Haryana",
+        "category": "Wildlife",
+        "description": "Sultanpur National Park is a bird sanctuary known for its rich avian diversity and is a haven for birdwatchers and nature enthusiasts.",
+        "city": "Gurugram",
+        "rating": 4.6,
+        "entrance_fee": "INR 5 (Indian Nationals), INR 40 (Foreign Nationals)",
+        "open_hours": "6:30 AM - 6:00 PM",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Bird Watching",
+            "Nature Trails",
+            "Visitor Center"
+        ]
+    },
+    {
+        "name": "Surajkund International Crafts Mela",
+        "image_url": "https://static.toiimg.com/photo/62706089.cms",
+        "state": "Haryana",
+        "category": "Cultural",
+        "description": "The Surajkund Mela is an annual cultural fair that showcases traditional crafts, art, music, and dance from across India.",
+        "city": "Faridabad",
+        "rating": 4.7,
+        "entrance_fee": "Varies by event",
+        "open_hours": "10:30 AM - 8:30 PM",
+        "best_time_to_visit": "February",
+        "facilities": [
+            "Crafts Exhibitions",
+            "Cultural Performances",
+            "Food Stalls"
+        ]
+    },
+    {
+        "name": "Pinjore Gardens (Yadavindra Gardens)",
+        "image_url": "https://c8.alamy.com/comp/2AGA24W/panchkula-haryana-india-december-03-2019-yadavindra-gardens-also-known-as-pinjore-gardens-2AGA24W.jpg",
+        "state": "Haryana",
+        "category": "Gardens",
+        "description": "Pinjore Gardens is a historic Mughal-style garden known for its terraced layout, fountains, and lush greenery.",
+        "city": "Pinjore",
+        "rating": 4.5,
+        "entrance_fee": "INR 20 (Indian Nationals), INR 50 (Foreign Nationals)",
+        "open_hours": "7:00 AM - 10:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Mughal Architecture",
+            "Picnic Spots",
+            "Light and Sound Show"
+        ]
+    },
+    {
+        "name": "Kurukshetra",
+        "image_url": "https://images.tribuneindia.com/cms/gall_content/2017/11/2017_11$largeimg19_Sunday_2017_144106665.JPG",
+        "state": "Haryana",
+        "category": "Historical",
+        "description": "Kurukshetra is an ancient city with great historical and religious significance, known for the Kurukshetra War from the Mahabharata.",
+        "city": "Kurukshetra",
+        "rating": 4.6,
+        "entrance_fee": "Free (Charges may apply to specific attractions)",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Historical Sites",
+            "Religious Pilgrimage",
+            "Museums"
+        ]
+    },
+    {
+        "name": "Rock Garden (Chandigarh)",
+        "image_url": "https://img.atlasobscura.com/F7c9zmXzdj0f49f9CXlB3r6thiO6s5SSx44rUWdiEds/rs:fill:780:520:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wMGVm/NjVlMC00Y2ZjLTQz/YTktOTJmNy1mMTRl/Y2Y4MmVkYmI4ZmE4/NjIwNWNjMzUxM2Ux/M2Jfd29tZW4tc3Rh/dHVlcy0yNDQxODE2/XzE5MjAuanBn.jpg",
+        "state": "Haryana",
+        "category": "Cultural",
+        "description": "The Rock Garden is a unique sculpture garden in Chandigarh, created using recycled materials and featuring art installations.",
+        "city": "Chandigarh",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 50 (Foreign Nationals)",
+        "open_hours": "9:00 AM - 7:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Sculpture Art",
+            "Open-Air Museum",
+            "Cafeteria"
+        ]
+    },
+    {
+        "name": "Panipat Battlefields",
+        "image_url": "https://haryanatourism.gov.in/WriteReadData/mediafiles/image/park_pic1.jpg",
+        "state": "Haryana",
+        "category": "Historical",
+        "description": "The Panipat Battlefields are historically significant as they witnessed three major battles in Indian history: the Battles of Panipat.",
+        "city": "Panipat",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by attraction",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Historical Monuments",
+            "Battlefield Tours",
+            "Museum"
+        ]
+    },
+    {
+        "name": "Manali",
+        "image_url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/448946043.jpg?k=d765a73dbdf4ada44520cc3ad787cdb4dc1d02dbb462b0e37cb7629f1512e3a5&o=&hp=1",
+        "state": "Himachal Pradesh",
+        "category": "Hill Station",
+        "description": "Manali is a picturesque hill station nestled in the Himalayas, known for its scenic beauty, adventure activities, and vibrant culture.",
+        "city": "Manali",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, October to February (for snowfall)",
+        "facilities": [
+            "Trekking",
+            "Skiing",
+            "Local Markets"
+        ]
+    },
+    {
+        "name": "Shimla",
+        "image_url": "https://static.toiimg.com/photo/msid-102383896,width-96,height-65.cms",
+        "state": "Himachal Pradesh",
+        "category": "Hill Station",
+        "description": "Shimla, the 'Queen of Hill Stations,' is known for its colonial charm, scenic beauty, and pleasant weather throughout the year.",
+        "city": "Shimla",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, December to February (for snowfall)",
+        "facilities": [
+            "Mall Road Shopping",
+            "Toy Train Ride",
+            "Hiking Trails"
+        ]
+    },
+    {
+        "name": "Dharamshala and McLeod Ganj",
+        "image_url": "https://i.ytimg.com/vi/-PTIEN10NRA/maxresdefault.jpg",
+        "state": "Himachal Pradesh",
+        "category": "Hill Stations",
+        "description": "Dharamshala and McLeod Ganj are twin hill stations known for their Tibetan culture, monasteries, and as the residence of the Dalai Lama.",
+        "city": "Dharamshala",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, October to November",
+        "facilities": [
+            "Tibetan Monasteries",
+            "Trekking",
+            "Cafes"
+        ]
+    },
+    {
+        "name": "Rohtang Pass",
+        "image_url": "https://englishtribuneimages.blob.core.windows.net/gallary-content/2022/10/2022_10$largeimg_1639732011.JPG",
+        "state": "Himachal Pradesh",
+        "category": "Natural Wonder",
+        "description": "Rohtang Pass is a high mountain pass offering breathtaking views of the Himalayas and is a gateway to the Lahaul and Spiti Valleys.",
+        "city": "Manali",
+        "rating": 4.8,
+        "entrance_fee": "INR 500 (Indian Nationals), INR 800 (Foreign Nationals)",
+        "open_hours": "May to November (Weather-dependent)",
+        "best_time_to_visit": "May to October",
+        "facilities": [
+            "Scenic Drive",
+            "Snow Activities",
+            "Tea Stalls"
+        ]
+    },
+    {
+        "name": "Kullu",
+        "image_url": "https://www.mundo-albergues.com/wp-content/uploads/2015/11/manikaran_manali.jpg",
+        "state": "Himachal Pradesh",
+        "category": "Hill Station",
+        "description": "Kullu is a beautiful valley nestled in the Himalayas, known for its lush greenery, adventure sports, and vibrant festivals.",
+        "city": "Kullu",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, October to November",
+        "facilities": [
+            "River Rafting",
+            "Dussehra Festival",
+            "Local Handicrafts"
+        ]
+    },
+    {
+        "name": "Dalhousie",
+        "image_url": "https://www.seawatersports.com/img/newimage/places/dalhousie.jpg",
+        "state": "Himachal Pradesh",
+        "category": "Hill Station",
+        "description": "Dalhousie is a serene hill station known for its colonial architecture, pine-covered hills, and panoramic views of the Dhauladhar Range.",
+        "city": "Dalhousie",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "May to September",
+        "facilities": [
+            "Colonial Buildings",
+            "Trekking",
+            "Shopping"
+        ]
+    },
+    {
+        "name": "Great Himalayan National Park",
+        "image_url": "https://static2.tripoto.com/media/filter/tst/img/224284/TripDocument/1500389770_1500389719_tirthan04m.jpg",
+        "state": "Himachal Pradesh",
+        "category": "Wildlife",
+        "description": "The Great Himalayan National Park is a UNESCO World Heritage Site known for its biodiversity, trekking trails, and pristine natural beauty.",
+        "city": "Kullu",
+        "rating": 4.7,
+        "entrance_fee": "INR 100 (Indian Nationals), INR 400 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "April to June, September to November",
+        "facilities": [
+            "Trekking Trails",
+            "Wildlife Viewing",
+            "Visitor Center"
+        ]
+    },
+    {
+        "name": "Srinagar",
+        "image_url": "https://facts.net/wp-content/uploads/2023/07/38-facts-about-srinagar-1688457299.jpeg",
+        "state": "Jammu and Kashmir",
+        "category": "Hill Station",
+        "description": "Srinagar, the summer capital of Jammu and Kashmir, is known for its pristine Dal Lake, houseboats, and Mughal gardens.",
+        "city": "Srinagar",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "April to October",
+        "facilities": [
+            "Shikara Rides",
+            "Houseboat Stays",
+            "Mughal Gardens"
+        ]
+    },
+    {
+        "name": "Gulmarg",
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2023/05/19/1600x900/Gulmarg_Kashmir_Valley_1684489094985_1684489103602.jpg",
+        "state": "Jammu and Kashmir",
+        "category": "Hill Station",
+        "description": "Gulmarg is a popular hill station and skiing destination known for its meadows, the Gulmarg Gondola, and scenic beauty.",
+        "city": "Gulmarg",
+        "rating": 4.6,
+        "entrance_fee": "INR 50 (Indian Nationals), INR 300 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, November to February (for snowfall)",
+        "facilities": [
+            "Gulmarg Gondola",
+            "Skiing",
+            "Golf Course"
+        ]
+    },
+    {
+        "name": "Leh-Ladakh",
+        "image_url": "https://static.toiimg.com/photo/91796663.cms",
+        "state": "Jammu and Kashmir",
+        "category": "Adventure",
+        "description": "Leh-Ladakh is a high-altitude region known for its stunning landscapes, monasteries, and adventure activities like trekking and biking.",
+        "city": "Leh",
+        "rating": 4.8,
+        "entrance_fee": "Permit required for some areas",
+        "open_hours": "May to September",
+        "best_time_to_visit": "May to September",
+        "facilities": [
+            "Trekking",
+            "Biking",
+            "Monastery Tours"
+        ]
+    },
+    {
+        "name": "Pahalgam",
+        "image_url": "https://www.holidify.com/images/bgImages/PAHALGAM.jpg",
+        "state": "Jammu and Kashmir",
+        "category": "Hill Station",
+        "description": "Pahalgam is a scenic hill station known for its lush meadows, the Lidder River, and as a base for the Amarnath Yatra pilgrimage.",
+        "city": "Pahalgam",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "April to November",
+        "facilities": [
+            "River Rafting",
+            "Hiking",
+            "Amarnath Yatra"
+        ]
+    },
+    {
+        "name": "Vaishno Devi Temple (Katra)",
+        "image_url": "Vaishno Devi Temple (Katra)",
+        "state": "Jammu and Kashmir",
+        "category": "Religious",
+        "description": "Vaishno Devi Temple is a sacred Hindu shrine dedicated to Goddess Vaishno Devi, visited by millions of pilgrims annually.",
+        "city": "Katra",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "24 hours (Pilgrimage requires trekking)",
+        "best_time_to_visit": "March to October",
+        "facilities": [
+            "Pilgrimage Trek",
+            "Prasad Distribution",
+            "Accommodation"
+        ]
+    },
+    {
+        "name": "Sonamarg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sonmarg_rishav7336.jpg",
+        "state": "Jammu and Kashmir",
+        "category": "Hill Station",
+        "description": "Sonamarg is a tranquil hill station known for its pristine landscapes, alpine meadows, and as a starting point for the Amarnath Yatra.",
+        "city": "Sonamarg",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "May to October",
+        "facilities": [
+            "Trekking",
+            "Camping",
+            "Amarnath Yatra"
+        ]
+    },
+    {
+        "name": "Hemis Monastery",
+        "image_url": "https://discoverlehladakh.in/wp-content/uploads/2020/06/Hemis-monastery-1022x530.jpeg",
+        "state": "Jammu and Kashmir",
+        "category": "Cultural",
+        "description": "Hemis Monastery is the largest and wealthiest monastery in Ladakh, known for its annual Hemis Festival and stunning Buddhist art.",
+        "city": "Hemis",
+        "rating": 4.7,
+        "entrance_fee": "INR 50 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "8:00 AM - 5:00 PM",
+        "best_time_to_visit": "June to July (Hemis Festival), April to September (General)",
+        "facilities": [
+            "Monastery Tours",
+            "Buddhist Art",
+            "Cultural Festival"
+        ]
+    },
+    {
+        "name": "Hundru Falls",
+        "image_url": "https://assets.telegraphindia.com/telegraph/2021/Jan/1609515317_untitled-design-2021-01-01t210449-127.jpg",
+        "state": "Jharkhand",
+        "category": "Natural Wonder",
+        "description": "Hundru Falls is a stunning waterfall near Ranchi, known for its cascading waters and lush green surroundings.",
+        "city": "Ranchi",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Scenic Views",
+            "Picnic Area",
+            "Trekking"
+        ]
+    },
+    {
+        "name": "Netarhat",
+        "image_url": "https://gumlet.assettype.com/outlooktraveller%2Fimport%2Foutlooktraveller%2Fpublic%2Fuploads%2Farticles%2Fexplore%2Fdbdb1.jpg?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+        "state": "Jharkhand",
+        "category": "Hill Station",
+        "description": "Netarhat is a serene hill station in Jharkhand, known for its cool climate, lush forests, and sunrise and sunset points.",
+        "city": "Netarhat",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Sunrise Point",
+            "Sunset Point",
+            "Nature Walks"
+        ]
+    },
+    {
+        "name": "Deoghar",
+        "image_url": "https://www.delhimetrotimes.in/photos/2021/03/deoghar.jpg",
+        "state": "Jharkhand",
+        "category": "Religious",
+        "description": "Deoghar is a sacred pilgrimage town known for the Baidyanath Jyotirlinga Temple, attracting devotees from across the country.",
+        "city": "Deoghar",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by temple",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Temple Darshan",
+            "Religious Festivals",
+            "Accommodation"
+        ]
+    },
+    {
+        "name": "Betla National Park",
+        "image_url": "https://assets.telegraphindia.com/telegraph/bc81a1d1-5cee-4cff-9332-87a0d412a06e.jpg",
+        "state": "Jharkhand",
+        "category": "Wildlife",
+        "description": "Betla National Park is a tiger reserve and wildlife sanctuary known for its diverse flora and fauna, including tigers and elephants.",
+        "city": "Betla",
+        "rating": 4.5,
+        "entrance_fee": "INR 10 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 5:00 PM",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Wildlife Safaris",
+            "Nature Photography",
+            "Trekking"
+        ]
+    },
+    {
+        "name": "Bengaluru (Bangalore)",
+        "image_url": "https://static.toiimg.com/photo/62507296.cms",
+        "state": "Karnataka",
+        "category": "City",
+        "description": "Bengaluru, the Silicon Valley of India, is known for its vibrant culture, IT hub, and a mix of historic and modern attractions.",
+        "city": "Bengaluru",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to February",
+        "facilities": [
+            "Cubbon Park",
+            "Vidhana Soudha",
+            "Tech Parks"
+        ]
+    },
+    {
+        "name": "Mysuru (Mysore)",
+        "image_url": "https://magikindia.com/wp-content/uploads/2015/12/mysore-1-1.jpg",
+        "state": "Karnataka",
+        "category": "City",
+        "description": "Mysuru, known as the 'City of Palaces,' is famous for its royal heritage, historic palaces, and grand Dussehra celebrations.",
+        "city": "Mysuru",
+        "rating": 4.7,
+        "entrance_fee": "Varies by palace",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Mysore Palace",
+            "Chamundi Hill",
+            "Brindavan Gardens"
+        ]
+    },
+    {
+        "name": "Coorg (Kodagu)",
+        "image_url": "https://www.tripiwiki.com/images/places/uploads/Coorg6816.PNG",
+        "state": "Karnataka",
+        "category": "Hill Station",
+        "description": "Coorg, also known as Kodagu, is a picturesque hill station known for its coffee plantations, lush landscapes, and outdoor adventures.",
+        "city": "Madikeri",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Coffee Plantations",
+            "Trekking",
+            "Waterfalls"
+        ]
+    },
+    {
+        "name": "Hampi",
+        "image_url": "https://www.holidify.com/images/bgImages/HAMPI.jpg",
+        "state": "Karnataka",
+        "category": "Historical",
+        "description": "Hampi is a UNESCO World Heritage Site known for its ancient ruins, temples, and the remains of the Vijayanagara Empire.",
+        "city": "Hampi",
+        "rating": 4.8,
+        "entrance_fee": "INR 40 (Indian Nationals), INR 600 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to February",
+        "facilities": [
+            "Vitthala Temple",
+            "Virupaksha Temple",
+            "Elephant Stables"
+        ]
+    },
+    {
+        "name": "Gokarna",
+        "image_url": "https://www.tripsavvy.com/thmb/jsegO0EapRskdhu_59UDPLHu3d0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-148705447-5a514b9dbeba330037019ac2.jpg",
+        "state": "Karnataka",
+        "category": "Beaches",
+        "description": "Gokarna is a serene coastal town known for its pristine beaches, temple culture, and as a backpacker's paradise.",
+        "city": "Gokarna",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Om Beach",
+            "Kudle Beach",
+            "Mahabaleshwar Temple"
+        ]
+    },
+    {
+        "name": "Badami",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Badami_102.JPG/640px-Badami_102.JPG",
+        "state": "Karnataka",
+        "category": "Historical",
+        "description": "Badami, once the capital of the Chalukya dynasty, is known for its rock-cut cave temples, ancient architecture, and archaeological sites.",
+        "city": "Badami",
+        "rating": 4.7,
+        "entrance_fee": "INR 15 (Indian Nationals), INR 200 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Badami Cave Temples",
+            "Aihole",
+            "Pattadakal"
+        ]
+    },
+    {
+        "name": "Bandipur National Park",
+        "image_url": "https://images.newindianexpress.com/uploads/user/imagelibrary/2020/12/19/w600X390/brt8112903.jpg",
+        "state": "Karnataka",
+        "category": "Wildlife",
+        "description": "Bandipur National Park is a tiger reserve and wildlife sanctuary known for its diverse flora and fauna, including tigers and elephants.",
+        "city": "Bandipur",
+        "rating": 4.6,
+        "entrance_fee": "INR 150 (Indian Nationals), INR 650 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 9:00 AM, 3:30 PM - 5:30 PM",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Wildlife Safaris",
+            "Nature Photography",
+            "Jungle Lodges"
+        ]
+    },
+    {
+        "name": "Munnar",
+        "image_url": "https://luxeglamp.com/wp-content/uploads/2023/02/luxeglamp-Projects-Munnar.jpg",
+        "state": "Kerala",
+        "category": "Hill Station",
+        "description": "Munnar is a picturesque hill station in Kerala known for its lush tea gardens, misty landscapes, and pleasant climate.",
+        "city": "Munnar",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Tea Gardens",
+            "Eravikulam National Park",
+            "Adventure Activities"
+        ]
+    },
+    {
+        "name": "Alappuzha (Alleppey)",
+        "image_url": "https://static.toiimg.com/photo/27975358.cms",
+        "state": "Kerala",
+        "category": "Backwaters",
+        "description": "Alappuzha, also known as Alleppey, is famous for its backwater cruises, houseboats, and serene canals lined with coconut trees.",
+        "city": "Alappuzha",
+        "rating": 4.6,
+        "entrance_fee": "Varies by houseboat tour",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Houseboat Stay",
+            "Backwater Cruises",
+            "Nehru Trophy Boat Race"
+        ]
+    },
+    {
+        "name": "Kochi (Cochin)",
+        "image_url": "https://stories.parkplus.io/4-things-to-do-in-cochin/assets/2.jpeg",
+        "state": "Kerala",
+        "category": "City",
+        "description": "Kochi, also known as Cochin, is a vibrant coastal city known for its historic fort, Chinese fishing nets, and cultural diversity.",
+        "city": "Kochi",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Fort Kochi",
+            "Chinese Fishing Nets",
+            "Kathakali Performances"
+        ]
+    },
+    {
+        "name": "Thekkady",
+        "image_url": "https://www.keralatourism.org/images/picture/large/Thekkady_Your_Gateway_to_the_Wild_1353.jpg",
+        "state": "Kerala",
+        "category": "Wildlife",
+        "description": "Thekkady is known for the Periyar Tiger Reserve, spice plantations, and opportunities for wildlife safaris and boating.",
+        "city": "Thekkady",
+        "rating": 4.6,
+        "entrance_fee": "INR 450 (Indian Nationals), INR 900 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 3:00 PM",
+        "best_time_to_visit": "September to March",
+        "facilities": [
+            "Periyar Wildlife Sanctuary",
+            "Boat Safari",
+            "Spice Tours"
+        ]
+    },
+    {
+        "name": "Kovalam",
+        "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/5d/df/27/at-kovalam-beach.jpg?w=1200&h=1200&s=1",
+        "state": "Kerala",
+        "category": "Beaches",
+        "description": "Kovalam is a popular beach destination in Kerala known for its golden sands, lighthouse, and water sports activities.",
+        "city": "Kovalam",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Lighthouse Beach",
+            "Hawa Beach",
+            "Water Sports"
+        ]
+    },
+    {
+        "name": "Wayanad",
+        "image_url": "https://backpackersunited.in/media/event/1835/Wayanad_2.png",
+        "state": "Kerala",
+        "category": "Hill Station",
+        "description": "Wayanad is a beautiful hill station in Kerala known for its lush forests, wildlife sanctuaries, and trekking opportunities.",
+        "city": "Wayanad",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Edakkal Caves",
+            "Chembra Peak",
+            "Wildlife Sanctuaries"
+        ]
+    },
+    {
+        "name": "Varkala",
+        "image_url": "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/01/11133545/shutterstock_294262202.jpg?tr=w-1200,h-900",
+        "state": "Kerala",
+        "category": "Beaches",
+        "description": "Varkala is a coastal town in Kerala known for its cliffside views, mineral springs, and a serene beach frequented by travelers.",
+        "city": "Varkala",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Varkala Cliff",
+            "Janardanaswamy Temple",
+            "Mineral Springs"
+        ]
+    },
+    {
+        "name": "Kumarakom",
+        "image_url": "https://img.onmanorama.com/content/dam/mm/en/travel/travel-news/images/2019/7/7/kumarakom.jpg",
+        "state": "Kerala",
+        "category": "Backwaters",
+        "description": "Kumarakom is a backwater paradise in Kerala known for its serene canals, houseboat stays, and birdwatching at Vembanad Lake.",
+        "city": "Kumarakom",
+        "rating": 4.6,
+        "entrance_fee": "Varies by houseboat tour",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "September to March",
+        "facilities": [
+            "Houseboat Cruises",
+            "Kumarakom Bird Sanctuary",
+            "Vembanad Lake"
+        ]
+    },
+    {
+        "name": "Athirappilly Waterfalls",
+        "image_url": "https://gumlet.assettype.com/outlooktraveller%2Fimport%2Foutlooktraveller%2Fpublic%2Fuploads%2Farticles%2Fexplore%2FKerala_Athirapally_Waterfall.jpg?auto=format%2Ccompress&fit=max&format=webp&w=400&dpr=2.6",
+        "state": "Kerala",
+        "category": "Natural Wonder",
+        "description": "Athirappilly Waterfalls is a magnificent cascade in Kerala known for its beauty, lush surroundings, and a popular filming location.",
+        "city": "Athirappilly",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 400 (Foreign Nationals)",
+        "open_hours": "8:00 AM - 5:00 PM",
+        "best_time_to_visit": "June to September",
+        "facilities": [
+            "Scenic Views",
+            "Trekking",
+            "Nature Photography"
+        ]
+    },
+    {
+        "name": "Kannur",
+        "image_url": "https://img.etimg.com/thumb/msid-67021349,width-640,height-480,imgsize-66190,resizemode-4/keralas-kannur-airport-inaugurated.jpg",
+        "state": "Kerala",
+        "category": "Historical",
+        "description": "Kannur is a historic coastal town in Kerala known for its forts, pristine beaches, and traditional art forms like Theyyam.",
+        "city": "Kannur",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "St. Angelo Fort",
+            "Muzhappilangad Beach",
+            "Theyyam Performances"
+        ]
+    },
+    {
+        "name": "Khajuraho",
+        "image_url": "https://i0.wp.com/travelmax.in/wp-content/uploads/2020/01/11.jpeg",
+        "state": "Madhya Pradesh",
+        "category": "Historical",
+        "description": "Khajuraho is famous for its stunning temples adorned with intricate erotic sculptures, showcasing exquisite architectural and artistic skills.",
+        "city": "Khajuraho",
+        "rating": 4.7,
+        "entrance_fee": "INR 40 (Indian Nationals), INR 600 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Khajuraho Temples",
+            "Sound and Light Show",
+            "Museum"
+        ]
+    },
+    {
+        "name": "Bhopal",
+        "image_url": "https://www.authenticindiatours.com/app/uploads/2022/04/Upper-Lake-Bbada-Talab-Bhopal-Madhya-Pradesh-1400x550-c-default.jpg",
+        "state": "Madhya Pradesh",
+        "category": "City",
+        "description": "Bhopal, the capital city of Madhya Pradesh, is known for its scenic lakes, historic sites, and a blend of modern and traditional culture.",
+        "city": "Bhopal",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Upper Lake",
+            "Bhimbetka Caves",
+            "Taj-ul-Masjid"
+        ]
+    },
+    {
+        "name": "Sanchi",
+        "image_url": "https://static.toiimg.com/photo/msid-86416954,width-96,height-65.cms",
+        "state": "Madhya Pradesh",
+        "category": "Historical",
+        "description": "Sanchi is renowned for its ancient Buddhist stupas, monasteries, and Ashoka Pillar, making it an important pilgrimage and historical site.",
+        "city": "Sanchi",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 500 (Foreign Nationals)",
+        "open_hours": "6:30 AM - 6:30 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Sanchi Stupas",
+            "Ashoka Pillar",
+            "Sanchi Museum"
+        ]
+    },
+    {
+        "name": "Pachmarhi",
+        "image_url": "https://travelwithbiker.com/wp-content/uploads/2021/09/GOPR5619-1024x768.jpg",
+        "state": "Madhya Pradesh",
+        "category": "Hill Station",
+        "description": "Pachmarhi is a scenic hill station known for its lush forests, cascading waterfalls, and pleasant climate, making it a popular getaway.",
+        "city": "Pachmarhi",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to June",
+        "facilities": [
+            "Bee Falls",
+            "Dhoopgarh",
+            "Pandava Caves"
+        ]
+    },
+    {
+        "name": "Gwalior",
+        "image_url": "https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/neemrana-hotels/Deo_Bagh_-_17th_Century_Gwalior_-_Gwalior_fort_side_view_mg3hhn",
+        "state": "Madhya Pradesh",
+        "category": "Historical",
+        "description": "Gwalior is known for its majestic Gwalior Fort, palaces, and cultural heritage, showcasing the grandeur of Indian history.",
+        "city": "Gwalior",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Gwalior Fort",
+            "Jai Vilas Palace",
+            "Tansen Tomb"
+        ]
+    },
+    {
+        "name": "Ujjain",
+        "image_url": "https://peopleplaces.in/wp-content/uploads/2022/12/Best-places-to-visit-in-Ujjain.jpg",
+        "state": "Madhya Pradesh",
+        "category": "Religious",
+        "description": "Ujjain is one of the seven sacred cities for Hindus, known for the Mahakaleshwar Jyotirlinga Temple and the Kumbh Mela.",
+        "city": "Ujjain",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Varies by temple",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Mahakaleshwar Temple",
+            "Ram Ghat",
+            "Kumbh Mela"
+        ]
+    },
+    {
+        "name": "Orchha",
+        "image_url": "https://img.freepik.com/premium-photo/sanchi-stupa-sanchi-town_78361-5045.jpg?w=1800",
+        "state": "Madhya Pradesh",
+        "category": "Historical",
+        "description": "Orchha is a historic town known for its majestic palaces, temples, and cenotaphs that reflect the grandeur of the Bundela dynasty.",
+        "city": "Orchha",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Orchha Fort",
+            "Jehangir Mahal",
+            "Chaturbhuj Temple"
+        ]
+    },
+    {
+        "name": "Jabalpur",
+        "image_url": "https://img.freepik.com/premium-photo/exterior-shots-scenic-tourist-landmark-maheshwar-fort-temple-madhya-pradesh-india-this-monument-is-banks-narmada-river_136354-12300.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=sph",
+        "state": "Madhya Pradesh",
+        "category": "City",
+        "description": "Jabalpur is known for its scenic beauty, natural wonders, and cultural attractions, including the famous Dhuandhar Falls.",
+        "city": "Jabalpur",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Dhuandhar Falls",
+            "Marble Artifacts",
+            "Madan Mahal Fort"
+        ]
+    },
+    {
+        "name": "Mumbai",
+        "image_url": "https://img.freepik.com/free-photo/bandra-worli-sea-link-snaking-across-arabian-sea-mahim-bay-from-worli-bandra_469504-6.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=sph",
+        "state": "Maharashtra",
+        "category": "City",
+        "description": "Mumbai, the financial capital of India, is known for its bustling city life, historic landmarks, and vibrant culture.",
+        "city": "Mumbai",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to February",
+        "facilities": [
+            "Gateway of India",
+            "Marine Drive",
+            "Film City"
+        ]
+    },
+    {
+        "name": "Aurangabad (Ajanta and Ellora Caves)",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCt4UhpwLh7GkJoUG5MVMjuXCy-qc35GAvA&usqp=CAU",
+        "state": "Maharashtra",
+        "category": "Historical",
+        "description": "Aurangabad is famous for the UNESCO-listed Ajanta and Ellora Caves, showcasing ancient rock-cut temples, sculptures, and paintings.",
+        "city": "Aurangabad",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 500 (Foreign Nationals)",
+        "open_hours": "9:00 AM - 5:30 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Ajanta Caves",
+            "Ellora Caves",
+            "Bibi Ka Maqbara"
+        ]
+    },
+    {
+        "name": "Lonavala and Khandala",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzTP9lKL6Q5aiNPDLXzGPP7JerLbQIJ8zug&usqp=CAU",
+        "state": "Maharashtra",
+        "category": "Hill Station",
+        "description": "Lonavala and Khandala are picturesque hill stations known for their lush landscapes, waterfalls, and pleasant weather.",
+        "city": "Lonavala",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Bhushi Dam",
+            "Tiger's Leap",
+            "Lohagad Fort"
+        ]
+    },
+    {
+        "name": "Nashik (Sula Vineyards)",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh6RQ0cjBTMk_mhlDDrijnf0qDKpAkmMxK0w&usqp=CAU",
+        "state": "Maharashtra",
+        "category": "Winery",
+        "description": "Nashik is known for its Sula Vineyards, where you can explore the art of winemaking and enjoy wine tasting amid scenic vineyards.",
+        "city": "Nashik",
+        "rating": 4.6,
+        "entrance_fee": "Varies by vineyard tour",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Sula Vineyards",
+            "Wine Tasting",
+            "Vineyard Tours"
+        ]
+    },
+    {
+        "name": "Mahabaleshwar",
+        "image_url": "https://www.rajasthanleafes.com/wp-content/uploads/2017/06/mahabaleshwar.jpg",
+        "state": "Maharashtra",
+        "category": "Hill Station",
+        "description": "Mahabaleshwar is a charming hill station known for its strawberry farms, panoramic viewpoints, and pleasant climate.",
+        "city": "Mahabaleshwar",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to June",
+        "facilities": [
+            "Venna Lake",
+            "Mapro Garden",
+            "Pratapgad Fort"
+        ]
+    },
+    {
+        "name": "Elephanta Caves",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWveXMdyqJLb8c6oqyx89IH8zWE8ADp9RXtA&usqp=CAU",
+        "state": "Maharashtra",
+        "category": "Historical",
+        "description": "Elephanta Caves are UNESCO-listed rock-cut caves on Elephanta Island, showcasing ancient sculptures and art dedicated to Lord Shiva.",
+        "city": "Mumbai",
+        "rating": 4.6,
+        "entrance_fee": "INR 40 (Indian Nationals), INR 600 (Foreign Nationals)",
+        "open_hours": "9:30 AM - 5:30 PM (Closed on Mondays)",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Cave Temples",
+            "Sculptures",
+            "Boat Ride to Elephanta Island"
+        ]
+    },
+    {
+        "name": "Imphal",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Imphal_At_Dusk.jpg/1200px-Imphal_At_Dusk.jpg",
+        "state": "Manipur",
+        "category": "City",
+        "description": "Imphal is the capital city of Manipur and offers a blend of natural beauty, culture, and history with attractions like the Kangla Fort and Loktak Lake.",
+        "city": "Imphal",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Kangla Fort",
+            "Loktak Lake",
+            "Shree Govindajee Temple"
+        ]
+    },
+    {
+        "name": "Loktak Lake",
+        "image_url": "https://www.savaari.com/blog/wp-content/uploads/2022/12/loktak-lake-in-india.jpg",
+        "state": "Manipur",
+        "category": "Natural Wonder",
+        "description": "Loktak Lake is the largest freshwater lake in Northeast India, known for its floating phumdis (heterogeneous mass of vegetation, soil, and organic matter) and the Keibul Lamjao National Park.",
+        "city": "Bishnupur",
+        "rating": 4.6,
+        "entrance_fee": "INR 20 (Indian Nationals), INR 200 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Phumdis",
+            "Boating",
+            "Keibul Lamjao National Park"
+        ]
+    },
+    {
+        "name": "Moreh",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThv_-4Zx8co5AJ1ld3H70CT3C0sLgCnx-6Seeml1Cu3UpOMQV0DhAfceOG6Qy6Cdnj9v8&usqp=CAU",
+        "state": "Manipur",
+        "category": "Border Town",
+        "description": "Moreh is a border town in Manipur known for its trade activities at the India-Myanmar border, offering a unique cultural experience.",
+        "city": "Moreh",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "India-Myanmar Border",
+            "Shopping",
+            "Cultural Exchange"
+        ]
+    },
+    {
+        "name": "Keibul Lamjao National Park",
+        "image_url": "https://travelmynation.in/wp-content/uploads/2020/10/IMG_20201025_150420.jpg",
+        "state": "Manipur",
+        "category": "Wildlife",
+        "description": "Keibul Lamjao National Park is a unique wetland national park known for being the last natural habitat of the endangered Sangai deer, also known as the Manipur brow-antlered deer.",
+        "city": "Bishnupur",
+        "rating": 4.7,
+        "entrance_fee": "INR 10 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 4:30 PM",
+        "best_time_to_visit": "November to March",
+        "facilities": [
+            "Sangai Deer",
+            "Boat Safari",
+            "Nature Photography"
+        ]
+    },
+    {
+        "name": "Manipur Zoological Gardens",
+        "image_url": "https://www.incredible-northeastindia.com/images/manipur-head.jpg",
+        "state": "Manipur",
+        "category": "Zoo",
+        "description": "The Manipur Zoological Gardens is a well-maintained zoo featuring a variety of wildlife species, making it an ideal place for family visits.",
+        "city": "Imphal",
+        "rating": 4.4,
+        "entrance_fee": "INR 10 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "9:00 AM - 4:30 PM",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Wildlife Viewing",
+            "Children's Park",
+            "Picnic Area"
+        ]
+    },
+    {
+        "name": "Aizawl",
+        "image_url": "https://www.taleof2backpackers.com/wp-content/uploads/2019/12/Night-view-of-Aizawl-city.jpg",
+        "state": "Mizoram",
+        "category": "City",
+        "description": "Aizawl is the capital city of Mizoram and is known for its picturesque landscapes, vibrant culture, and traditional Mizo handicrafts.",
+        "city": "Aizawl",
+        "rating": 4.5,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Durtlang Hills",
+            "Mizo Hnam Run (Handicrafts)",
+            "Reiek Tlang (Reiek Peak)"
+        ]
+    },
+    {
+        "name": "Reiek",
+        "image_url": "https://curlytales.com/wp-content/uploads/2019/04/mizo.jpg",
+        "state": "Mizoram",
+        "category": "Hill Station",
+        "description": "Reiek is a scenic hill station in Mizoram known for its lush greenery, trekking trails, and panoramic views from Reiek Peak.",
+        "city": "Reiek",
+        "rating": 4.6,
+        "entrance_fee": "INR 10 (Indian Nationals), INR 50 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Reiek Peak Trek",
+            "Picnic Spots",
+            "Cultural Experiences"
+        ]
+    },
+    {
+        "name": "Mizoram State Museum",
+        "image_url": "https://mizoculture.mizoram.gov.in/uploads/attachments/c0622673131ed895b7edfafc47bc53ff/dsc-5600.jpg",
+        "state": "Mizoram",
+        "category": "Museum",
+        "description": "The Mizoram State Museum showcases the rich cultural heritage of Mizoram through artifacts, traditional costumes, and historical exhibits.",
+        "city": "Aizawl",
+        "rating": 4.3,
+        "entrance_fee": "INR 10 (Indian Nationals), INR 50 (Foreign Nationals)",
+        "open_hours": "10:00 AM - 4:00 PM (Closed on Sundays)",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Cultural Artifacts",
+            "Traditional Costumes",
+            "Historical Exhibits"
+        ]
+    },
+    {
+        "name": "Champhai",
+        "image_url": "https://discoverneindia.com/wp-content/uploads/2022/10/Champhai.jpg",
+        "state": "Mizoram",
+        "category": "Hill Station",
+        "description": "Champhai is a serene hill station in Mizoram known for its breathtaking landscapes, orchids, and the Rih Dil Lake on the Myanmar border.",
+        "city": "Champhai",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Rih Dil Lake",
+            "Lungphunlian",
+            "Phawngpui (Blue Mountain)"
+        ]
+    },
+    {
+        "name": "Palak Lake",
+        "image_url": "https://cdn.pixabay.com/photo/2020/03/28/08/16/hyderabad-tank-bund-4976030_1280.jpg",
+        "state": "Mizoram",
+        "category": "Natural Wonder",
+        "description": "Palak Lake is a beautiful high-altitude lake in Mizoram, known for its clear waters, scenic surroundings, and birdwatching opportunities.",
+        "city": "Champhai",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Scenic Beauty",
+            "Birdwatching",
+            "Trekking"
+        ]
+    },
+    {
+        "name": "Shillong",
+        "image_url": "https://cdn.pixabay.com/photo/2017/10/12/11/51/shillong-2844384_1280.jpg",
+        "state": "Meghalaya",
+        "category": "City",
+        "description": "Shillong, the capital city of Meghalaya, is known for its lush landscapes, pleasant weather, and vibrant music culture.",
+        "city": "Shillong",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Umiam Lake",
+            "Don Bosco Museum",
+            "Police Bazar"
+        ]
+    },
+    {
+        "name": "Cherrapunji (Sohra)",
+        "image_url": "https://gosomewhere.in/wp-content/uploads/2018/03/Lyngksiar-1.jpg",
+        "state": "Meghalaya",
+        "category": "Hill Station",
+        "description": "Cherrapunji, also known as Sohra, is famous for being one of the wettest places on Earth, offering lush greenery, living root bridges, and stunning waterfalls.",
+        "city": "Cherrapunji",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Living Root Bridges",
+            "Nohkalikai Falls",
+            "Double Decker Root Bridge"
+        ]
+    },
+    {
+        "name": "Mawlynnong",
+        "image_url": "https://wildlifezones.com/wp-content/uploads/2020/05/Mawlynong-Village-1024x614.jpg",
+        "state": "Meghalaya",
+        "category": "Village",
+        "description": "Mawlynnong is known as 'Asia's Cleanest Village' and is famous for its cleanliness, natural beauty, and the living root bridge of Riwai.",
+        "city": "Mawlynnong",
+        "rating": 4.8,
+        "entrance_fee": "INR 50 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Cleanliness",
+            "Living Root Bridge",
+            "Sky View"
+        ]
+    },
+    {
+        "name": "Dawki",
+        "image_url": "https://nomadicweekends.com/blog/wp-content/uploads/2019/09/66851483_2355591914534526_8824396371357335552_o.jpg",
+        "state": "Meghalaya",
+        "category": "Natural Wonder",
+        "description": "Dawki is known for its crystal-clear Umngot River, where you can enjoy boat rides in transparent waters with a view of the riverbed.",
+        "city": "Dawki",
+        "rating": 4.6,
+        "entrance_fee": "Varies by activity",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Umngot River",
+            "Boat Rides",
+            "Suspension Bridge"
+        ]
+    },
+    {
+        "name": "Nongriat (Living Root Bridges)",
+        "image_url": "https://images.livemint.com/rf/Image-621x414/LiveMint/Period1/2014/12/13/Photos/meghalaya-kRxH--621x414@LiveMint.jpg",
+        "state": "Meghalaya",
+        "category": "Natural Wonder",
+        "description": "Nongriat is famous for its picturesque living root bridges, including the Double Decker Root Bridge and the single-root bridge, offering unique trekking experiences.",
+        "city": "Nongriat",
+        "rating": 4.7,
+        "entrance_fee": "INR 100 (Indian Nationals), INR 500 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Living Root Bridges",
+            "Trekking",
+            "Natural Pools"
+        ]
+    },
+    {
+        "name": "Kohima",
+        "image_url": "https://media.istockphoto.com/id/579400138/photo/hornbill-festival-in-india.jpg?s=612x612&w=0&k=20&c=Xa9DQbPiAmz7I7JEJQE8j61wS8IHyGS0fi6KDZdqLWs=",
+        "state": "Nagaland",
+        "category": "City",
+        "description": "Kohima, the capital city of Nagaland, is known for its serene landscapes, Naga culture, and the historic Kohima War Cemetery.",
+        "city": "Kohima",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Kohima War Cemetery",
+            "Nagaland State Museum",
+            "Kisama Heritage Village"
+        ]
+    },
+    {
+        "name": "Dimapur",
+        "image_url": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSpAI3JwndeIeuwo4N9o7EgdaN6q8KSJZVup0a3SSNhqgLKhxw8qzS4YeuQkDA3JtbSk3bZAMhDYz0CjgLvMu1mO8mWPFyz",
+        "state": "Nagaland",
+        "category": "City",
+        "description": "Dimapur is the largest city in Nagaland and serves as a commercial and transportation hub, with historical sites like Kachari Ruins and Diezephe Craft Village.",
+        "city": "Dimapur",
+        "rating": 4.4,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Kachari Ruins",
+            "Diezephe Craft Village",
+            "Rangapahar Reserve Forest"
+        ]
+    },
+    {
+        "name": "Hornbill Festival",
+        "image_url": "https://images.pexels.com/photos/18358502/pexels-photo-18358502/free-photo-of-people-throwing-colorful-powder-at-holi-festival.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Nagaland",
+        "category": "Cultural Festival",
+        "description": "The Hornbill Festival is a vibrant cultural festival in Nagaland that celebrates the state's indigenous tribes with traditional music, dance, and crafts.",
+        "city": "Kisama",
+        "rating": 4.7,
+        "entrance_fee": "INR 10 (Indian Nationals), INR 30 (Foreign Nationals)",
+        "open_hours": "December 1st to 10th (Annually)",
+        "best_time_to_visit": "December",
+        "facilities": [
+            "Cultural Performances",
+            "Crafts Bazaar",
+            "Food Stalls"
+        ]
+    },
+    {
+        "name": "Dzukou Valley",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxfZkbq8QduTV8iSSpu1GTdWeRNUvmWU-xw&usqp=CAU",
+        "state": "Nagaland",
+        "category": "Natural Wonder",
+        "description": "Dzukou Valley is a pristine wilderness area known for its scenic beauty, trekking trails, and the seasonal blooming of the Dzukou Lily.",
+        "city": "Kohima",
+        "rating": 4.7,
+        "entrance_fee": "INR 50 (Indian Nationals), INR 100 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to May",
+        "facilities": [
+            "Trekking",
+            "Dzukou Lily",
+            "Camping"
+        ]
+    },
+    {
+        "name": "Khonoma Village",
+        "image_url": "https://img.freepik.com/free-photo/ban-rak-thai-mae-hong-son-thailand_335224-943.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=ais",
+        "state": "Nagaland",
+        "category": "Village",
+        "description": "Khonoma Village is known for its rich biodiversity, community-based conservation efforts, and the Khonoma Nature Conservation and Tragopan Sanctuary.",
+        "city": "Khonoma",
+        "rating": 4.7,
+        "entrance_fee": "INR 100 (Indian Nationals), INR 200 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Khonoma Nature Conservation and Tragopan Sanctuary",
+            "Cultural Experiences",
+            "Community Homestays"
+        ]
+    },
+    {
+        "name": "Bhubaneswar",
+        "image_url": "https://www.trawell.in/admin/images/upload/120956734Bhubaneswar_Brahmeswara_temple_Main.jpg",
+        "state": "Odisha",
+        "category": "City",
+        "description": "Bhubaneswar, the capital city of Odisha, is known for its ancient temples, architectural wonders, and rich cultural heritage.",
+        "city": "Bhubaneswar",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Lingaraj Temple",
+            "Konark Sun Temple",
+            "Nandankanan Zoological Park"
+        ]
+    },
+    {
+        "name": "Puri",
+        "image_url": "https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/06/20122321/puri-rath-yatra-20231687161370913.jpg",
+        "state": "Odisha",
+        "category": "City",
+        "description": "Puri is a coastal city in Odisha known for its beautiful beaches, the sacred Jagannath Temple, and the annual Rath Yatra festival.",
+        "city": "Puri",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Jagannath Temple",
+            "Puri Beach",
+            "Konark Beach"
+        ]
+    },
+    {
+        "name": "Konark",
+        "image_url": "https://cdn.pixabay.com/photo/2021/11/19/04/51/temple-6808093_1280.jpg",
+        "state": "Odisha",
+        "category": "Historical",
+        "description": "Konark is famous for the UNESCO-listed Konark Sun Temple, a masterpiece of ancient architecture featuring intricate carvings and sculptures.",
+        "city": "Konark",
+        "rating": 4.7,
+        "entrance_fee": "INR 30 (Indian Nationals), INR 600 (Foreign Nationals)",
+        "open_hours": "9:00 AM - 5:00 PM",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Konark Sun Temple",
+            "Chandrabhaga Beach",
+            "Archaeological Museum"
+        ]
+    },
+    {
+        "name": "Chilika Lake",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Birds_eyeview_of_Chilika_Lake.jpg/800px-Birds_eyeview_of_Chilika_Lake.jpg",
+        "state": "Odisha",
+        "category": "Natural Wonder",
+        "description": "Chilika Lake is Asia's largest coastal lagoon and a haven for migratory birds, offering boat rides and dolphin watching.",
+        "city": "Chilika",
+        "rating": 4.6,
+        "entrance_fee": "Varies by activity",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Boat Rides",
+            "Dolphin Watching",
+            "Bird Sanctuary"
+        ]
+    },
+    {
+        "name": "Bhitarkanika National Park",
+        "image_url": "https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Odisha",
+        "category": "Wildlife",
+        "description": "Bhitarkanika National Park is a unique ecosystem known for its mangrove forests, saltwater crocodiles, and diverse wildlife species.",
+        "city": "Kendrapara",
+        "rating": 4.7,
+        "entrance_fee": "INR 50 (Indian Nationals), INR 500 (Foreign Nationals)",
+        "open_hours": "6:00 AM - 6:00 PM",
+        "best_time_to_visit": "November to April",
+        "facilities": [
+            "Mangrove Forests",
+            "Crocodile Sanctuary",
+            "Boat Safari"
+        ]
+    },
+    {
+        "name": "Raghurajpur",
+        "image_url": "https://www.guidetopuri.com/wp-content/uploads/2019/11/20191210_163042-scaled.jpg",
+        "state": "Odisha",
+        "category": "Village",
+        "description": "Raghurajpur is a heritage crafts village known for its traditional Pattachitra paintings, palm leaf engravings, and Gotipua dance performances.",
+        "city": "Puri",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Pattachitra Art",
+            "Gotipua Dance",
+            "Artisan Workshops"
+        ]
+    },
+    {
+        "name": "Hirakud Dam",
+        "image_url": "https://img.freepik.com/free-photo/picture-shasta-dam-surrounded-by-roads-trees-with-lake-mountains_181624-13762.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=ais",
+        "state": "Odisha",
+        "category": "Dam",
+        "description": "Hirakud Dam is one of the longest dams in the world, built on the Mahanadi River, offering scenic views, boating, and a chance to learn about its history.",
+        "city": "Sambalpur",
+        "rating": 4.6,
+        "entrance_fee": "INR 10 (Indian Nationals), INR 50 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Scenic Views",
+            "Boating",
+            "Visitor Center"
+        ]
+    },
+    {
+        "name": "Amritsar",
+        "image_url": "https://cdn.pixabay.com/photo/2021/01/06/16/58/harmandir-sahib-5895031_1280.jpg",
+        "state": "Punjab",
+        "category": "City",
+        "description": "Amritsar is a city known for its rich Sikh heritage, including the Golden Temple, a sacred and iconic Sikh shrine, and the Wagah Border ceremony.",
+        "city": "Amritsar",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Golden Temple",
+            "Jallianwala Bagh",
+            "Wagah Border Ceremony"
+        ]
+    },
+    {
+        "name": "Golden Temple (Harmandir Sahib)",
+        "image_url": "https://images.pexels.com/photos/574313/pexels-photo-574313.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Punjab",
+        "category": "Religious",
+        "description": "The Golden Temple, also known as Harmandir Sahib, is the holiest Gurdwara for Sikhs and is known for its stunning architecture and the sacred Amrit Sarovar.",
+        "city": "Amritsar",
+        "rating": 4.8,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round, 24/7",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Langar (Community Kitchen)",
+            "Amrit Sarovar",
+            "Guru Granth Sahib"
+        ]
+    },
+    {
+        "name": "Jallianwala Bagh",
+        "image_url": "https://www.hindustantimes.com/ht-img/img/2023/04/13/1600x900/PTI03-09-2023-000249B-0_1681360661041_1681360661041_1681360680768_1681360680768.jpg",
+        "state": "Punjab",
+        "category": "Historical",
+        "description": "Jallianwala Bagh is a memorial garden in Amritsar that commemorates the Jallianwala Bagh massacre of 1919, a significant event in Indian history.",
+        "city": "Amritsar",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Memorial",
+            "Martyrs' Well",
+            "Light and Sound Show"
+        ]
+    },
+    {
+        "name": "Wagah Border Ceremony",
+        "image_url": "",
+        "state": "Punjab",
+        "category": "Cultural Event",
+        "description": "The Wagah Border ceremony is a daily military ritual at the India-Pakistan border near Amritsar, known for its patriotic fervor and elaborate drill performances.",
+        "city": "Amritsar",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Evening Ceremony",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Patriotic Performances",
+            "Flag Lowering Ceremony"
+        ]
+    },
+    {
+        "name": "Anandpur Sahib",
+        "image_url": "https://images.pexels.com/photos/5125093/pexels-photo-5125093.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Punjab",
+        "category": "Religious",
+        "description": "Anandpur Sahib is a historic Sikh pilgrimage site known for the Anandpur Sahib Gurudwara and its association with Guru Gobind Singh Ji.",
+        "city": "Anandpur Sahib",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Anandpur Sahib Gurudwara",
+            "Virasat-e-Khalsa Museum",
+            "Holla Mohalla Festival"
+        ]
+    },
+    {
+        "name": "Patiala",
+        "image_url": "https://im.hunt.in/cg/patiala/City-Guide/shesh.jpg",
+        "state": "Punjab",
+        "category": "City",
+        "description": "Patiala is a city known for its royal heritage, including the opulent Qila Mubarak Palace, colorful pagdis (turbans), and traditional Punjabi cuisine.",
+        "city": "Patiala",
+        "rating": 4.5,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Qila Mubarak Palace",
+            "Sheesh Mahal",
+            "Patiala Peg"
+        ]
+    },
+    {
+        "name": "Ranjit Sagar Dam",
+        "image_url": "https://images.pexels.com/photos/18314313/pexels-photo-18314313/free-photo-of-ben-metir-dam-tunisia.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Punjab",
+        "category": "Dam",
+        "description": "Ranjit Sagar Dam, also known as Thein Dam, is a major hydroelectric dam on the Ravi River, offering scenic views, boating, and a serene environment.",
+        "city": "Pathankot",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Scenic Views",
+            "Boating",
+            "Gurdwara Sri Kandh Sahib"
+        ]
+    },
+    {
+        "name": "Jaipur",
+        "image_url": "https://www.savaari.com/blog/wp-content/uploads/2022/11/Hawa-mahal.jpg",
+        "state": "Rajasthan",
+        "category": "City",
+        "description": "Jaipur, the Pink City of India, is known for its majestic palaces, historic forts, vibrant markets, and rich Rajasthani culture.",
+        "city": "Jaipur",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Hawa Mahal",
+            "Amber Fort",
+            "City Palace"
+        ]
+    },
+    {
+        "name": "Udaipur",
+        "image_url": "https://images.pexels.com/photos/17547457/pexels-photo-17547457/free-photo-of-aerial-view-of-the-city-of-udaipur-in-india-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "state": "Rajasthan",
+        "category": "City",
+        "description": "Udaipur, the City of Lakes, is famous for its romantic ambiance, beautiful lakes, majestic palaces, and intricate Rajput architecture.",
+        "city": "Udaipur",
+        "rating": 4.8,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "City Palace",
+            "Lake Pichola",
+            "Jag Mandir"
+        ]
+    },
+    {
+        "name": "Jodhpur",
+        "image_url": "https://cdn.pixabay.com/photo/2022/01/13/10/57/palace-6934954_1280.jpg",
+        "state": "Rajasthan",
+        "category": "City",
+        "description": "Jodhpur, the Blue City of India, is known for its historic forts, vibrant blue houses, and the magnificent Mehrangarh Fort.",
+        "city": "Jodhpur",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Mehrangarh Fort",
+            "Jaswant Thada",
+            "Umaid Bhawan Palace"
+        ]
+    },
+    {
+        "name": "Jaisalmer",
+        "image_url": "https://cdn.pixabay.com/photo/2017/10/07/09/40/india-2825918_1280.jpg",
+        "state": "Rajasthan",
+        "category": "City",
+        "description": "Jaisalmer, the Golden City of India, is known for its stunning sand dunes, camel safaris, historic havelis, and the majestic Jaisalmer Fort.",
+        "city": "Jaisalmer",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Jaisalmer Fort",
+            "Sam Sand Dunes",
+            "Patwon Ki Haveli"
+        ]
+    },
+    {
+        "name": "Pushkar",
+        "image_url": "https://cdn.pixabay.com/photo/2017/05/17/17/02/pushkar-2321363_1280.jpg",
+        "state": "Rajasthan",
+        "category": "City",
+        "description": "Pushkar is a sacred city known for its holy Pushkar Lake, Brahma Temple, and the annual Pushkar Camel Fair.",
+        "city": "Pushkar",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Pushkar Lake",
+            "Brahma Temple",
+            "Pushkar Camel Fair"
+        ]
+    },
+    {
+        "name": "Ajmer",
+        "image_url": "https://images.pexels.com/photos/16534741/pexels-photo-16534741/free-photo-of-jaipur-india.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Rajasthan",
+        "category": "City",
+        "description": "Ajmer is a city with historical and religious significance, known for the Ajmer Sharif Dargah, Ana Sagar Lake, and the Taragarh Fort.",
+        "city": "Ajmer",
+        "rating": 4.5,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Ajmer Sharif Dargah",
+            "Ana Sagar Lake",
+            "Taragarh Fort"
+        ]
+    },
+    {
+        "name": "Mount Abu",
+        "image_url": "https://img.freepik.com/free-photo/landscape-south-africa-countryside-nature-earth_1253-762.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=ais",
+        "state": "Rajasthan",
+        "category": "Hill Station",
+        "description": "Mount Abu is the only hill station in Rajasthan, offering a cool climate, lush greenery, and attractions like Dilwara Temples and Nakki Lake.",
+        "city": "Mount Abu",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Dilwara Temples",
+            "Nakki Lake",
+            "Sunset Point"
+        ]
+    },
+    {
+        "name": "Gangtok",
+        "image_url": "https://img.freepik.com/premium-photo/space-exploration-aweinspiring-view-cosmic-wonders-charting-mysteries-space_966802-83793.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=sph",
+        "state": "Sikkim",
+        "category": "City",
+        "description": "Gangtok, the capital of Sikkim, is known for its breathtaking landscapes, monasteries, and vibrant culture. It's a gateway to the Himalayas.",
+        "city": "Gangtok",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to May, October to December",
+        "facilities": [
+            "Rumtek Monastery",
+            "Nathula Pass",
+            "Tsomgo Lake"
+        ]
+    },
+    {
+        "name": "Pelling",
+        "image_url": "https://img.freepik.com/premium-photo/essence-bihar-mosaic-heritage-scenery-life_966802-71187.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=sph",
+        "state": "Sikkim",
+        "category": "Hill Station",
+        "description": "Pelling is a serene hill station in Sikkim, offering panoramic views of the Himalayas, ancient monasteries, and the Khecheopalri Lake.",
+        "city": "Pelling",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to May, September to November",
+        "facilities": [
+            "Pemayangtse Monastery",
+            "Khecheopalri Lake",
+            "Rabdentse Ruins"
+        ]
+    },
+    {
+        "name": "Lachung",
+        "image_url": "https://img.freepik.com/free-photo/mae-klang-waterfall-doi-inthanon-national-park-chiang-mai-thailand_554837-221.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=ais",
+        "state": "Sikkim",
+        "category": "Hill Station",
+        "description": "Lachung is a charming hill station in North Sikkim, known for its lush valleys, Yumthang Valley, hot springs, and Buddhist monasteries.",
+        "city": "Lachung",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, September to December",
+        "facilities": [
+            "Yumthang Valley",
+            "Yumesamdong (Zero Point)",
+            "Lachung Monastery"
+        ]
+    },
+    {
+        "name": "Ravangla",
+        "image_url": "https://northbengaltourism.com/images/sikkim/ravangla_1024.jpg",
+        "state": "Sikkim",
+        "category": "Hill Station",
+        "description": "Ravangla is a tranquil hill station in South Sikkim, offering stunning views of the Himalayas, trekking trails, and the Buddha Park.",
+        "city": "Ravangla",
+        "rating": 4.5,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to May, October to December",
+        "facilities": [
+            "Buddha Park",
+            "Temi Tea Garden",
+            "Ralong Monastery"
+        ]
+    },
+    {
+        "name": "Yumthang Valley",
+        "image_url": "https://img.freepik.com/free-photo/confluence-indus-zanskar-rivers-leh-ladakh-india_1150-11112.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=ais",
+        "state": "Sikkim",
+        "category": "Natural Wonder",
+        "description": "Yumthang Valley, also known as the Valley of Flowers, is a pristine natural paradise in North Sikkim, famous for its colorful blooms and hot springs.",
+        "city": "Lachung",
+        "rating": 4.7,
+        "entrance_fee": "INR 100 (Indian Nationals), INR 300 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "April to June",
+        "facilities": [
+            "Valley of Flowers",
+            "Yumthang Hot Springs",
+            "Shingba Rhododendron Sanctuary"
+        ]
+    },
+    {
+        "name": "Chennai",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg",
+        "state": "Tamil Nadu",
+        "category": "City",
+        "description": "Chennai, the capital of Tamil Nadu, is known for its vibrant culture, historic temples, beautiful beaches, and modern infrastructure.",
+        "city": "Chennai",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Marina Beach",
+            "Kapaleeshwarar Temple",
+            "Chennai Central"
+        ]
+    },
+    {
+        "name": "Madurai",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Temple_de_M%C3%AEn%C3%A2ksh%C3%AE01.jpg/1200px-Temple_de_M%C3%AEn%C3%A2ksh%C3%AE01.jpg",
+        "state": "Tamil Nadu",
+        "category": "City",
+        "description": "Madurai, the Athens of the East, is famous for the Meenakshi Amman Temple, colorful markets, and its rich Dravidian heritage.",
+        "city": "Madurai",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Meenakshi Amman Temple",
+            "Gandhi Memorial Museum",
+            "Thirumalai Nayakkar Palace"
+        ]
+    },
+    {
+        "name": "Ooty",
+        "image_url": "https://img.freepik.com/free-photo/aerial-view-beautiful-sky-road-top-mountains-with-green-jungle-nan-province-thailand_335224-1063.jpg?w=1800&t=st=1695478752~exp=1695479352~hmac=ee6cc64c64f9837dc7984d3eca7fd9c4f6a26a6bfb46af7b4d868d5f6f4ce882",
+        "state": "Tamil Nadu",
+        "category": "Hill Station",
+        "description": "Ooty, also known as Udhagamandalam, is a picturesque hill station in the Nilgiri Mountains, offering lush tea gardens, botanical gardens, and serene lakes.",
+        "city": "Ooty",
+        "rating": 4.8,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "April to June, September to November",
+        "facilities": [
+            "Botanical Gardens",
+            "Ooty Lake",
+            "Nilgiri Mountain Railway"
+        ]
+    },
+    {
+        "name": "Mahabalipuram",
+        "image_url": "https://images.pexels.com/photos/17087832/pexels-photo-17087832/free-photo-of-the-shore-temple-in-mahabalipuram-india.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Tamil Nadu",
+        "category": "Historical",
+        "description": "Mahabalipuram, also known as Mamallapuram, is renowned for its UNESCO-listed ancient rock-cut temples, shore temples, and stone carvings.",
+        "city": "Mahabalipuram",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Shore Temple",
+            "Pancha Rathas",
+            "Arjuna's Penance"
+        ]
+    },
+    {
+        "name": "Kodaikanal",
+        "image_url": "https://media.istockphoto.com/id/492882716/photo/kodaikanal-tamil-nadu-the-picturesque-lake-in-the-british-colonial-town-on-the-palani-hills-in.jpg?s=1024x1024&w=is&k=20&c=V8c9wwXoFm_tNkA892csNrM8lqsq5zsYFSVZ2lkbDW0=",
+        "state": "Tamil Nadu",
+        "category": "Hill Station",
+        "description": "Kodaikanal, the Princess of Hill Stations, is known for its cool climate, serene lakes, scenic viewpoints, and the Kodaikanal International School.",
+        "city": "Kodaikanal",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "April to June, September to November",
+        "facilities": [
+            "Kodai Lake",
+            "Coaker's Walk",
+            "Bryant Park"
+        ]
+    },
+    {
+        "name": "Rameswaram",
+        "image_url": "https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/rameswaram-temple-1656167436_f2c551193bb7d4bc6f70.webp",
+        "state": "Tamil Nadu",
+        "category": "Religious",
+        "description": "Rameswaram is a sacred pilgrimage town known for the Ramanathaswamy Temple and its unique architectural marvels, such as the Pamban Bridge.",
+        "city": "Rameswaram",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Ramanathaswamy Temple",
+            "Pamban Bridge",
+            "Agni Theertham"
+        ]
+    },
+    {
+        "name": "Kanyakumari",
+        "image_url": "https://img.freepik.com/free-photo/buddha-statue-wat-mahathat-temple-precinct-sukhothai-historical-park_335224-907.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=sph",
+        "state": "Tamil Nadu",
+        "category": "Natural Wonder",
+        "description": "Kanyakumari is the southernmost tip of India, famous for its breathtaking sunrise and sunset views over the confluence of the Arabian Sea, Bay of Bengal, and Indian Ocean.",
+        "city": "Kanyakumari",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Vivekananda Rock Memorial",
+            "Thiruvalluvar Statue",
+            "Kanyakumari Beach"
+        ]
+    },
+    {
+        "name": "Thanjavur",
+        "image_url": "https://cdn.pixabay.com/photo/2017/05/30/21/37/brihadishvara-2358280_1280.jpg",
+        "state": "Tamil Nadu",
+        "category": "Historical",
+        "description": "Thanjavur, also known as Tanjore, is renowned for the Brihadeeswarar Temple, a UNESCO World Heritage site, and its contributions to art, culture, and music.",
+        "city": "Thanjavur",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Brihadeeswarar Temple",
+            "Thanjavur Palace",
+            "Saraswathi Mahal Library"
+        ]
+    },
+    {
+        "name": "Hyderabad",
+        "image_url": "https://img.theculturetrip.com/1200x900/wp-content/uploads/2016/06/24498998325_f451c67aae_o.jpg",
+        "state": "Telangana",
+        "category": "City",
+        "description": "Hyderabad, the City of Pearls, is known for its historic landmarks, including the Charminar, Golconda Fort, and the Hi-Tech City.",
+        "city": "Hyderabad",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Charminar",
+            "Golconda Fort",
+            "Ramoji Film City"
+        ]
+    },
+    {
+        "name": "Warangal",
+        "image_url": "https://media.istockphoto.com/id/1007840372/photo/ramappa-temple-palampet-warangal-telangana-india.jpg?b=1&s=612x612&w=0&k=20&c=WGGxo7IYdbe227449Sr26lb7GuQSChRGeXbkUjyac0I=",
+        "state": "Telangana",
+        "category": "Historical",
+        "description": "Warangal, with its rich historical legacy, is known for the Warangal Fort, Thousand Pillar Temple, and the picturesque Bhadrakali Lake.",
+        "city": "Warangal",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to February",
+        "facilities": [
+            "Warangal Fort",
+            "Thousand Pillar Temple",
+            "Bhadrakali Lake"
+        ]
+    },
+    {
+        "name": "Nagarjuna Sagar",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxvBR0v6OR7ZjxRk2z56PdSNALhI1uM3XNA&usqp=CAU",
+        "state": "Telangana",
+        "category": "Natural Wonder",
+        "description": "Nagarjuna Sagar is famous for the Nagarjuna Sagar Dam, which is one of the largest dams in India, and the Ethipothala Waterfall in its vicinity.",
+        "city": "Nagarjuna Sagar",
+        "rating": 4.5,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to February",
+        "facilities": [
+            "Nagarjuna Sagar Dam",
+            "Ethipothala Waterfall",
+            "Nagarjunakonda Island Museum"
+        ]
+    },
+    {
+        "name": "Vemulawada",
+        "image_url": "https://img.freepik.com/free-photo/lotus-mahal-hampi_181624-60764.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=ais",
+        "state": "Telangana",
+        "category": "Religious",
+        "description": "Vemulawada is a renowned pilgrimage town known for the Rajanna Sircilla Temple, dedicated to Lord Rajanna, and its spiritual significance.",
+        "city": "Vemulawada",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Rajanna Sircilla Temple",
+            "Vemulawada Lake",
+            "Sri Raja Rajeshwara Swamy Temple"
+        ]
+    },
+    {
+        "name": "Agartala",
+        "image_url": "https://cdn.pixabay.com/photo/2021/08/30/16/44/boat-6586400_1280.jpg",
+        "state": "Tripura",
+        "category": "City",
+        "description": "Agartala, the capital of Tripura, is known for its cultural diversity, royal palaces, vibrant markets, and the Ujjayanta Palace.",
+        "city": "Agartala",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Ujjayanta Palace",
+            "Neermahal Palace",
+            "Kunjaban Palace"
+        ]
+    },
+    {
+        "name": "Udaipur (Tripura)",
+        "image_url": "https://img.freepik.com/free-photo/pak-nam-chumphon-town-fisherman-village-from-khao-matsee-viewpoint-chumphon-thailand_335224-1141.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=ais",
+        "state": "Tripura",
+        "category": "City",
+        "description": "Udaipur in Tripura, also known as Matabari, is famous for the Tripura Sundari Temple, the largest temple dedicated to Goddess Tripura Sundari.",
+        "city": "Udaipur",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Tripura Sundari Temple",
+            "Gunabati Group of Temples",
+            "Dumboor Lake"
+        ]
+    },
+    {
+        "name": "Neermahal Palace",
+        "image_url": "https://img.freepik.com/free-photo/historical-building-decaying_181624-42963.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=ais",
+        "state": "Tripura",
+        "category": "Historical",
+        "description": "Neermahal, the 'Water Palace,' is a stunning royal palace built in the middle of the Rudrasagar Lake, offering a unique and picturesque experience.",
+        "city": "Melaghar",
+        "rating": 4.7,
+        "entrance_fee": "INR 20 (Indian Nationals), INR 200 (Foreign Nationals)",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Boating to Neermahal",
+            "Rudrasagar Lake",
+            "Matabari"
+        ]
+    },
+    {
+        "name": "Jampui Hills",
+        "image_url": "https://img.freepik.com/free-photo/mountainside-with-green-trees_1204-287.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=ais",
+        "state": "Tripura",
+        "category": "Hill Station",
+        "description": "Jampui Hills is a serene hill station in Tripura, known for its lush greenery, cool climate, orange orchards, and mesmerizing sunset views.",
+        "city": "Vanghmun",
+        "rating": 4.6,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to April",
+        "facilities": [
+            "Orange Orchards",
+            "Eden Tourist Lodge",
+            "Sunset Point"
+        ]
+    },
+    {
+        "name": "Unakoti",
+        "image_url": "https://img.freepik.com/free-photo/phrayanakorn-cave-prachuap-khiri-khan-province-thailand_335224-912.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=ais",
+        "state": "Tripura",
+        "category": "Historical",
+        "description": "Unakoti is an archaeological site with ancient rock-cut carvings and sculptures, including the Unakoti Shiva head and numerous deities.",
+        "city": "Kailashahar",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Unakoti Shiva Head",
+            "Rock-cut Carvings",
+            "Ashokastami Festival"
+        ]
+    },
+    {
+        "name": "Kolkata",
+        "image_url": "https://media.istockphoto.com/id/1164386039/photo/howrah-bridge-on-river-ganges-at-kolkata-at-twilight-with-moody-sky.webp?b=1&s=612x612&w=0&k=20&c=5OPkWdzFlgNN_CV2fAc8S6tSdBocgW2hZuzrJW-9Kdo=",
+        "state": "West Bengal",
+        "category": "City",
+        "description": "Kolkata, the cultural capital of India, is known for its historic architecture, artistic heritage, vibrant festivals, and the Howrah Bridge.",
+        "city": "Kolkata",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Victoria Memorial",
+            "Dakshineswar Kali Temple",
+            "Indian Museum"
+        ]
+    },
+    {
+        "name": "Darjeeling",
+        "image_url": "https://media.istockphoto.com/id/670688480/photo/green-tea-plantations-munnar-kerala-india.webp?b=1&s=612x612&w=0&k=20&c=yWrD253trE5_e6CNpPobi1iyLzY-6cvgddlsQ5t4DFc=",
+        "state": "West Bengal",
+        "category": "Hill Station",
+        "description": "Darjeeling is a picturesque hill station in the Himalayas, known for its tea gardens, stunning views of Kanchenjunga, and the Darjeeling Himalayan Railway.",
+        "city": "Darjeeling",
+        "rating": 4.8,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "April to June, September to November",
+        "facilities": [
+            "Tiger Hill",
+            "Batasia Loop",
+            "Padmaja Naidu Himalayan Zoological Park"
+        ]
+    },
+    {
+        "name": "Sundarbans",
+        "image_url": "https://cdn.pixabay.com/photo/2019/06/24/15/48/sylhet-4296348_1280.jpg",
+        "state": "West Bengal",
+        "category": "Natural Wonder",
+        "description": "The Sundarbans is a UNESCO World Heritage site and the largest mangrove forest in the world, home to the Royal Bengal Tiger and diverse wildlife.",
+        "city": "Sundarbans",
+        "rating": 4.6,
+        "entrance_fee": "Varies by entry point",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "September to March",
+        "facilities": [
+            "Tiger Safari",
+            "Bird Watching",
+            "Boat Tours"
+        ]
+    },
+    {
+        "name": "Digha",
+        "image_url": "https://img.freepik.com/free-photo/landscape-tropical-vacation-palm-summer_1203-5352.jpg?size=626&ext=jpg&ga=GA1.1.1678463297.1693565442&semt=sph",
+        "state": "West Bengal",
+        "category": "Beaches",
+        "description": "Digha is a popular seaside resort town on the Bay of Bengal, known for its sandy beaches, water sports, and relaxing coastal ambiance.",
+        "city": "Digha",
+        "rating": 4.5,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to February",
+        "facilities": [
+            "Digha Beach",
+            "Marine Aquarium",
+            "Shankarpur Beach"
+        ]
+    },
+    {
+        "name": "Murshidabad",
+        "image_url": "https://media.istockphoto.com/id/1303285957/photo/view-of-katra-masjid-one-of-the-largest-caravanserais-in-the-indian-subcontinent-located-at.jpg?b=1&s=612x612&w=0&k=20&c=gWBqsgWGV_1HG6MDocc1GusdvHJ36NSZq_wnnebToag=",
+        "state": "West Bengal",
+        "category": "Historical",
+        "description": "Murshidabad is a historically significant town on the banks of the Bhagirathi River, known for its palaces, tombs, and the Hazarduari Palace.",
+        "city": "Murshidabad",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Hazarduari Palace",
+            "Nizamat Imambara",
+            "Kathgola Palace"
+        ]
+    },
+    {
+        "name": "Jaldapara National Park",
+        "image_url": "https://img.freepik.com/free-photo/beautiful-view-deer-by-waterfall-stones-captured-miyajima-island-japan_181624-7260.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=ais",
+        "state": "West Bengal",
+        "category": "Wildlife",
+        "description": "Jaldapara National Park is a wildlife sanctuary in the foothills of the Eastern Himalayas, known for its population of Indian rhinoceros and diverse fauna.",
+        "city": "Jaldapara",
+        "rating": 4.7,
+        "entrance_fee": "Varies by nationality",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Jungle Safaris",
+            "Rhino Observation",
+            "Chilapata Forest"
+        ]
+    },
+    {
+        "name": "Dehradun",
+        "image_url": "https://img.freepik.com/free-photo/backpacker-deogyusan-mountains-winter_335224-465.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=sph",
+        "state": "Uttarakhand",
+        "category": "City",
+        "description": "Dehradun, the capital city of Uttarakhand, is known for its pleasant climate, educational institutions, and proximity to the Himalayas.",
+        "city": "Dehradun",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, September to November",
+        "facilities": [
+            "Robber's Cave",
+            "Sahastradhara",
+            "Forest Research Institute"
+        ]
+    },
+    {
+        "name": "Mussoorie",
+        "image_url": "https://img.freepik.com/premium-photo/kedarnath-india_78361-2508.jpg?size=626&ext=jpg&ga=GA1.2.1678463297.1693565442&semt=sph",
+        "state": "Uttarakhand",
+        "category": "Hill Station",
+        "description": "Mussoorie, the 'Queen of Hills,' is a charming hill station offering panoramic views of the Himalayas, lush landscapes, and a pleasant climate.",
+        "city": "Mussoorie",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, September to November",
+        "facilities": [
+            "Kempty Falls",
+            "Gun Hill",
+            "Camel's Back Road"
+        ]
+    },
+    {
+        "name": "Rishikesh",
+        "image_url": "https://cdn.pixabay.com/photo/2022/10/05/07/11/temple-7499927_1280.jpg",
+        "state": "Uttarakhand",
+        "category": "Spiritual",
+        "description": "Rishikesh, the 'Yoga Capital of the World,' is known for its ashrams, the sacred Ganges River, adventure sports, and a serene spiritual ambiance.",
+        "city": "Rishikesh",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "September to November, February to June",
+        "facilities": [
+            "Parmarth Niketan",
+            "Laxman Jhula",
+            "White Water Rafting"
+        ]
+    },
+    {
+        "name": "Nainital",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdrCK1AkSvGJ19Wy4VcJM_wR5Y38hQ1Q_vQg&usqp=CAU",
+        "state": "Uttarakhand",
+        "category": "Hill Station",
+        "description": "Nainital, the 'City of Lakes,' is a popular hill station nestled around a beautiful lake, offering boating, scenic views, and the Naina Devi Temple.",
+        "city": "Nainital",
+        "rating": 4.7,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "March to June, September to November",
+        "facilities": [
+            "Naini Lake",
+            "Snow View Point",
+            "Naina Devi Temple"
+        ]
+    },
+    {
+        "name": "Jim Corbett National Park",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpGw-d4isFeU1GkDBp9SsYVq5OmS5A3kLBKQ&usqp=CAU",
+        "state": "Uttarakhand",
+        "category": "Wildlife",
+        "description": "Jim Corbett National Park is India's oldest national park, known for its tiger population, diverse wildlife, and lush forests in the foothills of the Himalayas.",
+        "city": "Ramnagar",
+        "rating": 4.6,
+        "entrance_fee": "Varies by nationality",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to June",
+        "facilities": [
+            "Safari",
+            "Dhikala Forest Lodge",
+            "Corbett Waterfall"
+        ]
+    },
+    {
+        "name": "Haridwar",
+        "image_url": "data:image/jpeg;base64,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",
+        "state": "Uttarakhand",
+        "category": "Spiritual",
+        "description": "Haridwar, one of the seven holiest places in Hinduism, is known for the Ganges Aarti at Har Ki Pauri, temples, and the Kumbh Mela.",
+        "city": "Haridwar",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Har Ki Pauri Ghat",
+            "Mansa Devi Temple",
+            "Chandi Devi Temple"
+        ]
+    },
+    {
+        "name": "Auli",
+        "image_url": "https://cdn.pixabay.com/photo/2020/02/09/06/50/auli-4832101_1280.jpg",
+        "state": "Uttarakhand",
+        "category": "Hill Station",
+        "description": "Auli is a serene hill station known for its skiing opportunities, breathtaking views of the Himalayas, and the Auli Artificial Lake.",
+        "city": "Auli",
+        "rating": 4.8,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "November to March",
+        "facilities": [
+            "Skiing",
+            "Gurso Bugyal Trek",
+            "Joshimath"
+        ]
+    },
+    {
+        "name": "Varanasi",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThulo7ASGTd52RZrKFVqZWJM_VHVKAcCpM_g&usqp=CAU",
+        "state": "Uttar Pradesh",
+        "category": "Spiritual",
+        "description": "Varanasi, the spiritual heart of India, is known for its ghats along the Ganges River, ancient temples, and spiritual ceremonies.",
+        "city": "Varanasi",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Dashashwamedh Ghat",
+            "Kashi Vishwanath Temple",
+            "Sarnath"
+        ]
+    },
+    {
+        "name": "Agra",
+        "image_url": "https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.webp?b=1&s=612x612&w=0&k=20&c=3PEobOthDnogYweVRbKoRqf7-p1aB6UQvKXSyYdDmVY=",
+        "state": "Uttar Pradesh",
+        "category": "Historical",
+        "description": "Agra is famous for the iconic Taj Mahal, a UNESCO World Heritage Site, as well as Agra Fort and Fatehpur Sikri, all showcasing Mughal architecture.",
+        "city": "Agra",
+        "rating": 4.8,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Taj Mahal",
+            "Agra Fort",
+            "Fatehpur Sikri"
+        ]
+    },
+    {
+        "name": "Lucknow",
+        "image_url": "https://images.pexels.com/photos/9179544/pexels-photo-9179544.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "state": "Uttar Pradesh",
+        "category": "City",
+        "description": "Lucknow, the 'City of Nawabs,' is known for its historical monuments, Nawabi cuisine, and the Bara Imambara, a marvel of Mughal architecture.",
+        "city": "Lucknow",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Bara Imambara",
+            "Chota Imambara",
+            "Lucknow Zoo"
+        ]
+    },
+    {
+        "name": "Allahabad",
+        "image_url": "https://media.istockphoto.com/id/525109131/photo/big-wooden-boats-in-water-with-cloudy-sky-and-sunbeams.jpg?b=1&s=612x612&w=0&k=20&c=zO6xfnb8hJX8lWHCwr3rDongKN1JhsxJvZzAThTAa1M=",
+        "state": "Uttar Pradesh",
+        "category": "Spiritual",
+        "description": "Allahabad, now known as Prayagraj, is famous for the Triveni Sangam, the confluence of the Ganges, Yamuna, and Saraswati rivers, and the Kumbh Mela.",
+        "city": "Prayagraj",
+        "rating": 4.7,
+        "entrance_fee": "Free",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Triveni Sangam",
+            "Kumbh Mela",
+            "Allahabad Fort"
+        ]
+    },
+    {
+        "name": "Ayodhya",
+        "image_url": "https://images.moneycontrol.com/static-mcnews/2020/08/ayodhya-ram-mandir.jpg?impolicy=website&width=1600&height=900",
+        "state": "Uttar Pradesh",
+        "category": "Religious",
+        "description": "Ayodhya is the birthplace of Lord Rama and is known for its temples, including the Ram Janmabhoomi and Hanuman Garhi, steeped in religious significance.",
+        "city": "Ayodhya",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Ram Janmabhoomi",
+            "Hanuman Garhi",
+            "Kanak Bhavan"
+        ]
+    },
+    {
+        "name": "Mathura",
+        "image_url": "https://img.traveltriangle.com/blog/wp-content/uploads/2019/11/og-image-of-Mathura_30th-nov.jpg",
+        "state": "Uttar Pradesh",
+        "category": "Religious",
+        "description": "Mathura, the birthplace of Lord Krishna, is known for its temples, ghats along the Yamuna River, and vibrant celebrations during Janmashtami.",
+        "city": "Mathura",
+        "rating": 4.6,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Krishna Janmabhoomi Temple",
+            "Vishram Ghat",
+            "Mathura Museum"
+        ]
+    },
+    {
+        "name": "Kanpur",
+        "image_url": "https://www.iitk.ac.in/fmfp14/home_files/fatehpur.jpg",
+        "state": "Uttar Pradesh",
+        "category": "City",
+        "description": "Kanpur is an industrial city known for its historical significance, educational institutions, and the Allen Forest Zoo.",
+        "city": "Kanpur",
+        "rating": 4.5,
+        "entrance_fee": "Varies by attraction",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Allen Forest Zoo",
+            "Shri Radhakrishna Temple",
+            "Phool Bagh"
+        ]
+    },
+    {
+        "name": "Fatehpur Sikri",
+        "image_url": "https://media.istockphoto.com/id/827043866/photo/fatehpur-sikri-city.webp?b=1&s=612x612&w=0&k=20&c=QvU1T9V26L8gvbKXW96zXB-6UZ05zKeBGHiZuFloR5w=",
+        "state": "Uttar Pradesh",
+        "category": "Historical",
+        "description": "Fatehpur Sikri is a UNESCO World Heritage Site known for its Mughal architecture, including the Buland Darwaza and the Jama Masjid.",
+        "city": "Fatehpur Sikri",
+        "rating": 4.7,
+        "entrance_fee": "Varies by nationality",
+        "open_hours": "Year-round",
+        "best_time_to_visit": "October to March",
+        "facilities": [
+            "Buland Darwaza",
+            "Jama Masjid",
+            "Panch Mahal"
+        ]
+    }
+]
