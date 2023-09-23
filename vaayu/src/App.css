@@ -85,6 +85,13 @@
 }
 
 .explorehome{
+  transition: all ease 0.2s;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.explorehome:hover{
+  transition: all ease 0.2s;
+  letter-spacing: 2px;
   text-decoration: none;
   font-size: 1.7rem;
 }
@@ -94,6 +101,7 @@
 }
 
 .scroll-to-top-btn {
+  z-index: 999;
   position: fixed;
   bottom: 6px;
   right: 6px;
@@ -125,4 +133,12 @@
   border: 2px solid white;
   box-shadow: 0 0 12px rgb(224, 224, 224);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.modal{
+  backdrop-filter: blur(22px);
+  border: none !important;
+}
+.modal-content{
+  background-color: transparent;
+  border: none !important;
 }
