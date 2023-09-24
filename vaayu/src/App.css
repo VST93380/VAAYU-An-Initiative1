@@ -32,16 +32,18 @@
 
 .loginbtn:before {
   content: "";
-  background: linear-gradient(45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
   left: -2px;
@@ -94,7 +96,7 @@
 
 .explorehome:hover {
   transition: all ease 0.2s;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-decoration: none;
   font-size: 1.7rem;
 }
@@ -108,20 +110,21 @@
   position: fixed;
   bottom: 6px;
   right: 6px;
-  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  background: linear-gradient(to bottom right, #ef4765, #ff9a5a);
   border: 2px solid transparent;
   border-radius: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   font-size: 1.8rem;
   line-height: 1.7;
   outline: transparent;
   padding: 0 0.6rem;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -129,17 +132,22 @@
 }
 
 .scroll-to-top-btn:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 .scroll-to-top-btn:not([disabled]):hover {
   border: 2px solid white;
   box-shadow: 0 0 12px rgb(224, 224, 224);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
 .modal {
-  backdrop-filter: blur(22px);
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.168);
   border: none !important;
 }
 
@@ -148,67 +156,116 @@
   border: none !important;
 }
 
-
 .homecard {
-  padding: 0 25px;
   position: relative;
-  width: 300px;
-  height: 200px;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  width: 240px; /* Increased width */
+  height: 270px; /* Increased height */
+  perspective: 1000px; /* Adds 3D perspective to the card */
+  cursor: pointer;
+  transition: transform 0.5s; /* Smooth transition for flip animation */
+  border-radius: 10px; /* Increased border radius for rounded corners */
 }
 
-.main-homecard li {
-  margin: 0 20px;
+.homecard:hover .homecard__inner {
+  transform: rotateY(180deg); /* Rotate the card on hover */
 }
 
-.homecard img {
-  width: 280px;
-  fill: #333;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  /* background-size: cover; */
-
-}
-
-.homecard:hover {
-  transform: rotate(-5deg) scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.homecard__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+/* Card inner container */
+.homecard__inner {
   width: 100%;
   height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #fff;
-  opacity: 0;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
-.homecard:hover .homecard__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
+/* Front side of the card */
+.homecard__front,
+.homecard__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  border: 2px solid white;
 }
 
-.homecard__title {
-  margin: 0;
-  font-size: 24px;
-  color: #333;
-  font-weight: 700;
+.homecard__front {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 2; /* Ensure the front side is on top initially */
+  box-shadow: 0 0 12px black;
+
 }
 
-.homecard__description {
-  margin: 10px 0 0;
-  font-size: 14px;
-  color: #777;
-  line-height: 1.4;
+.homecard__image {
+  width: 240px;
+  height: 320px;
+  object-fit: cover; /*Make the image cover the container while maintaining aspect ratio */
+  border-radius: 50px;
+  /* object-position: center; */
+}
+
+/* Back side of the card */
+.homecard__back {
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  transform: rotateY(180deg); /* Initially, show the back side */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  z-index: 1; /* Make sure the back side is below the front side */
+}
+
+.homecard__description{
+  padding: 10px;
+  text-align: center;
+}
+.homecard__description p{
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.homecard__description i{
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Rest of your CSS styles... */
+
+/* Add any other styles as needed */
+
+/* Animation for the flip effect */
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Floating animation for elements like circles */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+.homecard__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Make the image cover the container while maintaining aspect ratio */
+  border-radius: 5px;
 }

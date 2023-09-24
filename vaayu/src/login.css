@@ -1,5 +1,20 @@
-.login{
-    font-family: 'Poppins', sans-serif !important;
+/* Reset input field styles to default */
+.login .form-style {
+  border: 2px solid #ccc;
+  background-color: #fff;
+  box-shadow: none;
+  color: #333;
+}
+
+/* Restore cursor behavior */
+.login .form-style:focus {
+  transition: all 0.2s;
+  border-bottom: 4px solid rgb(0, 204, 255);
+  box-shadow: 0 0 12px rgb(177, 177, 177);
+}
+
+.login {
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .login a {
@@ -29,7 +44,6 @@
 }
 .login h6 span {
   margin: 0 20px;
-  padding: 6px 20px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -55,7 +69,7 @@
   height: 16px;
   border-radius: 8px;
   padding: 0;
-  margin: 10px auto;
+  margin: 30px auto;
   cursor: pointer;
   background-color: #ffeba7;
 }
@@ -90,7 +104,7 @@
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 800px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .login .card-3d-wrapper {
   width: 100%;
@@ -106,15 +120,15 @@
 .login .card-back {
   width: 100%;
   height: 100%;
-  border: 2px solid white;
-  box-shadow: rgb(0, 0, 0) 0px 50px 100px -20px,
-    rgb(0, 0, 0) 0px 30px 60px -30px;
-  background-image: url(./assets/login-bg.png);
-  background-position: bottom center;
+  border: 2px solid rgb(241, 241, 241);
+  box-shadow: rgb(49, 49, 49) 0px 50px 100px -20px,
+    rgb(61, 61, 61) 0px 30px 60px -30px;
+  background-image: url(./assets/1.jpg);
+  background-position: center center fixed;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   position: absolute;
-  border-radius: 6px;
+  border-radius: 20px;
   left: 0;
   top: 0;
   -webkit-transform-style: preserve-3d;
@@ -157,23 +171,16 @@
   font-weight: 800;
   border-radius: 4px;
   font-size: 1.3rem;
-  line-height: 22px;
   letter-spacing: 0.5px;
   outline: none;
   color: #ffffff;
-  background-color: rgba(31, 32, 41, 0.879); /* Adjust the alpha value (0.7) for transparency */
+  background-color: rgba(16, 16, 17, 0.835); /* Adjust the alpha value (0.7) for transparency */
   border: none;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-  box-shadow: 0 4px 8px 0 rgba(6, 237, 214, 0.479);
+  box-shadow: 0 4px 8px 0 rgba(0, 35, 31, 0.798);
+  border-bottom: 4px solid white;
+  border-radius: 50px;
 }
 
-.login .form-style:focus,
-.login .form-style:active {
-  border: none;
-  outline: none;
-  box-shadow: 0 4px 8px 0 rgba(21, 21, 21, 0.2);
-}
 .login .input-icon {
   position: absolute;
   top: 0;
@@ -187,50 +194,6 @@
   transition: all 200ms linear;
 }
 
-.login .form-group input:-ms-input-placeholder {
-  color: #c4c3ca;
-  opacity: 0.7;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.login .form-group input::-moz-placeholder {
-  color: #c4c3ca;
-  opacity: 0.7;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.login .form-group input:-moz-placeholder {
-  color: #c4c3ca;
-  opacity: 0.7;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.login .form-group input::-webkit-input-placeholder {
-  color: #c4c3ca;
-  opacity: 0.7;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.login .form-group input:focus:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.login .form-group input:focus::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.login .form-group input:focus:-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
-.login .form-group input:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
-}
 
 .login .logo {
   position: absolute;
@@ -255,4 +218,25 @@
     font-size: 1.3rem !important;
     padding: 4px 32px;
     letter-spacing: 2px;
+}
+
+.loginnav{
+  color: white;
+  font-size: 1.6rem;
+}
+
+.loginheader{
+  background: linear-gradient(45deg, rgba(0, 0, 70, 0.813),rgba(65, 0, 65, 0.791));
+  padding: 6px;
+  border-radius: 50px;
+  box-shadow: 0 0 6px white;
+}
+
+.closemodal{
+  margin-top: 10px;
+  font-size: 3.3rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-shadow: 0 0 12px black;
 }
