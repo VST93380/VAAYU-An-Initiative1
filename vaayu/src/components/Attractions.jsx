@@ -3,24 +3,27 @@ import locations from "./Json/Places.json";
 import statesData from "./Json/States.json";
 
 export default function Attractions() {
-  const originalLoc = locations
+  const originalLoc = locations;
   const [selectedState, setSelectedState] = useState("default");
   const [places, setPlaces] = useState(locations);
 
   const handlePro = (e) => {
     if (selectedState === "default") {
-      setPlaces(originalLoc)
+      setPlaces(originalLoc);
     } else {
-      setPlaces(locations.filter((destination) => destination.state === selectedState))
+      setPlaces(
+        locations.filter((destination) => destination.state === selectedState)
+      );
     }
   };
 
   return (
-    <>
+    <div className="attractions">
       <div class="container mt-5">
         <div class="row glass p-3">
-          <div class="col-md-3">
+          <div class="col-md-5">
             <select
+              className="form-control"
               value={selectedState}
               onChange={(e) => setSelectedState(e.target.value)}
             >
@@ -32,15 +35,17 @@ export default function Attractions() {
               ))}
             </select>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-5">
             <select class="form-control">
               <option>Dropdown 2</option>
               <option>Dropdown 2</option>
               <option>Dropdown 2</option>
             </select>
           </div>
-          <div class="col-md-6">
-          <button className="loginbtn" onClick={handlePro}>GO</button>
+          <div class="col-md-2">
+            <button className="loginbtn filterbtn" onClick={handlePro}>
+              Apply Filter <i class="fa-solid fa-paint-roller"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -95,6 +100,6 @@ export default function Attractions() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
