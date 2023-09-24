@@ -4,6 +4,7 @@ import FeaturedDestination from "./FeaturedDestination";
 import greetingsData from "./Json/Greetings.json";
 import axios from "axios";
 
+
 export default function Home() {
   const [longitude, setLongitude] = useState(null);
   const [latitude, setLatitude] = useState(null);
@@ -81,27 +82,6 @@ export default function Home() {
       <section id="welcomehome" className="welcomehome">
         {/* Featured Destinations */}
         <FeaturedDestination state={userLocation} />
-
-        {/* About Us */}
-        <div className="container featured">
-          <div className="row">
-            <div className="col-md-6">
-              <h2>About Us</h2>
-              <p>
-                We are passionate about travel and committed to making your
-                journey unforgettable. Discover new places, experience different
-                cultures, and create lifelong memories with us.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <img
-                src="about-us-image.jpg"
-                alt="About Us"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
       </section>
     </>
   );

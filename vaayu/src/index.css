@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url("./assets/bg.jpg");
+  background-image: url(./assets/l1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,8 +31,9 @@ section {
 .custom-navbar {
   z-index: 999;
   border-radius: 6px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.548);
-  background-color: rgba(0, 0, 0, 0.263);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.991);
+  background-color: rgba(0, 0, 0, 0.459);
+  backdrop-filter: blur(2px);
 }
 
 .navbar-brand {
@@ -52,11 +53,14 @@ section {
 }
 
 .navbar-image {
-  position: absolute;
-  top: 0;
-  width: 100px;
+  margin-left: 20px;
+  width: 50px;
   filter: drop-shadow(0 0 8px black);
 }
+.navbar-image {
+  transform: scale(1.8);
+}
+
 /* Home  */
 .homewelcome {
   display: flex;
@@ -95,15 +99,33 @@ section {
   margin-top: 20px;
 }
 
-.welcomehome .featured {
+footer .featured {
+  color: white;
+  min-width: 100%;
   backdrop-filter: blur(6px);
   border-radius: 8px;
-  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  background-image: linear-gradient(120deg, #00081b 0%, #480054 100%);
   padding: 23px 40px;
-  margin: 20px auto;
+  margin: 0px auto;
   border: 2px solid white;
+  padding: 25px;
+  text-align: justify;
 }
 
+.abthomeing {
+  width: 150px;
+}
+section {
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.827);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 @media (max-width: 991px) {
   .custom-navbar {
     backdrop-filter: blur(44px);

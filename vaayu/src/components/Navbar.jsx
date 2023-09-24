@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./../assets/logo.png";
 import Authenticate from "./Authenticate";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -10,9 +11,9 @@ export default function Navbar() {
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="/">
             <img src={logo} className="navbar-image" />
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,41 +28,41 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+                <NavLink className="nav-link" aria-current="page" to="/">
+                <i class="fa-solid fa-house"></i>&nbsp;Home
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
-                  Trip Planner
-                </a>
+                <NavLink className="nav-link" aria-current="page" to="/tripplanner">
+                <i class="fa-solid fa-plane-departure"></i>&nbsp;Trip Planner
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
-                  Attractions
-                </a>
+                <NavLink className="nav-link" aria-current="page" to="/attractions">
+                <i class="fa-solid fa-crown"></i>&nbsp;Attractions
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
-                  Community
-                </a>
+                <NavLink className="nav-link" aria-current="page" to="/community">
+                <i class="fa-solid fa-comments"></i>&nbsp;Community
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
-                  Vaayu Soul
-                </a>
+                <NavLink className="nav-link" aria-current="page" to="/soul">
+                <i class="fa-solid fa-heart-pulse"></i>&nbsp;Vaayu Soul
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page">
+                <NavLink className="nav-link" aria-current="page">
                   <button
                     className="loginbtn"
                     role="button"
                     data-bs-toggle="modal"
                     data-bs-target="#loginModal"
                   >
-                    Login
+                    <i class="fa-solid fa-unlock-keyhole"></i>&nbsp;Login
                   </button>
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

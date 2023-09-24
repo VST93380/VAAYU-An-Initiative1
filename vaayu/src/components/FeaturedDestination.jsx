@@ -12,12 +12,12 @@ const FeaturedDestination = (props) => {
     perPage: 4,
     autoplay: true,
     focus: "center",
-    pauseOnHover: true,
+    pauseOnHover: false,
     drag: "free",
     pagination: false,
     rewind: true,
     autoScroll: {
-      speed: 10,
+      speed: 4,
     },
   };
 
