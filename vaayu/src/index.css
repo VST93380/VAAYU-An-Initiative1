@@ -56,8 +56,6 @@ section {
   margin-left: 20px;
   width: 50px;
   filter: drop-shadow(0 0 8px black);
-}
-.navbar-image {
   transform: scale(1.8);
 }
 
@@ -133,6 +131,7 @@ section {
   .navbar-image {
     position: static;
     width: 60px;
+    transform: scale(1);
   }
   .navbar-toggler i {
     font-size: 2.2rem;

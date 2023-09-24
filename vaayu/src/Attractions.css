@@ -1,0 +1,190 @@
+.attcontainer p {
+  font-size: 18px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.attcontainer #klef {
+  margin-left: 6px;
+  font-size: 20px;
+}
+
+.attcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.attcontainer .card {
+  width: 400px;
+  height: 300px;
+  background: rgb(103, 225, 255);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 30px;
+  margin-top: 45px;
+  overflow: hidden;
+}
+
+.attcontainer .card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background: rgb(103, 151, 255);
+}
+
+.attcontainer .first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+  padding: 2px;
+}
+
+.attcontainer img {
+  height: 270px;
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.attcontainer .card:hover .first-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.attcontainer .second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.attcontainer .card:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.3rem;
+  transform: rotate(0deg);
+}
+
+/* CSS for images begins*/
+
+.attcontainer .image-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* Set the container's position to relative */
+  display: inline-block;
+  /* Make the container inline to fit its content */
+}
+
+/* Style for the image */
+.attcontainer .image-container img {
+  display: block;
+  /* Make the image a block element */
+  max-width: 100%;
+  /* Ensure the image doesn't exceed its container's width */
+}
+
+/* Style for the overlay text */
+.attcontainer .overlay-text {
+  position: absolute;
+  /* Position the text absolutely within the container */
+  bottom: 10px;
+  /* Adjust the text's position from the bottom */
+  left: 10px;
+  /* Adjust the text's position from the left */
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent background */
+  color: white;
+  /* Text color */
+  padding: 5px 10px;
+  /* Add some padding for better readability */
+}
+
+/* Ends Here */
+
+/* CSS For Buttons */
+.attcontainer .button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+  font-size: 12px;
+}
+
+.attcontainer .button__icon-wrapper {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.attcontainer .button:hover {
+  background-color: #000;
+}
+
+.attcontainer .button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.attcontainer .button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.attcontainer .button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.attcontainer .button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+.attcontainer .button__text {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Define the background color using the --clr custom property */
+.attcontainer .button {
+  --clr: #7808d0;
+}
+
+
