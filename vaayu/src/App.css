@@ -7,12 +7,14 @@
   left: 0;
   z-index: -999;
 }
+
 .hmvid video {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .loginbtn {
   padding: 0.15em 1.3em;
   border: 2px solid white;
@@ -30,18 +32,16 @@
 
 .loginbtn:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -60,9 +60,11 @@
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -84,12 +86,13 @@
   border: 2px solid rgb(9, 255, 0);
 }
 
-.explorehome{
+.explorehome {
   transition: all ease 0.2s;
   text-decoration: none;
   font-size: 1.7rem;
 }
-.explorehome:hover{
+
+.explorehome:hover {
   transition: all ease 0.2s;
   letter-spacing: 2px;
   text-decoration: none;
@@ -111,7 +114,7 @@
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
   line-height: 1.7;
   outline: transparent;
@@ -134,11 +137,13 @@
   box-shadow: 0 0 12px rgb(224, 224, 224);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
-.modal{
+
+.modal {
   backdrop-filter: blur(22px);
   border: none !important;
 }
-.modal-content{
+
+.modal-content {
   background-color: transparent;
   border: none !important;
 }
@@ -149,7 +154,7 @@
   position: relative;
   width: 300px;
   height: 200px;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -157,10 +162,12 @@
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
-.main-homecard li{
-margin: 0 20px;
+
+.main-homecard li {
+  margin: 0 20px;
 }
-.homecard img{
+
+.homecard img {
   width: 280px;
   fill: #333;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
@@ -205,5 +212,3 @@ margin: 0 20px;
   color: #777;
   line-height: 1.4;
 }
-
-
