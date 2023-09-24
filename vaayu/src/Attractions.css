@@ -132,7 +132,11 @@
   /* Adjust the text's position from the bottom */
   left: 10px;
   /* Adjust the text's position from the left */
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.498);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgb(162, 63, 255);
+  border: 1px solid white;
   /* Semi-transparent background */
   color: white;
   /* Text color */
