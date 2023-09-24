@@ -78,23 +78,27 @@ section {
   font-size: 2.2rem;
 }
 
-.welcomehome{
+.welcomehome {
   margin-top: 3%;
   color: white;
+  padding: 3% 0;
+  background-image: url(./assets/l1.jpg);
+  background-size: cover;
+  background-position: center center fixed;
 }
-.welcomehome h2{
+.welcomehome h2 {
   color: white;
   font-family: "Croissant One", cursive;
   font-weight: 900;
   font-size: 2.2rem;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.welcomehome .featured{
+.welcomehome .featured {
   backdrop-filter: blur(6px);
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.38);
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   padding: 23px 40px;
   margin: 20px auto;
   border: 2px solid white;
@@ -108,7 +112,7 @@ section {
     position: static;
     width: 60px;
   }
-  .navbar-toggler i{
+  .navbar-toggler i {
     font-size: 2.2rem;
   }
   .homewelcome p {
@@ -120,4 +124,19 @@ section {
     position: static;
     width: 60px;
   }
+}
+.main-homecard {
+  background-size: cover;
+  background-position: center center fixed;
+  backdrop-filter: blur(42px);
+  border: 2px solid white;
+  border-radius: 12px;
+  margin: 30px 10px;
+  box-shadow: rgba(0, 0, 0, 0.953) 0px 1px 1px 0px inset,
+    rgba(39, 39, 39, 0.926) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.865) 0px 30px 60px -30px;
+  padding: 20px;
+}
+.featureddestiations {
+  margin: 0 auto;
 }

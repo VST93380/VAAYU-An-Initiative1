@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Backvid from "./Backvid";
 import FeaturedDestination from "./FeaturedDestination";
-import greetingsData from './Json/Greetings.json';
+import greetingsData from "./Json/Greetings.json";
 import axios from "axios";
-
 
 export default function Home() {
   const [longitude, setLongitude] = useState(null);
   const [latitude, setLatitude] = useState(null);
   const [userLocation, setUserLocation] = useState(null);
-  const [greeting, setGreeting] = useState('');
+  const [greeting, setGreeting] = useState("");
 
   useEffect(() => {
-    const foundGreeting = greetingsData.find((item) => item.name === userLocation);
+    const foundGreeting = greetingsData.find(
+      (item) => item.name === userLocation
+    );
     if (foundGreeting) {
       setGreeting(foundGreeting.Greetings);
     } else {
-      setGreeting('Your gateway to amazing destinations and experiences');
+      setGreeting("Your gateway to amazing destinations and experiences");
     }
   }, [userLocation]);
 
@@ -29,10 +30,10 @@ export default function Home() {
         if (response.data.address && response.data.address.state) {
           setUserLocation(response.data.address.state);
         } else {
-          setUserLocation('State not found');
+          setUserLocation("State not found");
         }
       } catch (error) {
-        console.error('Error fetching location data:', error);
+        console.error("Error fetching location data:", error);
       }
     }
 
@@ -45,9 +46,9 @@ export default function Home() {
         const { latitude, longitude } = position.coords;
         // const latitude = 17.5892;
         // const longitude = 78.9448;
-        
-        setLatitude(latitude)
-        setLongitude(longitude)
+
+        setLatitude(latitude);
+        setLongitude(longitude);
       });
     } else {
       setUserLocation("Geolocation is not available in this browser.");
@@ -65,16 +66,21 @@ export default function Home() {
         <p className="lead">
           {greeting}
           <br />
-          {userLocation && <p>User Location: {userLocation}</p>}
+          {/* {userLocation && <p>User Location: {userLocation}</p>} */}
         </p>
-        <a className="loginbtn explorehome" href="#welcomehome" role="button" onClick={fetchUserLocation}>
-          Explore Now
+        <a
+          className="loginbtn explorehome"
+          href="#welcomehome"
+          role="button"
+          onClick={fetchUserLocation}
+        >
+          Explore {userLocation} <i class="fa-solid fa-location-arrow"></i>
         </a>
       </div>
 
       <section id="welcomehome" className="welcomehome">
         {/* Featured Destinations */}
-          <FeaturedDestination state = {userLocation} />
+        <FeaturedDestination state={userLocation} />
 
         {/* About Us */}
         <div className="container featured">

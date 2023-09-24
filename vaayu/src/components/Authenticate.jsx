@@ -4,36 +4,31 @@ import { toast } from "react-toastify";
 //import { useNavigate } from "react-router-dom";
 // import{ useState } from "react";
 export default function Authenticate() {
-
   //const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     axios
-      .post('http://localhost:5000/api/register', {
+      .post("http://localhost:5000/api/register", {
         username: data.get("reguser").split(" ").join("").toLowerCase(),
         email: data.get("regemail"),
         phone: data.get("regphone"),
         password: data.get("regpassword"),
       })
       .then((response) => {
-
         if (response.data === "userexist") {
           toast.info("Username taken", {
             position: "bottom-right",
           });
-        }
-        else if (response.data === "phoneexist") {
+        } else if (response.data === "phoneexist") {
           toast.info("Phone number already is in use", {
             position: "bottom-right",
           });
-        }
-        else if (response.data === "emailexist") {
+        } else if (response.data === "emailexist") {
           toast.info("Email already taken", {
             position: "bottom-right",
           });
-        }
-        else {
+        } else {
           toast.info("Registration Successfull", {
             position: "bottom-right",
           });
@@ -43,7 +38,7 @@ export default function Authenticate() {
         console.log(err);
         toast.error("Server not started, Please wait", {
           position: "bottom-right",
-        })
+        });
       });
   };
 
@@ -53,38 +48,40 @@ export default function Authenticate() {
     const data = new FormData(e.currentTarget);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/login', {
-        phone: data.get('phone'),
-        password: data.get('password'),
+      const response = await axios.post("http://localhost:5000/api/login", {
+        phone: data.get("phone"),
+        password: data.get("password"),
       });
       if (response.data === "invalid") {
         console.log(response.data);
         toast.info("Enter correct password", { position: "bottom-right" });
-      }
-      else if (response.data === "newuser") {
+      } else if (response.data === "newuser") {
         console.log(response.data);
         toast.error("Please register to Vaayu", { position: "bottom-right" });
-      }
-      else if (response.status === 200) {
-        localStorage.setItem('user', response.data.username);
-        localStorage.setItem('role', response.data.role);
+      } else if (response.status === 200) {
+        localStorage.setItem("user", response.data.username);
+        localStorage.setItem("role", response.data.role);
 
         console.log(response.data);
 
-        if (response.data.role === "Customer" || response.data.role === "Admin") {
-          toast.success("Login Successful", { position: "bottom-right", theme: "dark" });
+        if (
+          response.data.role === "Customer" ||
+          response.data.role === "Admin"
+        ) {
+          toast.success("Login Successful", {
+            position: "bottom-right",
+            theme: "dark",
+          });
         }
-
       }
-
     } catch (error) {
       console.error("Error during login:", error);
-      toast.error("An error occurred during login", { position: "bottom-right", theme: "dark" });
+      toast.error("An error occurred during login", {
+        position: "bottom-right",
+        theme: "dark",
+      });
     }
   };
-
-
-
 
   return (
     <>
@@ -95,16 +92,17 @@ export default function Authenticate() {
         tabindex="-1"
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
+        data-bs-backdrop="static"
       >
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-body login">
               <div className="container">
-                <div className="row full-height justify-content-center">
+                <div className="row justify-content-center">
                   <div className="section text-center">
-                    <h6 className="mb-0 pb-3">
-                      <span className="loginbtn">Log In </span>
-                      <span className="loginbtn">Sign Up</span>
+                    <h6 className="loginheader">
+                      <span className="loginnav">Log In </span>
+                      <span className="loginnav">Sign Up</span>
                     </h6>
                     <input
                       className="checkbox"
@@ -116,7 +114,7 @@ export default function Authenticate() {
                     <div className="card-3d-wrap mx-auto">
                       <div className="card-3d-wrapper">
                         <div className="card-front">
-                          <form onSubmit={loginAction}            >
+                          <form onSubmit={loginAction}>
                             <div className="center-wrap">
                               <div className="section text-center">
                                 <h4 className="mb-4 pb-3">Log In</h4>
@@ -127,7 +125,6 @@ export default function Authenticate() {
                                     className="form-style"
                                     placeholder="Your Phone Number"
                                     id="logphone"
-
                                     autocomplete="off"
                                     required
                                   />
@@ -223,6 +220,14 @@ export default function Authenticate() {
                 </div>
               </div>
             </div>
+            <button
+              type="button"
+              class="closemodal"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <i class="fa-solid fa-circle-arrow-up"></i>
+            </button>
           </div>
         </div>
       </div>
