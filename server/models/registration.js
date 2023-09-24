@@ -19,8 +19,17 @@ const registrationtemplate = new mongoose.Schema({
     required: true,
   },
   date: {
-    type: Date,
-    default: Date.now,
+    type: String,
+    default: function () {
+      const today = new Date();
+      const dd = String(today.getDate()).padStart(2, "0");
+      const mm = String(today.getMonth() + 1).padStart(2, "0");
+      const yyyy = today.getFullYear();
+      const hoursIST = today.getHours();
+      const minutesIST = today.getMinutes();
+
+      return `${dd}-${mm}-${yyyy} at ${hoursIST}:${minutesIST}`;
+    }
   },
   role: {
     type: String,

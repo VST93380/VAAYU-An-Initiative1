@@ -29,8 +29,8 @@ app.use(bodyParser.json())
 app.use(express.json());
 app.use(cors());
 
-app.use("/api",authurls);
-  
+app.use("/api", authurls);
+
 
 //listening on port
 const port = process.env.PORT || 5000;
