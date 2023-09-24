@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
 const regtemp = require("../models/registration");
-
+const communitytemp = require("../models/community");
 
 //register
 router.post("/register", async (req, res) => {
@@ -32,7 +32,7 @@ router.post("/register", async (req, res) => {
             });
     } else if (usercheck != null) {
         res.send("userexist");
-    }  else if (phonecheck != null) {
+    } else if (phonecheck != null) {
         res.send("phoneexist");
     } else if (emailcheck != null) {
         res.send("emailexist");
@@ -65,6 +65,30 @@ router.post("/login", async (req, res) => {
         res.status(500).send({
             message: "Internal Server Error",
         });
+    }
+});
+
+router.post("/comment", async (req, res) => {
+    const { username, blogmsg, title, imagelink } = req.body;
+
+    try {
+        // Input validation
+        if (!username || !blogmsg || !title || !imagelink) {
+            return res.status(400).json({ error: "Missing required fields" });
+        }
+
+        const comment = new communitytemp({
+            username: username,
+            title: title,
+            blogmsg: blogmsg,
+            imagelink: imagelink,
+        });
+
+        await comment.save();
+        res.status(201).json({ message: "Comment added successfully" });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: "Failed to add comment" });
     }
 });
 
