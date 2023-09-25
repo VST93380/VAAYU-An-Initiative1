@@ -92,4 +92,18 @@ router.post("/comment", async (req, res) => {
     }
 });
 
+router.get("/getcomments", async (req, res) => {
+
+    try {
+        const items = await communitytemp.find();
+        res.json(items);
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).send("Internal Server Error");
+    }
+
+
+});
+
+
 module.exports = router;
