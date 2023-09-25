@@ -1,21 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import locations from "./Json/Places.json";
 import statesData from "./Json/States.json";
 import Detailed from "./Detailed";
 
 export default function Attractions() {
-
   const [detailedProp, setDetailedProp] = useState([]);
   const originalLoc = locations;
   const [selectedState, setSelectedState] = useState("default");
   const [places, setPlaces] = useState(locations);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 8;
+
+  useEffect(() => {
+    handlePro();
+  }, [selectedState, currentPage]);
 
   const handleDetails = (data, e) => {
     e.preventDefault();
     setDetailedProp(data);
-  }
+  };
 
-  const handlePro = (e) => {
+  const handlePro = () => {
     if (selectedState === "default") {
       setPlaces(originalLoc);
     } else {
@@ -24,6 +29,16 @@ export default function Attractions() {
       );
     }
   };
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const totalItems = places.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const displayedPlaces = places.slice(startIndex, endIndex);
 
   return (
     <>
@@ -59,7 +74,7 @@ export default function Attractions() {
           </div>
         </div>
         <div class="attcontainer">
-          {places.map((item, index) => (
+          {displayedPlaces.map((item, index) => (
             <div className="card" key={index}>
               <div className="first-content">
                 <div className="image-container">
@@ -115,8 +130,25 @@ export default function Attractions() {
             </div>
           ))}
         </div>
+        <nav aria-label="Page navigation">
+          <ul className="pagination justify-content-center">
+            {Array.from({ length: totalPages }).map((_, index) => (
+              <li
+                className={`page-item ${index + 1 === currentPage ? "active" : ""}`}
+                key={index}
+              >
+                <button
+                  className="page-link"
+                  onClick={() => handlePageChange(index + 1)}
+                >
+                  {index + 1}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      {detailedProp && <Detailed details = {detailedProp} />}
+      {detailedProp && <Detailed details={detailedProp} />}
     </>
   );
 }
