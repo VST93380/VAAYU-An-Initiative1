@@ -2,6 +2,7 @@ import React from "react";
 import "./Styles/App.css";
 import "./Styles/login.css";
 import "./Styles/Attractions.css";
+import "./Styles/Community.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
@@ -12,6 +13,7 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import TripPlanner from "./components/TripPlanner";
 import Vaayusoul from "./components/Vaayusoul";
+import Community from "./components/Community"
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/attractions" element={<Attractions />} />
           <Route path="/tripplanner" element={<TripPlanner />} />
+          <Route path="/community" element={<Community />} />
           <Route path="/vaayusoul" element={<Vaayusoul></Vaayusoul>} />
         </Routes>
       </section>

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Community.css"
+
 function BlogModal() {
     return (
         <>
