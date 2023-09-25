@@ -48,7 +48,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/soul">
+                <NavLink className="nav-link" aria-current="page" to="/vaayusoul">
                 <i class="fa-solid fa-heart-pulse"></i>&nbsp;Vaayu Soul
                 </NavLink>
               </li>

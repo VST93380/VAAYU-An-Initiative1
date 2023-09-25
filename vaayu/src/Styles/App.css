@@ -443,3 +443,61 @@
 .aims-content .aims-btn:active {
   box-shadow: none;
 }
+
+
+/* carbon foot print vaayu soul css*/
+/* CSS for Carbon Footprint Calculator */
+
+/* Apply styles to the container */
+.carbon-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Apply styles to the title */
+.carbon-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Apply styles to the input fields and select dropdown */
+.carbon-input,
+.carbon-select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Apply styles to the Calculate button */
+.carbon-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+/* Apply styles to the Calculate button on hover */
+.carbon-button:hover {
+  background-color: #0056b3;
+}
+
+/* Apply styles to the result */
+.carbon-result {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+}
