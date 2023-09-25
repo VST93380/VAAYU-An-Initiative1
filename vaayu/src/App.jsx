@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import TripPlanner from "./components/TripPlanner";
 import Vaayusoul from "./components/Vaayusoul";
 import Community from "./components/Community"
+import HotelAttractions from "./components/HotelAttractions";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/tripplanner" element={<TripPlanner />} />
           <Route path="/community" element={<Community />} />
           <Route path="/vaayusoul" element={<Vaayusoul></Vaayusoul>} />
+          <Route path="/hotel" element={<HotelAttractions/>} />
         </Routes>
       </section>
       <Footer />
