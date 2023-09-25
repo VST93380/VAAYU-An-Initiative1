@@ -185,7 +185,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 2px solid white;
 }
 
@@ -200,7 +200,9 @@
   box-shadow: 0 0 12px black;
 
 }
-
+.homecard__front img{
+  border-radius: 20px;
+}
 .homecard__image {
   width: 240px;
   height: 320px;
@@ -356,4 +358,87 @@
   .explorehome {
     font-size: 1rem;
   }
+}
+
+
+/*aims css */
+.aims-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  min-height:350px ;
+  border: 2px solid white;
+  backdrop-filter: blur(10px);
+}
+
+.aims-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.aims-content .aims-heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.aims-content .aims-para {
+  line-height: 1.5;
+}
+
+.aims-content .aims-btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.aims-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.aims-card:hover::before {
+  height: 100%;
+}
+
+.aims-card:hover {
+  box-shadow: none;
+}
+
+.aims-card:hover .aims-btn {
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.aims-content .aims-btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.aims-content .aims-btn:active {
+  box-shadow: none;
 }

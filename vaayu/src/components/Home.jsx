@@ -3,6 +3,7 @@ import Backvid from "./Backvid";
 import FeaturedDestination from "./FeaturedDestination";
 import greetingsData from "./Json/Greetings.json";
 import axios from "axios";
+import Aims from "./Aims";
 
 
 export default function Home() {
@@ -82,6 +83,7 @@ export default function Home() {
       <section id="welcomehome" className="welcomehome">
         {/* Featured Destinations */}
         <FeaturedDestination state={userLocation} />
+        <Aims></Aims>
       </section>
     </>
   );
