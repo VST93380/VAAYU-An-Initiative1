@@ -59,7 +59,7 @@ export default function Vaayusoul() {
 
   const handleTransportTypeChange = (value) => {
     setTransportType(value);
-    if (value === 'car') {
+    if (value === 'carTravel') {
       setIsVehicleDropdownDisabled(false);
     } else {
       setIsVehicleDropdownDisabled(true);
@@ -87,18 +87,18 @@ export default function Vaayusoul() {
         data:params,
       });
       setCarbonFootprint(response.data);
-      console.log(response.data)
     } catch (error) {
       console.error(error);
     }
   };
 
   return (
-    <div className='carbon-container'>
-      <h1>Carbon Footprint Calculator</h1>
+    <div className="carbon-container">
+      <h1 className="carbon-title">Carbon Footprint Calculator</h1>
       <div>
         <label>Distance (in km): </label>
         <input
+          className="carbon-input"
           type="number"
           value={distance}
           onChange={(e) => setDistance(e.target.value)}
@@ -107,6 +107,7 @@ export default function Vaayusoul() {
       <div>
         <label>Transport Type: </label>
         <select
+          className="carbon-select"
           value={transportType}
           onChange={(e) => handleTransportTypeChange(e.target.value)}
         >
@@ -121,6 +122,7 @@ export default function Vaayusoul() {
         <div>
           <label>Car Type: </label>
           <select
+            className="carbon-select"
             value={vehicleType}
             onChange={(e) => setVehicleType(e.target.value)}
           >
@@ -137,6 +139,7 @@ export default function Vaayusoul() {
         <div>
           <label>Flight Type: </label>
           <select
+            className="carbon-select"
             value={vehicleType}
             onChange={(e) => setVehicleType(e.target.value)}
           >
@@ -153,6 +156,7 @@ export default function Vaayusoul() {
         <div>
           <label>Bike Type: </label>
           <select
+            className="carbon-select"
             value={vehicleType}
             onChange={(e) => setVehicleType(e.target.value)}
           >
@@ -169,6 +173,7 @@ export default function Vaayusoul() {
         <div>
           <label>Public Transport Type: </label>
           <select
+            className="carbon-select"
             value={vehicleType}
             onChange={(e) => setVehicleType(e.target.value)}
           >
@@ -181,9 +186,9 @@ export default function Vaayusoul() {
           </select>
         </div>
       )}
-      <button onClick={calculateCarbonFootprint}>Calculate</button>
+      <button className="carbon-button" onClick={calculateCarbonFootprint}>Calculate</button>
       {carbonFootprint !== null && (
-        <div>
+        <div className="carbon-result">
           <h2>Carbon Footprint: {carbonFootprint.carbon}</h2>
         </div>
       )}
