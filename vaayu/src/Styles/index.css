@@ -183,12 +183,15 @@ section {
   text-align: left !important;
 }
 
-.tripplanner{
+.tripplanner h2{
   color: white;
   padding: 12px;
   margin: auto 20px;
-  text-align: center;
 }
+.tripplanner .form-label{
+  color: white;
+}
+
 @media (max-width: 991px) {
   .socialcard h2 {
     display: none;
