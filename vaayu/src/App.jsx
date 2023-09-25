@@ -11,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import TripPlanner from "./components/TripPlanner";
+import Vaayusoul from "./components/Vaayusoul";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/attractions" element={<Attractions />} />
           <Route path="/tripplanner" element={<TripPlanner />} />
+          <Route path="/vaayusoul" element={<Vaayusoul></Vaayusoul>} />
         </Routes>
       </section>
       <Footer />
