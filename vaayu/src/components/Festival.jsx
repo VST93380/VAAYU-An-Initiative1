@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Festivals.css';
 import festivalsData from './Json/festival.json';
 
 
@@ -9,7 +8,7 @@ function FestivalCard(props) {
   return (
     <div className="festival_card">
       <div className="card-image">
-    
+
         <img src={image_url} alt={name} />
       </div>
       <p className="card-title">{name}</p>
@@ -47,7 +46,7 @@ function MonthDisplay() {
             location={festival.location}
             description={festival.description}
             month={festival.month}
-            image_url={festival.image_url} 
+            image_url={festival.image_url}
           />
         ))}
       </div>

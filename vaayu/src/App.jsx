@@ -3,6 +3,7 @@ import "./Styles/App.css";
 import "./Styles/login.css";
 import "./Styles/Attractions.css";
 import "./Styles/Community.css";
+import "./Styles/Festivals.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Festival from './Festival';
 
 const apiKey = 'fec307e567msh8973332cb7d2418p1bb94ajsnd750f07c108c';
 const apiBaseUrl = 'https://carbon-footprint-calculator-api.p.rapidapi.com';
@@ -93,6 +94,7 @@ export default function Vaayusoul() {
   };
 
   return (
+    <div>
     <div className="carbon-container">
       <h1 className="carbon-title">Carbon Footprint Calculator</h1>
       <div>
@@ -192,6 +194,10 @@ export default function Vaayusoul() {
           <h2>Carbon Footprint: {carbonFootprint.carbon}</h2>
         </div>
       )}
+    </div>
+    <div>
+      <Festival/>
+    </div>
     </div>
   );
 }
