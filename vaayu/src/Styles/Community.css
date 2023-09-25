@@ -1,0 +1,256 @@
+.original_card {
+    max-width: 310px;
+    border-radius: 0.5rem;
+    background-color: rgb(187, 231, 12);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid white;
+
+  }
+  
+  .original_card a {
+    text-decoration: none;
+  }
+  
+  .original_card .content {
+    padding: 1.1rem;
+  }
+  
+  .original_card .image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(239, 205, 255);
+  }
+  
+  .original_card .title {
+    color: #111827;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .original_card .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+ .original_card .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    /* border: 2px solid white; */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #c80e8a;
+    padding: 4px 8px;
+    /* border-radius: 10px; */
+  }
+  
+  .original_card .action span {
+    transition: 0.3s ease;
+  }
+  
+  .original_card .action:hover span {
+    transform: translateX(4px);
+  }
+  .card-container {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+
+  /* readmore_card */
+  .readmore_card {
+    max-width: 50em;
+    max-height: 80em;
+    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+
+    transition: 1s ease-in-out;
+    border: 2px solid white;
+    border-radius: 8px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .readmore_card span {
+    font-weight: bold;
+    color: rgb(226, 26, 12);
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .readmore_card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em;
+  }
+  
+  .readmore_card .read_img {
+    width: 20em;
+    height: 12em;
+    padding: 5px;
+    background-size: cover;
+    border-radius: 15px;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+  .readmore_card .read_img img{
+    border-radius: 12px;
+    border: 5px solid white;
+  }
+ .readmore_card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .readmore_card a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+
+
+
+
+  .Blog_container {
+    background-image: linear-gradient(green, purple);
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 100px;
+    overflow: hidden;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.Blog_container p {
+    font-size: 18px;
+    color: white;
+    display: inline;
+    text-align: center;
+}
+
+.Blog_container .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.Blog_container .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Blog */
+
+
+
+.orange {
+    color: #ff7a01;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 30px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 30px;
+
+}
+
+.heading {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-container .form .input {
+    color: #87a4b6;
+    width: 100%;
+    background-color: #002733;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+    border-left: 5px solid white;
+}
+
+.form-container .form .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    background-color: #013747;
+    color: white;
+    font-weight: bold;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+    border-left: 5px solid white;
+}
+
+.form-container .form .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+    flex-basis: 70%;
+    background: #ad0689;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+    margin: 0 auto;
+}
+
+.form-container .form .button-container .send-button:hover {
+    background: transparent;
+    border: 1px solid #ff7a01;
+    color: #ff7a01;
+}
