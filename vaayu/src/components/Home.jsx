@@ -47,8 +47,8 @@ export default function Home() {
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition((position) => {
         const { latitude, longitude } = position.coords;
-        // const latitude = 17.5892;
-        // const longitude = 78.9448;
+        // const latitude = 28.7041;
+        // const longitude = 77.1025;
 
         setLatitude(latitude);
         setLongitude(longitude);
