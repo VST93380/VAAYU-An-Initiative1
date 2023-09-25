@@ -4,6 +4,7 @@ import FeaturedDestination from "./FeaturedDestination";
 import greetingsData from "./Json/Greetings.json";
 import axios from "axios";
 import Aims from "./Aims";
+import TopPicks from "./TopPicks";
 
 
 export default function Home() {
@@ -83,6 +84,7 @@ export default function Home() {
       <section id="welcomehome" className="welcomehome">
         {/* Featured Destinations */}
         <FeaturedDestination state={userLocation} />
+        <TopPicks></TopPicks>
         <Aims></Aims>
       </section>
     </>
