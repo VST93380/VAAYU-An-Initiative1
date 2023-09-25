@@ -7,6 +7,8 @@ export default function Detailed(props) {
       class="offcanvas offcanvas-start"
       tabindex="-1"
       id="detailedOffcanvas"
+      data-bs-scroll="false"
+      data-bs-backdrop="true"
       aria-labelledby="offcanvasExampleLabel"
     >
       <div class="offcanvas-header">
@@ -34,9 +36,10 @@ export default function Detailed(props) {
           <div className="facilities">
             Facilities:
             <ul>
-              {details.facilities && details.facilities.map((facility, index) => (
-                <li key={index}>{facility}</li>
-              ))}
+              {details.facilities &&
+                details.facilities.map((facility, index) => (
+                  <li key={index}>{facility}</li>
+                ))}
             </ul>
           </div>
         </div>

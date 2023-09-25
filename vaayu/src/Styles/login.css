@@ -123,7 +123,7 @@
   border: 2px solid rgb(241, 241, 241);
   box-shadow: rgb(49, 49, 49) 0px 50px 100px -20px,
     rgb(61, 61, 61) 0px 30px 60px -30px;
-  background-image: url(./assets/1.jpg);
+  background-image: url(./../assets/1.jpg);
   background-position: center center fixed;
   background-repeat: no-repeat;
   background-size: cover;

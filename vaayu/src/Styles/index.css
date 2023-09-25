@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: url(./assets/l1.jpg);
+  background-image: url(./../assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -67,14 +67,14 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  justify-content: center;
+  height: 90vh;
   color: white;
 }
 .homewelcome h1 {
   /* mix-blend-mode: overlay; */
   text-shadow: 0 0 7px black;
   font-weight: 900 !important;
-  margin-top: 12%;
 }
 .homewelcome p {
   text-shadow: 0 0 7px black;
@@ -86,7 +86,6 @@ section {
   margin-top: 3%;
   color: white;
   padding: 3% 0;
-  background-image: url(./assets/l1.jpg);
   background-size: cover;
   background-position: center center fixed;
 }
@@ -183,6 +182,13 @@ section {
 .offcanvas .facilities {
   text-align: left !important;
 }
+
+.tripplanner{
+  color: white;
+  padding: 12px;
+  margin: auto 20px;
+  text-align: center;
+}
 @media (max-width: 991px) {
   .socialcard h2 {
     display: none;
@@ -215,6 +221,7 @@ section {
   }
 }
 .main-homecard {
+  background-image: url(./../assets/bg.jpg);
   background-size: cover;
   background-position: center center fixed;
   backdrop-filter: blur(42px);
