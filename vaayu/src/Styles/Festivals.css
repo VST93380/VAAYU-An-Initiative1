@@ -1,0 +1,51 @@
+/* FestivalCard.css */
+
+.festival_card {
+    width: 300px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.festival_card .card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.festival_card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.festival_card .card-body {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.festival_card .footer {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.festival_card .by-name {
+    font-weight: bold;
+}
+
+.festival_card .date {
+    font-weight: normal;
+}
+
+
+
+.festival_container {
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
