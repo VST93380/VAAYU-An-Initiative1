@@ -373,7 +373,8 @@
   overflow: hidden;
   border-radius: 20px;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  min-height:350px ;
+  min-height:300px;
+  max-height: 300px;
   border: 2px solid white;
   backdrop-filter: blur(10px);
 }

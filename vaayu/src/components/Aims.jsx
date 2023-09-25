@@ -1,7 +1,7 @@
 import React from 'react';
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
-import placesdata from "./Json/Places.json";
+import placesdata from "./Json/Aims.json";
 
 export default function Aims() {
   const splideOptions = {
@@ -29,7 +29,7 @@ export default function Aims() {
           <SplideSlide key={index}>
             <div className="aims-card">
               <div className="aims-content">
-                <p className="aims-heading">Aim {index+1}</p>
+                <p className="aims-heading">{destination.title}</p>
                 <p className="aims-para">
                   {destination.description}
                 </p>

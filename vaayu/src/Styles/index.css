@@ -72,7 +72,7 @@ section {
   color: white;
 }
 .homewelcome h1 {
-  /* mix-blend-mode: overlay; */
+  font-family: "Poppins", sans-serif !important;
   text-shadow: 0 0 7px black;
   font-weight: 900 !important;
 }
@@ -89,6 +89,30 @@ section {
   background-size: cover;
   background-position: center center fixed;
 }
+.select-video {
+  z-index: 999;
+  position: fixed;
+  top: 200px;
+  left: 20px;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.select-video:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.select-video:focus {
+  outline: none;
+}
+
 .welcomehome h2 {
   color: white;
   font-family: "Croissant One", cursive;
