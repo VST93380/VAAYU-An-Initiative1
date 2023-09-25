@@ -1,0 +1,287 @@
+[
+    {
+        "name": "Pongal",
+        "image_url": "https://i.ytimg.com/vi/qgSwHsGaY48/maxresdefault.jpg",
+        "famous_place": "Andhra Pradesh/Tamilnadu",
+        "description": "Makar Sankranti is a harvest festival celebrated with the flying of colorful kites, preparation of sweets like 'tilgul,' and exchanging of gifts.",
+        "month": "January"
+    },
+
+    {
+        "name": "Lohri",
+        "image_url": "https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/01/12/1004725-lohri.png?im=Resize=(1280,720)",
+        "famous_place": "Punjab and North India",
+        "description": "Lohri is celebrated with bonfires, folk songs, and dance in North India, particularly in Punjab.",
+        "month": "January"
+    },
+    {
+        "name": "Maha Shivaratri",
+        "image_url": "https://cdn.telanganatoday.com/wp-content/uploads/2021/03/shivratri.jpg",
+        "famous_place": "Varanasi",
+        "description": "Maha Shivaratri is a Hindu festival dedicated to Lord Shiva. Devotees fast and offer prayers to Lord Shiva on this day.",
+        "month": "February"
+    },
+    {
+        "name": "Vasant Panchami",
+        "image_url": "https://static.toiimg.com/thumb/msid-73659630,width-400,resizemode-4/73659630.jpg",
+        "famous_place": "Varanasi",
+        "description": "Vasant Panchami marks the arrival of spring and is dedicated to the worship of Goddess Saraswati, the deity of knowledge, music, and art.",
+        "month": "February"
+    },
+    {
+        "name": "Losar",
+        "image_url": "https://blog.thomascook.in/wp-content/uploads/2018/02/cc.jpg",
+        "famous_place": "Dharamshala and Ladakh",
+        "description": "Losar is the Tibetan New Year celebrated with traditional ceremonies and cultural performances by Tibetan communities in India.",
+        "month": "February"
+    },
+    {
+        "name": "Holi",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCo3QCUfHXRMQ2ycbazdlqwjxHC3-WL6FtMA&usqp=CAU",
+        "famous_place": "Mathura, Vrindavan, Barsana, and other cities across India",
+        "description": "Holi is the festival of colors. People play with colored powders and water, and it signifies the victory of good over evil.",
+        "month": "March"
+    },
+    {
+        "name": "Maha Shivaratri",
+        "image_url": "https://example.com/maha-shivaratri.jpg",
+        "famous_place": "Shiv temples across India",
+        "description": "Maha Shivaratri is a Hindu festival dedicated to Lord Shiva. Devotees fast and offer prayers to Lord Shiva on this day.",
+        "month": "feburary/March"
+    },
+    {
+        "name": "Dol Purnima",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-K4AXttnEhrwJ6n-_BzpraaOteowIf4kmGg&usqp=CAU",
+        "famous_place": "West Bengal, particularly in Kolkata",
+        "description": "Dol Purnima is celebrated with joy and enthusiasm in West Bengal, where processions with idols of Lord Krishna and Radha are taken out.",
+        "month": "March"
+    },
+    {
+        "name": "Baisakhi (Vaisakhi)",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_bDTQblwmF3hYm_9VXN7GoCgeTKTNe7JFbQ&usqp=CAU",
+        "famous_place": "Punjab, particularly in Amritsar",
+        "description": "Baisakhi is a Sikh and Hindu festival that marks the harvest of crops. It is celebrated with vibrant processions and dance.",
+        "month": "April"
+    },
+    {
+        "name": "Vishu",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp6R4fzj-oF1qgvkTWVUxMz7BJNSgW5GQ-Zg&usqp=CAU",
+        "famous_place": "Kerala, particularly in Thrissur",
+        "description": "Vishu is the Malayalam New Year and is celebrated with the Vishu Kani arrangement, traditional feasts, and cultural performances.",
+        "month": "April"
+    },
+    {
+        "name": "Gudi Padwa",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyeGesUxvCBGxf-P72rDLit8xd14ZFb4y7Rg&usqp=CAU",
+        "famous_place": "Maharashtra, particularly in Mumbai",
+        "description": "Gudi Padwa marks the Marathi New Year and is celebrated with the raising of the Gudi flag and traditional festivities.",
+        "month": "April"
+    },
+    {
+        "name": "Buddha Purnima",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBg-Bc45XqNx2_KVoVnGP4O1_uUCs11yLIA&usqp=CAU",
+        "famous_place": "Bodh Gaya, Bihar",
+        "description": "Buddha Purnima celebrates the birth, enlightenment, and death of Gautama Buddha. It is observed with prayer and meditation.",
+        "month": "May"
+    },
+    {
+        "name": "Ganga Dussehra",
+        "image_url": "https://imgk.timesnownews.com/story/Ganga_Dussehra_2021.jpg?tr=w-1200,h-900",
+        "famous_place": "Varanasi, Uttar Pradesh",
+        "description": "Ganga Dussehra is dedicated to Goddess Ganga and celebrates the descent of the Ganges River to Earth. Devotees take a holy dip in the river.",
+        "month": "May"
+    },
+    {
+        "name": "Hemis Festival",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwgGAM20QVclwWT0vbm0BfW8-q-ClwoA9bQ&usqp=CAU",
+        "famous_place": "Hemis Monastery, Ladakh",
+        "description": "Hemis Festival is a major Buddhist festival celebrated with masked dances and cultural performances at Hemis Monastery.",
+        "month": "May"
+    },
+    {
+        "name": "Vat Savitri Vrat",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH1jUyimQf-s0VdnGdssEB4xUP1BN6zRaog&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Vat Savitri Vrat is observed by married Hindu women for the well-being and long life of their husbands. They tie threads around banyan trees.",
+        "month": "May"
+    },
+    {
+        "name": "Chandan Yatra",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhbjbjld1boPWuQBbnfdNnTFwott06H8YbuQ&usqp=CAU",
+        "famous_place": "Jagannath Temple, Puri, Odisha",
+        "description": "Chandan Yatra is a 42-day-long festival where the deities of Lord Jagannath, Balabhadra, and Subhadra are taken on a boat ride.",
+        "month": "May"
+    },
+    {
+        "name": "Rath Yatra",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0NMW-OI9lxuBsqWzmFYRocrAhtNDecdcVnA&usqp=CAU",
+        "famous_place": "Puri, Odisha",
+        "description": "Rath Yatra is a grand chariot festival dedicated to Lord Jagannath, Lord Balabhadra, and Devi Subhadra. The deities are taken on chariots.",
+        "month": "June"
+    },
+    {
+        "name": "Ambubachi Mela",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj08XTo4rOX5kYcIo8YE_Vayix48o-WcyT1g&usqp=CAU",
+        "famous_place": "Kamakhya Temple, Guwahati, Assam",
+        "description": "Ambubachi Mela is a Hindu festival celebrated at the Kamakhya Temple. It marks the annual menstruation of the Goddess Kamakhya.",
+        "month": "June"
+    },
+
+    {
+        "name": "Hemis Tsechu",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0BNU14RZOkwt6Yq3Z00CREol5hgU9kHSv0g&usqp=CAU",
+        "famous_place": "Hemis Monastery, Ladakh",
+        "description": "Hemis Tsechu is a Buddhist festival celebrated with masked dances, rituals, and cultural performances at Hemis Monastery.",
+        "month": "June"
+    },
+    {
+        "name": "Raja Parba",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCaDJ7anc9WjZs1KFDX2qcJGzf15m4lyA2g&usqp=CAU",
+        "famous_place": "Odisha",
+        "description": "Raja Parba is a three-day festival celebrating womanhood, fertility, and the onset of the monsoon in Odisha.",
+        "month": "June"
+    },
+
+    {
+        "name": "Guru Purnima",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIInNUQESsdNxuddrNSnwl893AU2oLNa_O4w&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Guru Purnima is a day to honor and express gratitude to spiritual and academic teachers. It is observed by Buddhists, Hindus, and Jains.",
+        "month": "July"
+    },
+    {
+        "name": "Bonalu",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnAJhCBvnEgQFk74YzSGn-qAbbnbAk8e_UCg&usqp=CAU",
+        "famous_place": "Telangana",
+        "description": "Bonalu is a Hindu festival celebrated in Telangana to honor the Goddess Mahakali. Devotees offer food and rituals to the deity.",
+        "month": "July"
+    },
+    {
+        "name": "Ashadi Ekadashi",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNkNRbjIc6Ul95UdrT4BjIF0nH4GwAT54ARw&usqp=CAU",
+        "famous_place": "Pandharpur, Maharashtra",
+        "description": "Ashadi Ekadashi is a significant festival dedicated to Lord Vithoba in Pandharpur, Maharashtra. Pilgrims visit the temple.",
+        "month": "July"
+    },
+    {
+        "name": "Raksha Bandhan",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0E3jql--mAkXfaK-icbl0O-TTxOiRY2d7HQ&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Raksha Bandhan is a Hindu festival celebrating the bond between brothers and sisters. Sisters tie rakhi on their brothers' wrists.",
+        "month": "August"
+    },
+    {
+        "name": "Krishna Janmashtami",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1roYUs09w1sFe-m3_Q0Czpz8_sC8VEyULQ&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Krishna Janmashtami is the birth anniversary of Lord Krishna. Devotees fast, sing bhajans, and enact Krishna's life stories.",
+        "month": "August"
+    },
+
+    {
+        "name": "Onam",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSquUPjddRcvmRbtLEyyFTACjJ2UIVZew_3ww&usqp=CAU",
+        "famous_place": "Kerala",
+        "description": "Onam is the harvest festival of Kerala. It is celebrated with grand feasts, traditional dance (Kathakali), and boat races.",
+        "month": "August"
+    },
+    {
+        "name": "Ganesh Chaturthi",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS47_T9zhYbofsnQgajacTu4gQGJ9jHxPynAw&usqp=CAU",
+        "famous_place": "Maharashtra, Nationwide",
+        "description": "Ganesh Chaturthi is dedicated to Lord Ganesha. It involves the installation of Ganesha idols, prayers, and cultural events.",
+        "month": "September"
+    },
+    {
+        "name": "Rosh Hashanah",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStF6QvtbTzJr81k4DKnA8LYtlSUTzkvPhfrA&usqp=CAU",
+        "famous_place": "Jewish Communities in India",
+        "description": "Rosh Hashanah is the Jewish New Year. It is celebrated with synagogue services, festive meals, and the blowing of the shofar.",
+        "month": "September"
+    },
+    {
+        "name": "Navratri",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToz6glN1qzTmCec1qCh32wnxAV8_jpm_mifQ&usqp=CAU",
+        "famous_place": "Gujarat, Nationwide",
+        "description": "Navratri is a Hindu festival celebrating the goddess Durga. It involves nine nights of dance, music, and religious rituals.",
+        "month": "September"
+    },
+    {
+        "name": "Bakrid (Eid al-Adha)",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvQvpPSuCc8M1f_ON7sEa-U77JEpelCi06WA&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Bakrid, also known as Eid al-Adha, is an Islamic festival of sacrifice. It involves prayers, feasts, and the sacrifice of animals.",
+        "month": "September"
+    },
+    {
+        "name": "Dussehra (Vijayadashami)",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJj1eVrk5ymXYQQ4oVVxV9w3AS9C0YgYFiPt2_vwa6AePrO0arLePEuy9rutMHGLlZg2A&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Dussehra, also known as Vijayadashami, marks the victory of good over evil. It includes the burning of effigies and Ram Leela performances.",
+        "month": "October"
+    },
+    {
+        "name": "Diwali",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ocSk2096WgDr9gt7RiKeopEmduvwTC5jeQ&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Diwali, the Festival of Lights, is celebrated with lamps, fireworks, sweets, and prayers to the goddess Lakshmi.",
+        "month": "October/November"
+    },
+    {
+        "name": "Guru Nanak Jayanti",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLmXMPVRz3RWb0_fGHOrnpgtQW8sQvCt4IeQ&usqp=CAU",
+        "famous_place": "Amritsar, Punjab",
+        "description": "Guru Nanak Jayanti commemorates the birth of Guru Nanak, the founder of Sikhism. It involves religious processions and prayers.",
+        "month": "October"
+    },
+    {
+        "name": "Karva Chauth",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3pbrDFQ8esjxSfX2JA-dYDHx4JSJNdFGULQ&usqp=CAU",
+        "famous_place": "Northern India",
+        "description": "Karva Chauth is a fasting ritual observed by married Hindu women for the well-being and longevity of their husbands.",
+        "month": "October"
+    },
+    {
+        "name": "Chhath Puja",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInT3udhz-Mc_d86bGTAXbc_d4coLf4Dy3pQ&usqp=CAU",
+        "famous_place": "Bihar, Uttar Pradesh",
+        "description": "Chhath Puja is an ancient Hindu festival dedicated to the sun god. It involves rigorous rituals and offerings to the sun.",
+        "month": "November"
+    },
+    {
+        "name": "Kartik Purnima",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWY-bSMsNZkvZiyZjbauDax55ebVZWcDMBw&usqp=CAU",
+        "famous_place": "Varanasi, Uttar Pradesh",
+        "description": "Kartik Purnima is a Hindu festival celebrated with bathing in the Ganges and lighting lamps on the riverbanks.",
+        "month": "November"
+    },
+
+    {
+        "name": "Christmas",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVFt_-2at_x903R3dVmtNQ6W6R1o50Un_vEQ&usqp=CAU",
+        "famous_place": "Nationwide",
+        "description": "Christmas is a Christian festival celebrating the birth of Jesus Christ. It is widely observed with decorations, carols, and gift-giving.",
+        "month": "December"
+    },
+    {
+        "name": "Bhogali Bihu",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm60xJ3PZhSroH-gsXJkPXFdDtHk8WPOfajQ&usqp=CAU",
+        "famous_place": "Assam",
+        "description": "Bhogali Bihu, also known as Magh Bihu, is an Assamese harvest festival celebrated with feasts and traditional games.",
+        "month": "December"
+    },
+    {
+        "name": "Sikkim Winter Carnival",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlZ8ZlNFZWQ0q5F8vpCh17VMnx9niW1CVEw&usqp=CAU",
+        "famous_place": "Gangtok, Sikkim",
+        "description": "The Sikkim Winter Carnival is a colorful festival featuring cultural performances, food, and winter sports in Gangtok.",
+        "month": "December"
+    },
+    {
+        "name": "Festival of the Sun God",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBTrYLwa8CdmpMln_lnPH1ryA86VFlsKq0iw&usqp=CAU",
+        "famous_place": "Orissa",
+        "description": "The Festival of the Sun God, or Magha Saptami, is celebrated with rituals and a holy dip in rivers to honor the sun god.",
+        "month": "December"
+    }
+]
