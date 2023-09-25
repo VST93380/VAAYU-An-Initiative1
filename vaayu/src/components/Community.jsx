@@ -2,6 +2,7 @@ import React from 'react';
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useState, useEffect } from "react";
+
 function BlogModal() {
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -58,7 +59,7 @@ function ReadMore(props) {
                         <div className="readmore_card">
                             <h2><span>{props.comment.title}</span></h2>
                             <div className="read_img">
-                                <img src={props.comment.imagelink} alt="Blog Image" />
+                                <img src={props.comment.imagelink} alt="Blog Image"  />
                             </div>
                             <p className="info">{props.comment.blogmsg}</p>
                             <div className="share">
@@ -98,6 +99,7 @@ function BlogButton() {
 
 function Card(props) {
     const words = props.comment.blogmsg.split(' ');
+    const errImg = "https://th.bing.com/th/id/R.1c1b8c8219385a0f88a7b6cfcba712ab?rik=u9ceuWoncAl0iQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fFree-Desktop-Travel-Backgrounds.jpg&ehk=i2gnQlVtAUHLdjoM%2b5hVl%2bStT4ogWTYySuRp0cXXPnc%3d&risl=&pid=ImgRaw&r=0"
 
     // Take the first two words and join them back into a string
     const truncatedMessage = words.slice(0, 2).join(' ');
@@ -110,7 +112,7 @@ function Card(props) {
         <div>
             <div className="original_card">
                 <div className="image">
-                    <img src={props.comment.imagelink} alt="Blog Image" />
+                    <img src={props.comment.imagelink} alt="Blog Image" onError={(e)=>{ e.target.onerror = null; e.target.src={errImg}}} />
                 </div>
                 <div className="content">
                     <a href="#">
@@ -121,7 +123,7 @@ function Card(props) {
                     <p className="desc">
                         {trunmsg}
                     </p>
-                    <a className="action loginbtn" data-bs-toggle="modal" data-bs-target={`#${modalId}`}>
+                    <a className="action loginbtn readmorebtn" data-bs-toggle="modal" data-bs-target={`#${modalId}`}>
                         Find out more
                         <span aria-hidden="true">
                             →
