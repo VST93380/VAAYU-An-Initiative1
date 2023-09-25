@@ -1,6 +1,29 @@
 import React from 'react';
-
+import axios from "axios";
+import { toast } from "react-toastify";
+import { useState, useEffect } from "react";
 function BlogModal() {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        axios.post('http://localhost:5000/api/comment', {
+            username: "raajaaaa",
+            blogmsg: data.get('blogmsg'),
+            title: data.get('title'),
+            imagelink: data.get('imagelink'),
+        })
+            .then((response) => {
+                console.log(response.data);
+                if (response.status === 201) {
+                    toast.success("BlogPost has been saved")
+                } else {
+                    toast.error("error in saving the post");
+                }
+            }).catch((err) => {
+
+                console.log(err)
+            })
+    }
     return (
         <>
             <div className="modal fade" id="blogPostModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -8,15 +31,15 @@ function BlogModal() {
                     <div className="modal-content">
                         <div className="modal-body">
                             <div className="form-container">
-                                <div className="form">
+                                <form className="form" onSubmit={handleSubmit}>
                                     <span className="heading">Get in touch</span>
-                                    <input placeholder="title of the blog" type="text" className="input" />
-                                    <input placeholder="image url" id="mail" type="email" className="input" />
-                                    <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" className="textarea"></textarea>
+                                    <input placeholder="title of the blog" type="text" className="input" name="title" />
+                                    <input placeholder="image url" id="mail" type="text" className="input" name="imagelink" />
+                                    <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="blogmsg" className="textarea" ></textarea>
                                     <div className="button-container">
-                                        <div className="send-button loginbtn">Submit</div>
+                                        <button type="submit" className="send-button loginbtn">Submit</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -35,7 +58,7 @@ function ReadMore() {
                         <div className="readmore_card">
                             <h2><span>My journey in Ooty</span></h2>
                             <div className="read_img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXizQnHIg18wyWL95pLMJINUNMHzDGf54-1w&usqp=CAU" alt="Blog Image" />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXizQnHIg18wyWL95pLMJINUNMHzDGf54-1w&usqp=CAU" alt="Blog Image" />
                             </div>
                             <p className="info">I’m Walter, a multidisciplinary designer who focuses on telling my clients’ stories visually, through enjoyable and meaningful experiences. I specialize in responsive websites and functional user interfaces.</p>
                             <div className="share">
@@ -77,21 +100,26 @@ function BlogButton() {
 
 
 
-function Card() {
+function Card(props) {
+    const words = props.comment.blogmsg.split(' ');
+
+    // Take the first two words and join them back into a string
+    const truncatedMessage = words.slice(0, 2).join(' ');
+    const trunmsg=truncatedMessage+" ..."
     return (
-        <div>
+        <div >
             <div className="original_card">
                 <div className="image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXizQnHIg18wyWL95pLMJINUNMHzDGf54-1w&usqp=CAU" alt="Blog Image" />
+                    <img src={props.comment.imagelink} alt="Blog Image" />
                 </div>
                 <div className="content">
                     <a href="#">
                         <span className="title">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            {props.comment.title}
                         </span>
                     </a>
                     <p className="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium.
+                        {trunmsg}
                     </p>
                     <a className="action loginbtn" data-bs-toggle="modal" data-bs-target="#readMore">
                         Find out more
@@ -99,7 +127,7 @@ function Card() {
                             →
                         </span>
                     </a>
-                    <ReadMore/>
+                    <ReadMore />
                 </div>
             </div>
         </div>
@@ -107,19 +135,29 @@ function Card() {
 }
 
 function Community() {
+    const [comments, setComments] = useState([]); // State to store comments
+
+    useEffect(() => {
+        // Fetch comments when the component mounts
+        axios.get('http://localhost:5000/api/getcomments')
+            .then((response) => {
+                setComments(response.data); // Set comments in state
+            })
+            .catch((err) => {
+                console.error(err);
+            });
+    }, []);
     return (
-        <div>
+        <div className='blog-vaayu-conatiner'>
             <div className='Blog_container'>
                 <BlogButton />
             </div>
             <div className="container">
                 <div className="card-container">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {/* Render multiple Card components with comment data as props */}
+                    {comments.map((comment, index) => (
+                        <Card key={index} comment={comment} />
+                    ))}
                 </div>
             </div>
         </div>
