@@ -56,7 +56,7 @@ function ReadMore(props) {
                 <div className="modal-content">
                     <div className="modal-body">
                         <div className="readmore_card">
-                            <h2><span>My journey in Ooty</span></h2>
+                            <h2><span>{props.comment.title}</span></h2>
                             <div className="read_img">
                                 <img src={props.comment.imagelink} alt="Blog Image" />
                             </div>
