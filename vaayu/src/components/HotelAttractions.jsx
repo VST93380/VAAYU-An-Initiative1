@@ -50,11 +50,11 @@ export default function HotelAttractions() {
 
   const ratingRanges = [
     { label: "All Ratings", min: 0, max: 5 },
-    { label: "1 Star", min: 1, max: 1.99 },
-    { label: "2 Stars", min: 2, max: 2.99 },
-    { label: "3 Stars", min: 3, max: 3.99 },
-    { label: "4 Stars", min: 4, max: 4.99 },
-    { label: "5 Stars", min: 5, max: 5 },
+    { label: "0-1 Star", min: 0, max: 1 },
+    { label: "1-2 Stars", min: 1, max: 2 },
+    { label: "2-3 Stars", min: 2, max: 3 },
+    { label: "3-4 Stars", min: 3, max: 4 },
+    { label: "4-5 Stars", min: 4, max: 5 },
   ];
 
   return (
