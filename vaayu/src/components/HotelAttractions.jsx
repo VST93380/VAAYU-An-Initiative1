@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import HotelDetailed from "./HotelDetailed"; // Import your HotelDetailed component
 import locations from "./Json/Hotels.json";
 import statesData from "./Json/States.json";
+
 export default function HotelAttractions() {
   const [detailedProp, setDetailedProp] = useState([]);
   const originalLoc = locations;
   const [selectedState, setSelectedState] = useState("default");
   const [places, setPlaces] = useState(locations);
+  const [selectedRatingRange, setSelectedRatingRange] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
-
-  useEffect(() => {
-    handlePro();
-  }, [selectedState, currentPage]);
 
   const handleDetails = (data, e) => {
     e.preventDefault();
@@ -20,13 +18,24 @@ export default function HotelAttractions() {
   };
 
   const handlePro = () => {
-    if (selectedState === "default") {
-      setPlaces(originalLoc);
-    } else {
-      setPlaces(
-        locations.filter((destination) => destination.state === selectedState)
+    let filteredPlaces = originalLoc;
+
+    if (selectedState !== "default") {
+      filteredPlaces = filteredPlaces.filter(
+        (destination) => destination.state === selectedState
       );
     }
+
+    if (selectedRatingRange !== "") {
+      const { min, max } = ratingRanges.find(
+        (range) => range.label === selectedRatingRange
+      );
+      filteredPlaces = filteredPlaces.filter(
+        (destination) => destination.rating >= min && destination.rating <= max
+      );
+    }
+
+    setPlaces(filteredPlaces);
   };
 
   const handlePageChange = (page) => {
@@ -39,12 +48,21 @@ export default function HotelAttractions() {
   const endIndex = startIndex + itemsPerPage;
   const displayedPlaces = places.slice(startIndex, endIndex);
 
+  const ratingRanges = [
+    { label: "All Ratings", min: 0, max: 5 },
+    { label: "1 Star", min: 1, max: 1.99 },
+    { label: "2 Stars", min: 2, max: 2.99 },
+    { label: "3 Stars", min: 3, max: 3.99 },
+    { label: "4 Stars", min: 4, max: 4.99 },
+    { label: "5 Stars", min: 5, max: 5 },
+  ];
+
   return (
     <>
       <div className="attractions">
-        <div class="container mt-5">
-          <div class="row glass p-3">
-            <div class="col-md-5">
+        <div className="container mt-5">
+          <div className="row glass p-3">
+            <div className="col-md-5">
               <select
                 className="form-control"
                 value={selectedState}
@@ -58,21 +76,27 @@ export default function HotelAttractions() {
                 ))}
               </select>
             </div>
-            <div class="col-md-5">
-              <select class="form-control">
-                <option>Dropdown 2</option>
-                <option>Dropdown 2</option>
-                <option>Dropdown 2</option>
+            <div className="col-md-5">
+              <select
+                className="form-control"
+                value={selectedRatingRange}
+                onChange={(e) => setSelectedRatingRange(e.target.value)}
+              >
+                {ratingRanges.map((range, index) => (
+                  <option key={index} value={range.label}>
+                    {range.label}
+                  </option>
+                ))}
               </select>
             </div>
-            <div class="col-md-2">
+            <div className="col-md-2">
               <button className="loginbtn filterbtn" onClick={handlePro}>
-                Apply Filter <i class="fa-solid fa-paint-roller"></i>
+                Apply Filter <i className="fa-solid fa-paint-roller"></i>
               </button>
             </div>
           </div>
         </div>
-        <div class="attcontainer">
+        <div className="attcontainer">
           {displayedPlaces.map((item, index) => (
             <div className="card" key={index}>
               <div className="first-content">
@@ -87,7 +111,6 @@ export default function HotelAttractions() {
                 <p>{`State : ${item.state}`}</p>
                 <p>{`City : ${item.city}`}</p>
                 <p>{`Rating : ${item.rating}`}</p>
-          
                 <br />
                 <div className="pos">
                   <a
@@ -105,10 +128,7 @@ export default function HotelAttractions() {
                         fill="none"
                         viewBox="0 0 14 15"
                       >
-                        <path
-                          fill="currentColor"
-                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                        ></path>
+                        {/* SVG path for the icon */}
                       </svg>
 
                       <svg
@@ -118,10 +138,7 @@ export default function HotelAttractions() {
                         fill="none"
                         viewBox="0 0 14 15"
                       >
-                        <path
-                          fill="currentColor"
-                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-                        ></path>
+                        {/* SVG path for the icon */}
                       </svg>
                     </span>
                     <p className="button__text">Explore For More</p>
@@ -135,7 +152,8 @@ export default function HotelAttractions() {
           <ul className="pagination justify-content-center">
             {Array.from({ length: totalPages }).map((_, index) => (
               <li
-                className={`page-item ${index + 1 === currentPage ? "active" : ""}`}
+                className={`page-item ${index + 1 === currentPage ? "active" : ""
+                  }`}
                 key={index}
               >
                 <button
