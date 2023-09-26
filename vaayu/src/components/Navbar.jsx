@@ -29,29 +29,36 @@ export default function Navbar() {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to="/">
-                <i class="fa-solid fa-house"></i>&nbsp;Home
+                  <i class="fa-solid fa-house"></i>&nbsp;Home
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to="/tripplanner">
-                <i class="fa-solid fa-plane-departure"></i>&nbsp;Trip Planner
+                  <i class="fa-solid fa-plane-departure"></i>&nbsp;Trip Planner
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to="/attractions">
-                <i class="fa-solid fa-crown"></i>&nbsp;Attractions
+                  <i class="fa-solid fa-crown"></i>&nbsp;Attractions
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" aria-current="page" to="/hotel">
+                  <i class="fa-solid fa-hotel"></i>&nbsp;Hotels
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to="/community">
-                <i class="fa-solid fa-comments"></i>&nbsp;Community
+                  <i class="fa-solid fa-comments"></i>&nbsp;Community
                 </NavLink>
               </li>
+
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to="/vaayusoul">
-                <i class="fa-solid fa-heart-pulse"></i>&nbsp;Vaayu Soul
+                  <i class="fa-solid fa-heart-pulse"></i>&nbsp;Vaayu Soul
                 </NavLink>
               </li>
+
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page">
                   <button

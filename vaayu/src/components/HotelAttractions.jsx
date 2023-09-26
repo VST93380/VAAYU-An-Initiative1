@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Detailed from "./Detailed";
-import hotelsData from "./Json/Hotels.json"; // Import your hotels data JSON file
+import HotelDetailed from "./HotelDetailed"; // Import your HotelDetailed component
+import hotelsData from "./Json/Hotels.json";
 
 export default function HotelAttractions() {
   const [detailedProp, setDetailedProp] = useState(null);
-  const [hotels, setHotels] = useState([]); // Initialize with an empty array
+  const [hotels, setHotels] = useState([]);
   const [filteredHotels, setFilteredHotels] = useState([]); // Separate state for filtered hotels
   const [filters, setFilters] = useState({
     state: "all",
@@ -17,7 +17,6 @@ export default function HotelAttractions() {
 
   useEffect(() => {
     // Set the hotels data from your JSON file
-    console.log(hotelsData)
     setHotels(hotelsData);
     setFilteredHotels(hotelsData); // Initialize filteredHotels with all hotels
   }, []);
@@ -161,7 +160,7 @@ export default function HotelAttractions() {
                   <a
                     className="button"
                     data-bs-toggle="offcanvas"
-                    href="#detailedOffcanvas"
+                    href="#hotelDetailedOffcanvas" // Use a unique href
                     role="button"
                     onClick={(e) => handleDetails(hotel, e)}
                   >
@@ -203,7 +202,9 @@ export default function HotelAttractions() {
           <ul className="pagination justify-content-center">
             {Array.from({ length: totalPages }).map((_, index) => (
               <li
-                className={`page-item ${index + 1 === currentPage ? "active" : ""}`}
+                className={`page-item ${
+                  index + 1 === currentPage ? "active" : ""
+                }`}
                 key={index}
               >
                 <button
@@ -217,7 +218,9 @@ export default function HotelAttractions() {
           </ul>
         </nav>
       </div>
-      {detailedProp && <Detailed details={detailedProp} />}
+      {detailedProp && (
+        <HotelDetailed details={detailedProp} /> // Use HotelDetailed component
+      )}
     </>
   );
 }

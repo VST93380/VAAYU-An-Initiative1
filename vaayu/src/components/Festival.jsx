@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import festivalsData from './Json/festival.json';
 
-
 function FestivalCard(props) {
-  const { name, location, description, month, image_url } = props;
+  const { name, famous_place, description, month, image_url } = props;
 
   return (
     <div className="festival_card">
       <div className="card-image">
-
         <img src={image_url} alt={name} />
       </div>
       <p className="card-title">{name}</p>
       <p className="card-body">{description}</p>
       <p className="footer">
-        Location: {location} | Month: {month}
+        Location: {famous_place} | Month: {month}
       </p>
     </div>
   );
@@ -43,14 +41,13 @@ function MonthDisplay() {
           <FestivalCard
             key={index}
             name={festival.name}
-            location={festival.location}
+            famous_place={festival.famous_place}
             description={festival.description}
             month={festival.month}
             image_url={festival.image_url}
           />
         ))}
       </div>
-
     </div>
   );
 }
