@@ -1,8 +1,9 @@
-.attractions .container{
+.attractions .container {
   max-width: 95vw;
   margin-bottom: 3%;
 }
-.attractions select{
+
+.attractions select {
   text-align: center;
   font-weight: 800;
   letter-spacing: 1px;
@@ -12,7 +13,7 @@
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
-.attractions input{
+.attractions input {
   text-align: center;
   font-weight: 800;
   letter-spacing: 1px;
@@ -23,9 +24,11 @@
   margin-top: 9px;
 }
 
-.attractions select:hover,input:hover{
+.attractions select:hover,
+input:hover {
   cursor: pointer;
 }
+
 .attcontainer p {
   font-size: 18px;
   color: white;
@@ -92,9 +95,11 @@
   height: 0px;
   opacity: 0;
 }
-.attcontainer .second-content p{
+
+.attcontainer .second-content p {
   color: black;
 }
+
 .attcontainer .second-content {
   height: 0%;
   width: 100%;
@@ -190,9 +195,11 @@
   place-items: center;
   overflow: hidden;
 }
-.pos p{
+
+.pos p {
   color: white !important;
 }
+
 .attcontainer .button:hover {
   background-color: #000;
 }
@@ -216,7 +223,7 @@
   transform: translate(0);
 }
 
-.attcontainer .button__text{
+.attcontainer .button__text {
   font-size: 12px;
   margin: 0;
 }
@@ -228,7 +235,7 @@
 
 
 
-.attractions .filterbtn{
+.attractions .filterbtn {
   width: 100%;
   margin-top: 10px;
   line-height: 2rem;
@@ -240,5 +247,5 @@
     margin: 10px;
   }
 }
-@media (max-width: 450px) {
-}
+
+@media (max-width: 450px) {}

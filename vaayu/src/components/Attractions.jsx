@@ -81,7 +81,7 @@ export default function Attractions() {
                 onChange={handleSearchChange}
               />
             </div>
-            
+
           </div>
         </div>
         <div class="attcontainer">

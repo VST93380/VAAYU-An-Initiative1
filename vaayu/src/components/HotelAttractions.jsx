@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import HotelDetailed from "./HotelDetailed"; // Import your HotelDetailed component
+import React, { useState, useEffect } from "react";
+import HotelDetailed from "./HotelDetailed";
 import locations from "./Json/Hotels.json";
 import statesData from "./Json/States.json";
 
@@ -7,17 +7,18 @@ export default function HotelAttractions() {
   const [detailedProp, setDetailedProp] = useState([]);
   const originalLoc = locations;
   const [selectedState, setSelectedState] = useState("default");
-  const [places, setPlaces] = useState(locations);
   const [selectedRatingRange, setSelectedRatingRange] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
+  const [places, setPlaces] = useState(originalLoc); // Initialize places with original data
 
   const handleDetails = (data, e) => {
     e.preventDefault();
     setDetailedProp(data);
   };
 
-  const handlePro = () => {
+  const handleFilterChange = () => {
     let filteredPlaces = originalLoc;
 
     if (selectedState !== "default") {
@@ -35,12 +36,23 @@ export default function HotelAttractions() {
       );
     }
 
+    if (searchQuery !== "") {
+      filteredPlaces = filteredPlaces.filter(
+        (destination) =>
+          destination.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
     setPlaces(filteredPlaces);
   };
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
+
+  useEffect(() => {
+    handleFilterChange(); // Apply filters when component mounts
+  }, [selectedState, selectedRatingRange, searchQuery]);
 
   const totalItems = places.length;
   const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -62,7 +74,7 @@ export default function HotelAttractions() {
       <div className="attractions">
         <div className="container mt-5">
           <div className="row glass p-3">
-            <div className="col-md-5">
+            <div className="col-md-4">
               <select
                 className="form-control"
                 value={selectedState}
@@ -76,7 +88,7 @@ export default function HotelAttractions() {
                 ))}
               </select>
             </div>
-            <div className="col-md-5">
+            <div className="col-md-4">
               <select
                 className="form-control"
                 value={selectedRatingRange}
@@ -89,17 +101,21 @@ export default function HotelAttractions() {
                 ))}
               </select>
             </div>
-            <div className="col-md-2">
-              <button className="loginbtn filterbtn" onClick={handlePro}>
-                Apply Filter <i className="fa-solid fa-paint-roller"></i>
-              </button>
+            <div className="col-md-4">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search by Name"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
             </div>
           </div>
         </div>
         <div className="attcontainer">
           {displayedPlaces.map((item, index) => (
             <div className="card" key={index}>
-              <div className="first-content">
+             <div className="first-content">
                 <div className="image-container">
                   <img src={item.image} alt={item.name} />
                   <div className="overlay-text">{item.name}</div>
