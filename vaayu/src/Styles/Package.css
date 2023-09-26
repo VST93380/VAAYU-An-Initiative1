@@ -7,11 +7,12 @@
     width: 330px;
     height: 360px;
     border-radius: 20px;
-    background: #1b233d;
+    background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
     padding: 5px;
     overflow: hidden;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+    box-shadow: rgb(100, 100, 111) 0px 7px 20px 0px;
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid white;
   }
   
   .Package_card:hover {
@@ -37,16 +38,6 @@
     position: relative;
     transform: skew(-40deg);
     box-shadow: -10px -10px 0 0 #1b233d;
-  }
-
-  .Package_card  .sect{
-    height: 180px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%);
-    position: relative;
-    margin-top: 1px;
   }
   
   .Package_card  .top-section .border::before {
@@ -152,6 +143,7 @@
 
    /* Flex container */
    .Package_card-container {
+    margin: 50px 30px;
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
     gap: 35px; 

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Package from "./Package"
 
 function ItineraryForm() {
   const [title, setTitle] = useState("");
@@ -80,6 +81,7 @@ function TripPlanner() {
 
   return (
     <div className="tripplanner">
+      <Package />
       <ItineraryForm />
       <div className="container">
         <h2 className="my-3">Your Itinerary</h2>

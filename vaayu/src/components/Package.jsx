@@ -1,11 +1,10 @@
 import React from 'react';
-import './Package.css'; 
+import './../Styles/Package.css'; 
 
 function PackageCard({ id, title, locations, expenditure, ratings }) {
     return (
         <div className="Package_card">
             <div className="top-section" id={id}>
-                <div className="border"></div>
             </div>
             <div className="bottom-section">
                 <span className="title">{title}</span>
