@@ -99,8 +99,6 @@ function BlogButton() {
 
 function Card(props) {
     const words = props.comment.blogmsg.split(' ');
-    const errImg = "https://th.bing.com/th/id/R.1c1b8c8219385a0f88a7b6cfcba712ab?rik=u9ceuWoncAl0iQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fFree-Desktop-Travel-Backgrounds.jpg&ehk=i2gnQlVtAUHLdjoM%2b5hVl%2bStT4ogWTYySuRp0cXXPnc%3d&risl=&pid=ImgRaw&r=0"
-
     // Take the first two words and join them back into a string
     const truncatedMessage = words.slice(0, 2).join(' ');
     const trunmsg = truncatedMessage + " ...";
@@ -112,7 +110,7 @@ function Card(props) {
         <div>
             <div className="original_card">
                 <div className="image">
-                    <img src={props.comment.imagelink} alt="Blog Image" onError={(e)=>{ e.target.onerror = null; e.target.src={errImg}}} />
+                    <img src={props.comment.imagelink} alt="Blog Image" />
                 </div>
                 <div className="content">
                     <a href="#">

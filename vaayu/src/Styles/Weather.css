@@ -17,6 +17,8 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    max-height: 400px;
+    margin-top: 15px;
 }
 
 .weather-app .container {

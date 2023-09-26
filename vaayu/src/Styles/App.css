@@ -449,9 +449,22 @@
 /* CSS for Carbon Footprint Calculator */
 
 /* Apply styles to the container */
+.vaayusoulcont {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .vaayusoulcont {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .carbon-container {
-  max-width: 600px;
-  margin: 0 auto;
+  min-width: 600px;
+  max-height: 400px;
   padding: 20px;
   background-color: #f7f7f7;
   border-radius: 8px;
