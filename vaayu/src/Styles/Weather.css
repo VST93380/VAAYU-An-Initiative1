@@ -1,0 +1,138 @@
+/* Weather.css */
+
+.weather-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.weather-app .weather-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.weather-app .container {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: -35px;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+}
+
+.weather-app .cloud {
+    width: 250px;
+}
+
+.weather-app .front {
+    padding-top: 45px;
+    margin-left: 25px;
+    display: inline;
+    position: absolute;
+    z-index: 11;
+    animation: clouds 8s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.weather-app .back {
+    margin-top: -30px;
+    margin-left: 150px;
+    z-index: 12;
+    animation: clouds 12s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.weather-app .right-front {
+    width: 45px;
+    height: 45px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -25px;
+    z-index: 5;
+}
+
+.weather-app .left-front {
+    width: 65px;
+    height: 65px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+}
+
+.weather-app .right-back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -20px;
+    z-index: 5;
+}
+
+.weather-app .left-back {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+}
+
+.weather-app .sun {
+    width: 120px;
+    height: 120px;
+    background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+    background: linear-gradient(to right, #fcbb04, #fffc00);
+    border-radius: 60px;
+    display: inline;
+    position: absolute;
+}
+
+.weather-app .sunshine {
+    animation: sunshines 2s infinite;
+}
+
+.weather-app .card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.weather-app .temp {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.weather-app .temp-scale {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.weather-app .forecast {
+    margin-top: 20px;
+}
+
+.weather-app .forecast h2{
+    font-size: 1.2rem !important;
+}
+
+.weather-app .error-message {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
