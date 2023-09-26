@@ -7,13 +7,14 @@ export default function Attractions() {
   const [detailedProp, setDetailedProp] = useState([]);
   const originalLoc = locations;
   const [selectedState, setSelectedState] = useState("default");
+  const [searchQuery, setSearchQuery] = useState(""); // New state for search query
   const [places, setPlaces] = useState(locations);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
 
   useEffect(() => {
     handlePro();
-  }, [selectedState, currentPage]);
+  }, [selectedState, currentPage, searchQuery]);
 
   const handleDetails = (data, e) => {
     e.preventDefault();
@@ -21,17 +22,29 @@ export default function Attractions() {
   };
 
   const handlePro = () => {
-    if (selectedState === "default") {
-      setPlaces(originalLoc);
-    } else {
-      setPlaces(
-        locations.filter((destination) => destination.state === selectedState)
+    let filteredPlaces = originalLoc;
+
+    if (selectedState !== "default") {
+      filteredPlaces = filteredPlaces.filter(
+        (destination) => destination.state === selectedState
       );
     }
+
+    if (searchQuery) {
+      filteredPlaces = filteredPlaces.filter((destination) =>
+        destination.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
+    setPlaces(filteredPlaces);
   };
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
   };
 
   const totalItems = places.length;
@@ -45,7 +58,7 @@ export default function Attractions() {
       <div className="attractions">
         <div class="container mt-5">
           <div class="row glass p-3">
-            <div class="col-md-5">
+            <div class="col-md-6">
               <select
                 className="form-control"
                 value={selectedState}
@@ -59,18 +72,16 @@ export default function Attractions() {
                 ))}
               </select>
             </div>
-            <div class="col-md-5">
-              <select class="form-control">
-                <option>Dropdown 2</option>
-                <option>Dropdown 2</option>
-                <option>Dropdown 2</option>
-              </select>
+            <div class="col-md-6">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search by name"
+                value={searchQuery}
+                onChange={handleSearchChange}
+              />
             </div>
-            <div class="col-md-2">
-              <button className="loginbtn filterbtn" onClick={handlePro}>
-                Apply Filter <i class="fa-solid fa-paint-roller"></i>
-              </button>
-            </div>
+            
           </div>
         </div>
         <div class="attcontainer">
