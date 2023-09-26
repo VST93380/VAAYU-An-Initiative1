@@ -16,6 +16,7 @@ import TripPlanner from "./components/TripPlanner";
 import Vaayusoul from "./components/Vaayusoul";
 import Community from "./components/Community"
 import HotelAttractions from "./components/HotelAttractions";
+import ArVr from "./components/ArVr"
 import Map from "./components/Map";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path="/vaayusoul" element={<Vaayusoul></Vaayusoul>} />
           <Route path="/hotel" element={<HotelAttractions/>} />
+          <Route path="/vr" element={<ArVr/>} />
           <Route path="/map" element={<Map/>} />
         </Routes>
       </section>

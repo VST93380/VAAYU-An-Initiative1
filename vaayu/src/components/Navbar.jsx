@@ -23,7 +23,9 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span><i class="fa-solid fa-compass fa-spin"></i></span>
+            <span>
+              <i class="fa-solid fa-compass fa-spin"></i>
+            </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
@@ -33,28 +35,61 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/tripplanner">
+                <NavLink
+                  className="nav-link"
+                  aria-current="page"
+                  to="/tripplanner"
+                >
                   <i class="fa-solid fa-plane-departure"></i>&nbsp;Trip Planner
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/attractions">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <i class="fa-solid fa-crown"></i>&nbsp;Attractions
-                </NavLink>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <NavLink class="dropdown-item" to="/attractions">
+                    <i class="fa-solid fa-map-location-dot"></i>&nbsp;Tourism
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink class="dropdown-item" to="/hotel">
+                    <i class="fa-solid fa-hotel"></i>&nbsp;Hotels
+                    </NavLink>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <NavLink class="dropdown-item" to="/vr">
+                    <i class="fa-solid fa-vr-cardboard fa-bounce"></i> &nbsp;VR's
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/hotel">
-                  <i class="fa-solid fa-hotel"></i>&nbsp;Hotels
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/community">
+                <NavLink
+                  className="nav-link"
+                  aria-current="page"
+                  to="/community"
+                >
                   <i class="fa-solid fa-comments"></i>&nbsp;Community
                 </NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/vaayusoul">
+                <NavLink
+                  className="nav-link"
+                  aria-current="page"
+                  to="/vaayusoul"
+                >
                   <i class="fa-solid fa-heart-pulse"></i>&nbsp;Vaayu Soul
                 </NavLink>
               </li>
