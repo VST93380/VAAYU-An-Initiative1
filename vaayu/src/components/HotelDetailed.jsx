@@ -8,7 +8,7 @@ export default function HotelDetailed(props) {
         <div
             className="offcanvas offcanvas-start"
             tabIndex="-1"
-            id="hotelDetailedOffcanvas"
+            id="detailedOffcanvas"
             data-bs-scroll="false"
             data-bs-backdrop="true"
             aria-labelledby="offcanvasExampleLabel"

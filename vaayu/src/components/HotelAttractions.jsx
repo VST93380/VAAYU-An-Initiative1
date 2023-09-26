@@ -1,168 +1,101 @@
 import React, { useState, useEffect } from "react";
 import HotelDetailed from "./HotelDetailed"; // Import your HotelDetailed component
-import hotelsData from "./Json/Hotels.json";
-
+import locations from "./Json/Hotels.json";
+import statesData from "./Json/States.json";
 export default function HotelAttractions() {
-  const [detailedProp, setDetailedProp] = useState(null);
-  const [hotels, setHotels] = useState([]);
-  const [filteredHotels, setFilteredHotels] = useState([]); // Separate state for filtered hotels
-  const [filters, setFilters] = useState({
-    state: "all",
-    rating: "all",
-    minLivingCost: "",
-    maxLivingCost: "",
-  });
+  const [detailedProp, setDetailedProp] = useState([]);
+  const originalLoc = locations;
+  const [selectedState, setSelectedState] = useState("default");
+  const [places, setPlaces] = useState(locations);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
 
   useEffect(() => {
-    // Set the hotels data from your JSON file
-    setHotels(hotelsData);
-    setFilteredHotels(hotelsData); // Initialize filteredHotels with all hotels
-  }, []);
+    handlePro();
+  }, [selectedState, currentPage]);
 
   const handleDetails = (data, e) => {
     e.preventDefault();
     setDetailedProp(data);
   };
 
-  const applyFilters = () => {
-    // Filter hotels based on selected filter options
-    let newFilteredHotels = [...hotelsData];
-
-    if (filters.state !== "all") {
-      newFilteredHotels = newFilteredHotels.filter(
-        (hotel) => hotel.state === filters.state
+  const handlePro = () => {
+    if (selectedState === "default") {
+      setPlaces(originalLoc);
+    } else {
+      setPlaces(
+        locations.filter((destination) => destination.state === selectedState)
       );
     }
-
-    if (filters.rating !== "all") {
-      newFilteredHotels = newFilteredHotels.filter(
-        (hotel) => hotel.rating === filters.rating
-      );
-    }
-
-    if (filters.minLivingCost !== "") {
-      newFilteredHotels = newFilteredHotels.filter(
-        (hotel) =>
-          parseFloat(hotel["living cost"]) >= parseFloat(filters.minLivingCost)
-      );
-    }
-
-    if (filters.maxLivingCost !== "") {
-      newFilteredHotels = newFilteredHotels.filter(
-        (hotel) =>
-          parseFloat(hotel["living cost"]) <= parseFloat(filters.maxLivingCost)
-      );
-    }
-
-    setFilteredHotels(newFilteredHotels);
-    setCurrentPage(1); // Reset to the first page after filtering
   };
 
-  // Calculate the total number of pages
-  const totalPages = Math.ceil(filteredHotels.length / itemsPerPage);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
-  // Calculate the starting and ending index of the hotels to display on the current page
+  const totalItems = places.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-
-  // Get the hotels to display on the current page
-  const displayedHotels = filteredHotels.slice(startIndex, endIndex);
+  const displayedPlaces = places.slice(startIndex, endIndex);
 
   return (
     <>
       <div className="attractions">
-        <div className="container mt-5">
-          <div className="row glass p-3">
-            <div className="col-md-2">
+        <div class="container mt-5">
+          <div class="row glass p-3">
+            <div class="col-md-5">
               <select
                 className="form-control"
-                value={filters.state}
-                onChange={(e) =>
-                  setFilters({ ...filters, state: e.target.value })
-                }
+                value={selectedState}
+                onChange={(e) => setSelectedState(e.target.value)}
               >
-                <option value="all">All States</option>
-                {Array.from(
-                  new Set(hotelsData.map((hotel) => hotel.state))
-                ).map((state, index) => (
-                  <option key={index} value={state}>
-                    {state}
+                <option value="default">All States</option>
+                {statesData.map((state, index) => (
+                  <option key={index} value={state.name}>
+                    {state.name}
                   </option>
                 ))}
               </select>
             </div>
-            <div className="col-md-2">
-              <select
-                className="form-control"
-                value={filters.rating}
-                onChange={(e) =>
-                  setFilters({ ...filters, rating: e.target.value })
-                }
-              >
-                <option value="all">All Ratings</option>
-                {Array.from(
-                  new Set(hotelsData.map((hotel) => hotel.rating))
-                ).map((rating, index) => (
-                  <option key={index} value={rating}>
-                    {rating}
-                  </option>
-                ))}
+            <div class="col-md-5">
+              <select class="form-control">
+                <option>Dropdown 2</option>
+                <option>Dropdown 2</option>
+                <option>Dropdown 2</option>
               </select>
             </div>
-            <div className="col-md-2">
-              <input
-                type="number"
-                className="form-control"
-                placeholder="Min Living Cost"
-                value={filters.minLivingCost}
-                onChange={(e) =>
-                  setFilters({ ...filters, minLivingCost: e.target.value })
-                }
-              />
-            </div>
-            <div className="col-md-2">
-              <input
-                type="number"
-                className="form-control"
-                placeholder="Max Living Cost"
-                value={filters.maxLivingCost}
-                onChange={(e) =>
-                  setFilters({ ...filters, maxLivingCost: e.target.value })
-                }
-              />
-            </div>
-            <div className="col-md-2">
-              <button className="loginbtn filterbtn" onClick={applyFilters}>
-                Apply Filters
+            <div class="col-md-2">
+              <button className="loginbtn filterbtn" onClick={handlePro}>
+                Apply Filter <i class="fa-solid fa-paint-roller"></i>
               </button>
             </div>
           </div>
         </div>
-        <div className="attcontainer">
-          {displayedHotels.map((hotel, index) => (
+        <div class="attcontainer">
+          {displayedPlaces.map((item, index) => (
             <div className="card" key={index}>
               <div className="first-content">
                 <div className="image-container">
-                  <img src={hotel.image} alt={hotel.name} />
-                  <div className="overlay-text">{hotel.name}</div>
+                  <img src={item.image} alt={item.name} />
+                  <div className="overlay-text">{item.name}</div>
                 </div>
               </div>
               <div className="second-content">
-                <p id="klef">{`Welcome to ${hotel.name}`}</p>
-                <p>{`Name : ${hotel.name}`}</p>
-                <p>{`State : ${hotel.state}`}</p>
-                <p>{`City : ${hotel.city}`}</p>
-                <p>{`Rating : ${hotel.rating}`}</p>
-                <p>{`Living Cost : ${hotel["living cost"]}`}</p>
+                <p id="klef">{`Welcome to ${item.name}`}</p>
+                <p>{`Name : ${item.name}`}</p>
+                <p>{`State : ${item.state}`}</p>
+                <p>{`City : ${item.city}`}</p>
+                <p>{`Rating : ${item.rating}`}</p>
+          
+                <br />
                 <div className="pos">
                   <a
                     className="button"
                     data-bs-toggle="offcanvas"
-                    href="#hotelDetailedOffcanvas" // Use a unique href
+                    href="#detailedOffcanvas"
                     role="button"
-                    onClick={(e) => handleDetails(hotel, e)}
+                    onClick={(e) => handleDetails(item, e)}
                   >
                     <span className="button__icon-wrapper">
                       <svg
@@ -202,14 +135,12 @@ export default function HotelAttractions() {
           <ul className="pagination justify-content-center">
             {Array.from({ length: totalPages }).map((_, index) => (
               <li
-                className={`page-item ${
-                  index + 1 === currentPage ? "active" : ""
-                }`}
+                className={`page-item ${index + 1 === currentPage ? "active" : ""}`}
                 key={index}
               >
                 <button
                   className="page-link"
-                  onClick={() => setCurrentPage(index + 1)}
+                  onClick={() => handlePageChange(index + 1)}
                 >
                   {index + 1}
                 </button>
@@ -218,9 +149,7 @@ export default function HotelAttractions() {
           </ul>
         </nav>
       </div>
-      {detailedProp && (
-        <HotelDetailed details={detailedProp} /> // Use HotelDetailed component
-      )}
+      {detailedProp && <HotelDetailed details={detailedProp} />}
     </>
   );
 }
