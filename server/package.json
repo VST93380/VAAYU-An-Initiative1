@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "dev": "nodemon --watch server.js"
+    "vaayu": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
