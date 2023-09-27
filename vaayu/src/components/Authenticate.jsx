@@ -86,7 +86,6 @@ export default function Authenticate() {
       <div
         className="modal fade"
         id="loginModal"
-        data-bs-keyboard="false"
         tabindex="-1"
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"

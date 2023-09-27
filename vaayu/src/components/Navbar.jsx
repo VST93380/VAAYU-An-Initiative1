@@ -3,9 +3,19 @@ import logo from "./../assets/logo.png";
 import Authenticate from "./Authenticate";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../Authcontext";
+import { toast } from "react-toastify";
+
 
 export default function Navbar() {
   const auth = useAuth();
+  const handleLogout = () => {
+    auth.logout();
+    localStorage.clear();
+    toast.info("Logged out successfully", {
+      position: "bottom-right",
+      theme: "dark",
+    });
+  };
   return (
     <>
       <nav
@@ -58,12 +68,12 @@ export default function Navbar() {
                 <ul class="dropdown-menu">
                   <li>
                     <NavLink class="dropdown-item" to="/attractions">
-                    <i class="fa-solid fa-map-location-dot"></i>&nbsp;Tourism
+                      <i class="fa-solid fa-map-location-dot"></i>&nbsp;Tourism
                     </NavLink>
                   </li>
                   <li>
                     <NavLink class="dropdown-item" to="/hotel">
-                    <i class="fa-solid fa-hotel"></i>&nbsp;Hotels
+                      <i class="fa-solid fa-hotel"></i>&nbsp;Hotels
                     </NavLink>
                   </li>
                   <li>
@@ -71,7 +81,8 @@ export default function Navbar() {
                   </li>
                   <li>
                     <NavLink class="dropdown-item" to="/vr">
-                    <i class="fa-solid fa-vr-cardboard fa-bounce"></i> &nbsp;VR's
+                      <i class="fa-solid fa-vr-cardboard fa-bounce"></i>{" "}
+                      &nbsp;VR's
                     </NavLink>
                   </li>
                 </ul>
@@ -97,30 +108,28 @@ export default function Navbar() {
               </li>
 
               <li className="nav-item">
-              {!auth.user && (
-                <NavLink className="nav-link" aria-current="page">
-                  <button
-                    className="loginbtn"
-                    role="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginModal"
-                  >
-                    <i class="fa-solid fa-unlock-keyhole"></i>&nbsp;Login
-                  </button>
-                </NavLink>
-              )}
-              {auth.user && (
-                <NavLink className="nav-link" aria-current="page">
-                  <button
-                    className="loginbtn"
-                    role="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginModal"
-                  >
-                    <i class="fa-solid fa-unlock-keyhole"></i>&nbsp;{auth.user.username}
-                  </button>
-                </NavLink>
-              )}
+                {!auth.user && (
+                  <NavLink className="nav-link" aria-current="page">
+                    <button
+                      className="loginbtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginModal"
+                    >
+                      <i class="fa-solid fa-unlock-keyhole"></i>&nbsp;Login
+                    </button>
+                  </NavLink>
+                )}
+                {auth.user && (
+                  <NavLink className="nav-link" aria-current="page">
+                    <button
+                      className="loginbtn"
+                      onClick={handleLogout}
+                    >
+                      <i class="fa-solid fa-user-secret fa-fade"></i>&nbsp;
+                      {auth.user.role}
+                    </button>
+                  </NavLink>
+                )}
               </li>
             </ul>
           </div>
