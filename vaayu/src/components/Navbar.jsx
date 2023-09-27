@@ -2,8 +2,10 @@ import React from "react";
 import logo from "./../assets/logo.png";
 import Authenticate from "./Authenticate";
 import { NavLink } from "react-router-dom";
+import { useAuth } from "../Authcontext";
 
 export default function Navbar() {
+  const auth = useAuth();
   return (
     <>
       <nav
@@ -95,6 +97,7 @@ export default function Navbar() {
               </li>
 
               <li className="nav-item">
+              {!auth.user && (
                 <NavLink className="nav-link" aria-current="page">
                   <button
                     className="loginbtn"
@@ -105,6 +108,19 @@ export default function Navbar() {
                     <i class="fa-solid fa-unlock-keyhole"></i>&nbsp;Login
                   </button>
                 </NavLink>
+              )}
+              {auth.user && (
+                <NavLink className="nav-link" aria-current="page">
+                  <button
+                    className="loginbtn"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                  >
+                    <i class="fa-solid fa-unlock-keyhole"></i>&nbsp;{auth.user.username}
+                  </button>
+                </NavLink>
+              )}
               </li>
             </ul>
           </div>

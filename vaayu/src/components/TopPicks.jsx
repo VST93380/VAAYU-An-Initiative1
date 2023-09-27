@@ -17,7 +17,7 @@ const FeaturedDestination = (props) => {
     pagination: false,
     rewind: true,
     autoScroll: {
-      speed: 8,
+      speed: 4,
     },
   };
 

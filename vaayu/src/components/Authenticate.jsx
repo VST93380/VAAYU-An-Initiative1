@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-//import { useNavigate } from "react-router-dom";
-// import{ useState } from "react";
+// import { useNavigate } from "react-router-dom";
+import { useAuth } from "../Authcontext";
 export default function Authenticate() {
-  //const navigate = useNavigate();
+  const auth = useAuth();
   const handleRegister = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
@@ -59,15 +59,13 @@ export default function Authenticate() {
         console.log(response.data);
         toast.error("Please register to Vaayu", { position: "bottom-right" });
       } else if (response.status === 200) {
-        localStorage.setItem("user", response.data.username);
-        localStorage.setItem("role", response.data.role);
-
-        console.log(response.data);
-
+        const userData = response.data.user;
         if (
-          response.data.role === "Customer" ||
-          response.data.role === "Admin"
+          response.data.user.role === "Customer" ||
+          response.data.user.role === "Admin"
         ) {
+          auth.login(userData);
+          // $('#loginModal').modal('hide');
           toast.success("Login Successful", {
             position: "bottom-right",
             theme: "dark",
@@ -142,7 +140,11 @@ export default function Authenticate() {
                                   />
                                   <i className="input-icon uil uil-lock-alt"></i>
                                 </div>
-                                <button className="loginbtn loginmb mt-4">
+                                <button
+                                  className="loginbtn loginmb mt-4"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#loginModal"
+                                >
                                   Log In
                                 </button>
                                 <p className="mb-0 mt-4 text-center">
