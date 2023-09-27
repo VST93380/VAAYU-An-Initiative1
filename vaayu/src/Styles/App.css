@@ -462,6 +462,10 @@
     align-items: center;
     gap: 20px;
   }
+  #iframeContainer {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 .carbon-container {
   min-width: 600px;

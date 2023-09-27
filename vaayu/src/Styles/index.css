@@ -280,18 +280,44 @@ section {
 }
 
 /* Set the container's width and height */
+.vrcontainer{
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
 #iframeContainer {
-  max-width: 60%;
-  max-height: 600px; /* Adjust the height as needed */
+  min-width: 47%;
+  max-width: 40%;
+  max-height: 480px; /* Adjust the height as needed */
   overflow: hidden; /* Hide overflow */
   position: relative; /* Create a stacking context */
   overflow-y: hidden;
   border-radius: 20px;
-  border: 6px solid white;
-  padding: 4px;
+  border: 5px solid white;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+iframe{
+  overflow: hidden;
+  
+}
+iframe::-webkit-scrollbar {
+  display: none;
+}
+iframe, iframe body {
+  scrollbar-width: none;
+}
+iframe , iframe body{
+  -ms-overflow-style: none;
+}
+.hide-scrollbars::-webkit-scrollbar , iframe body::-webkit-scrollbar{
+  display: none;
+}
+
+.hide-scrollbars, iframe body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 /* Clip the iframe to show only a specific area */
@@ -300,6 +326,4 @@ section {
   width: 100%; /* Set the width to match the clipped area width */
   height: 600px; /* Set the height to match the clipped area height */
   object-fit: contain;
-
-  
 }
