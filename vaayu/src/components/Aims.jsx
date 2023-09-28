@@ -4,7 +4,7 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import placesdata from "./Json/Aims.json";
 
 export default function Aims() {
-  const[perPage, setPerPage] = useState(null)
+  const [perPage, setPerPage] = useState(null);
   const splideOptions = {
     type: "loop",
     autoplay: true,
@@ -21,7 +21,7 @@ export default function Aims() {
   // Define the number of cards per slide based on screen size
   useEffect(() => {
     const perPage = window.innerWidth < 768 ? 1 : 4;
-    setPerPage(perPage)
+    setPerPage(perPage);
   });
 
   return (

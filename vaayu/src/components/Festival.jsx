@@ -5,19 +5,6 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
 function FestivalCard(props) {
   const { name, famous_place, description, month, image_url } = props;
-  const splideOptions = {
-    type: "loop",
-    perPage: 4,
-    autoplay: true,
-    focus: "center",
-    pauseOnHover: false,
-    drag: "free",
-    pagination: false,
-    rewind: true,
-    autoScroll: {
-      speed: 4,
-    },
-  };
   return (
     <div className="festival_card">
       <div className="card-image">
@@ -35,9 +22,11 @@ function FestivalCard(props) {
 function MonthDisplay() {
   const [currentMonth, setCurrentMonth] = useState("");
   const [currentMonthFestivals, setCurrentMonthFestivals] = useState([]);
+  const [perPage, setPerPage] = useState(null);
+
   const splideOptions = {
     type: "loop",
-    perPage: 4,
+    perPage: perPage,
     autoplay: true,
     pauseOnHover: false,
     drag: "free",
@@ -47,6 +36,10 @@ function MonthDisplay() {
       speed: 4,
     },
   };
+  useEffect(() => {
+    const perPage = window.innerWidth < 991 ? 1 : 4;
+    setPerPage(perPage);
+  });
   useEffect(() => {
     const currentDate = new Date();
     const options = { month: "long" };
@@ -60,21 +53,27 @@ function MonthDisplay() {
   }, []);
 
   return (
-    <div className="festival_container">
-      <Splide options={splideOptions}>
-        {currentMonthFestivals.map((festival, index) => (
-          <SplideSlide key={index}>
-            <FestivalCard
-              name={festival.name}
-              famous_place={festival.famous_place}
-              description={festival.description}
-              month={festival.month}
-              image_url={festival.image_url}
-            />
-          </SplideSlide>
-        ))}
-      </Splide>
-    </div>
+    <>
+      <div className="festival_container">
+        <h2>
+          Festivals in {currentMonth}
+          <i className="fa-solid fa-wand-magic-sparkles fa-bounce"></i>
+        </h2>
+        <Splide options={splideOptions}>
+          {currentMonthFestivals.map((festival, index) => (
+            <SplideSlide key={index}>
+              <FestivalCard
+                name={festival.name}
+                famous_place={festival.famous_place}
+                description={festival.description}
+                month={festival.month}
+                image_url={festival.image_url}
+              />
+            </SplideSlide>
+          ))}
+        </Splide>
+      </div>
+    </>
   );
 }
 

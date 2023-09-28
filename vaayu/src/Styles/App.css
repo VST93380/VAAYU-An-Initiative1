@@ -354,12 +354,20 @@
 }
 
 @media (max-width: 991px) {
+  .weather-app .weather-card {
+    margin: 20px;
+  }
+  .carbon-container {
+    max-width: 90vw;
+    padding: 0;
+    margin: 0;
+  }
   .homecard {
     width: 100%;
   }
   .homecard__image {
     width: 100%;
-  height: 220px;
+    height: 220px;
   }
   .explorehome {
     font-size: 1rem;
@@ -467,7 +475,7 @@
   .vaayusoulcont {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
   }
   #iframeContainer {
     min-width: 100%;
@@ -475,19 +483,22 @@
   }
 }
 .carbon-container {
-  min-width: 600px;
+  width: 600px;
   max-height: 400px;
   padding: 20px;
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.755);
+  text-align: left;
 }
 
 /* Apply styles to the title */
 .carbon-title {
   font-size: 24px;
-  color: #333;
+  color: #fff2d7;
   margin-bottom: 20px;
 }
 
@@ -504,27 +515,18 @@
 
 /* Apply styles to the Calculate button */
 .carbon-button {
-  display: inline-block;
+  margin-top: 10px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
   cursor: pointer;
-  font-size: 18px;
+  text-align: right !important;
   transition: background-color 0.3s;
-}
-
-/* Apply styles to the Calculate button on hover */
-.carbon-button:hover {
-  background-color: #0056b3;
 }
 
 /* Apply styles to the result */
 .carbon-result {
   font-size: 20px;
-  color: #333;
-  margin-top: 20px;
+  color: #ffd89c;
+  margin: 30px 0;
 }
 
 /* pagination css*/

@@ -190,7 +190,7 @@ export default function CarbonFootprint() {
             </select>
           </div>
         )}
-        <button className="carbon-button" onClick={calculateCarbonFootprint}>
+        <button className="loginbtn carbon-button" onClick={calculateCarbonFootprint}>
           Calculate
         </button>
         {carbonFootprint !== null && (

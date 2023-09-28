@@ -243,6 +243,9 @@ input:hover {
 }
 
 @media (max-width: 991px) {
+  .festival_card {
+    width: 100%;
+  }
   .attcontainer .card {
     margin: 10px;
   }

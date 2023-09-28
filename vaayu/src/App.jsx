@@ -20,6 +20,7 @@ import HotelAttractions from "./components/HotelAttractions";
 import ArVr from "./components/ArVr";
 import Map from "./components/Map";
 import { useAuth } from "./Authcontext";
+import Backvid from "./components/Backvid";
 
 function App() {
   const auth = useAuth();
@@ -67,6 +68,7 @@ function App() {
   return (
     <>
       <ToastContainer />
+      {/* <Backvid /> */}
       <Navbar />
       <ScrollToTop />
       <section>
