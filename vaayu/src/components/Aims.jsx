@@ -21,7 +21,7 @@ export default function Aims() {
   return (
     <div className='main-homecard'>
        <h2 className="featureddestiations">
-          Our Aims <i class="fa-solid fa-users"></i>
+          Our Aims <i className="fa-solid fa-users"></i>
         </h2>
         <hr />
       <Splide options={splideOptions}>

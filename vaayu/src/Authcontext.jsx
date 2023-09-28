@@ -4,10 +4,17 @@ const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [stateRegion, setStateRegion] = useState(null);
+  const [district, setDistrict] = useState(null);
+
+  // function to update state of user
+  const location = (state, district) => {
+    setStateRegion(state);
+    setDistrict(district);
+  };
 
   // Function to handle user login
   const login = (userData) => {
-    console.log("inside auth", userData)
     localStorage.setItem("user", JSON.stringify(userData));
     setUser(userData);
   };
@@ -26,7 +33,9 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider
+      value={{ user, login, logout, location, stateRegion, district }}
+    >
       {children}
     </AuthContext.Provider>
   );

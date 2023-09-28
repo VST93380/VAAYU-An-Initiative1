@@ -86,7 +86,7 @@ export default function Authenticate() {
       <div
         className="modal fade"
         id="loginModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
         data-bs-backdrop="static"
@@ -104,10 +104,9 @@ export default function Authenticate() {
                     <input
                       className="checkbox"
                       type="checkbox"
-                      id="reg-log"
                       name="reg-log"
                     />
-                    <label for="reg-log"></label>
+                    <label htmlFor="reg-log"></label>
                     <div className="card-3d-wrap mx-auto">
                       <div className="card-3d-wrapper">
                         <div className="card-front">
@@ -121,8 +120,7 @@ export default function Authenticate() {
                                     name="phone"
                                     className="form-style"
                                     placeholder="Your Phone Number"
-                                    id="logphone"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required
                                   />
                                   <i className="input-icon uil uil-mobile-android-alt"></i>
@@ -133,8 +131,7 @@ export default function Authenticate() {
                                     name="password"
                                     className="form-style"
                                     placeholder="Your Password"
-                                    id="logpass"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required
                                   />
                                   <i className="input-icon uil uil-lock-alt"></i>
@@ -166,8 +163,7 @@ export default function Authenticate() {
                                     name="reguser"
                                     className="form-style"
                                     placeholder="Your Full Name"
-                                    id="logname"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required
                                   />
                                   <i className="input-icon uil uil-user"></i>
@@ -178,8 +174,7 @@ export default function Authenticate() {
                                     name="regphone"
                                     className="form-style"
                                     placeholder="Your Phone Number"
-                                    id="logphone"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required
                                   />
                                   <i className="input-icon uil uil-mobile-android-alt"></i>
@@ -190,8 +185,7 @@ export default function Authenticate() {
                                     name="regemail"
                                     className="form-style"
                                     placeholder="Your Email"
-                                    id="logemail"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required
                                   />
                                   <i className="input-icon uil uil-at"></i>
@@ -202,8 +196,7 @@ export default function Authenticate() {
                                     name="regpassword"
                                     className="form-style"
                                     placeholder="Your Password"
-                                    id="logpass"
-                                    autocomplete="off"
+                                    autoComplete="off"
                                     required
                                   />
                                   <i className="input-icon uil uil-lock-alt"></i>
@@ -223,11 +216,11 @@ export default function Authenticate() {
             </div>
             <button
               type="button"
-              class="closemodal"
+              className="closemodal"
               data-bs-toggle="modal"
               data-bs-target="#loginModal"
             >
-              <i class="fa-solid fa-circle-arrow-up"></i>
+              <i className="fa-solid fa-circle-arrow-up"></i>
             </button>
           </div>
         </div>

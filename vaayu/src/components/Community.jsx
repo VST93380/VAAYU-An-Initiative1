@@ -14,7 +14,7 @@ function BlogModal() {
             imagelink: data.get('imagelink'),
         })
             .then((response) => {
-                console.log(response.data);
+                // console.log(response.data);
                 if (response.status === 201) {
                     toast.success("BlogPost has been saved")
                 } else {

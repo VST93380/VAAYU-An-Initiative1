@@ -7,8 +7,8 @@ function ItineraryForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Title:", title);
-    console.log("Details:", details);
+    // console.log("Title:", title);
+    // console.log("Details:", details);
   };
 
   return (

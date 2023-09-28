@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HotelDetailed(props) {
     const details = props.details;
-    console.log(details)
+    // console.log(details)
     return (
 
         <div

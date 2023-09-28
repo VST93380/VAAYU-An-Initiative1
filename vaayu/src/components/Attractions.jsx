@@ -56,9 +56,9 @@ export default function Attractions() {
   return (
     <>
       <div className="attractions">
-        <div class="container mt-5">
-          <div class="row glass p-3">
-            <div class="col-md-6">
+        <div className="container mt-5">
+          <div className="row glass p-3">
+            <div className="col-md-6">
               <select
                 className="form-control"
                 value={selectedState}
@@ -72,7 +72,7 @@ export default function Attractions() {
                 ))}
               </select>
             </div>
-            <div class="col-md-6">
+            <div className="col-md-6">
               <input
                 type="text"
                 className="form-control"
@@ -84,7 +84,7 @@ export default function Attractions() {
 
           </div>
         </div>
-        <div class="attcontainer">
+        <div className="attcontainer">
           {displayedPlaces.map((item, index) => (
             <div className="card" key={index}>
               <div className="first-content">

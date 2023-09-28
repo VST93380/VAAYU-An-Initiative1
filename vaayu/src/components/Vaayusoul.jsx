@@ -2,13 +2,16 @@ import React from "react";
 import Festival from "./Festival";
 import WeatherComponent from "./Weather";
 import CarbonFootprint from "./CarbonFootprint";
+import { useAuth } from "../Authcontext";
 
 export default function Vaayusoul() {
+  const auth = useAuth();
+
   return (
     <div>
-      <div class="vaayusoulcont">
+      <div className="vaayusoulcont">
         <CarbonFootprint />
-        <WeatherComponent state="Andhra Pradesh" />
+        <WeatherComponent state={auth.stateRegion} />
       </div>
       <div>
         <Festival />

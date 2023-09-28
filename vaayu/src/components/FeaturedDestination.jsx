@@ -31,7 +31,7 @@ const FeaturedDestination = (props) => {
     <>
       <div className="main-homecard">
         <h2 className="featureddestiations">
-          Featured Destinations {props.state && <>Of {props.state} <i class="fa-solid fa-location-dot"></i></>}
+          Featured Destinations {props.state && <>Of {props.state} <i className="fa-solid fa-location-dot"></i></>}
         </h2>
         <hr />
         <Splide options={splideOptions}>
@@ -55,7 +55,7 @@ const FeaturedDestination = (props) => {
                   <div className="homecard__back">
                     <div className="homecard__back-content">
                       <p className="homecard__description">
-                      <i class="fa-solid fa-map-location-dot fa-bounce"></i><br></br>
+                      <i className="fa-solid fa-map-location-dot fa-bounce"></i><br></br>
                         {destination.description}
                       </p>
                     </div>

@@ -40,7 +40,7 @@ const FeaturedDestination = (props) => {
     <>
       <div className="main-homecard">
         <h2 className="featureddestiations">
-          Top Picks <i class="fa-solid fa-wand-magic-sparkles fa-bounce"></i>
+          Top Picks <i className="fa-solid fa-wand-magic-sparkles fa-bounce"></i>
         </h2>
         <hr />
         <Splide options={splideOptions}>
