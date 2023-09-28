@@ -10,6 +10,47 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+.floatingLR {
+  animation-name: floatingLR;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floatingLR {
+  0% {
+    transform: translate(0px, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(-0px, 0);
+  }
+}
+
 body {
   background-image: url(./../assets/bg.jpg);
   background-size: cover;
@@ -60,18 +101,17 @@ section {
   filter: drop-shadow(0 0 8px black);
   transform: scale(1.8);
 }
-.dropdown-menu{
+.dropdown-menu {
   padding: 8px 12px;
   width: 200px;
   background-color: rgba(0, 0, 0, 0.759);
 }
-.dropdown-menu li{
+.dropdown-menu li {
   margin: 10px 0;
   font-size: 1.2rem;
   text-align: center;
-
 }
-.dropdown-menu li a{
+.dropdown-menu li a {
   text-decoration: none;
   color: white;
 }
@@ -116,12 +156,12 @@ section {
   border-radius: 4px;
   padding: 5px;
   background-color: #f8f8f8;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .select-video:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .select-video:focus {
@@ -222,12 +262,12 @@ section {
   text-align: left !important;
 }
 
-.tripplanner h2{
+.tripplanner h2 {
   color: white;
   padding: 12px;
   margin: auto 20px;
 }
-.tripplanner .form-label{
+.tripplanner .form-label {
   color: white;
 }
 
@@ -280,7 +320,7 @@ section {
 }
 
 /* Set the container's width and height */
-.vrcontainer{
+.vrcontainer {
   display: flex;
   margin: 10px;
   flex-wrap: wrap;
@@ -298,33 +338,40 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-iframe{
+iframe {
   overflow: hidden;
-  
 }
 iframe::-webkit-scrollbar {
   display: none;
 }
-iframe, iframe body {
+iframe,
+iframe body {
   scrollbar-width: none;
 }
-iframe , iframe body{
+iframe,
+iframe body {
   -ms-overflow-style: none;
 }
-.hide-scrollbars::-webkit-scrollbar , iframe body::-webkit-scrollbar{
+.hide-scrollbars::-webkit-scrollbar,
+iframe body::-webkit-scrollbar {
   display: none;
 }
 
-.hide-scrollbars, iframe body {
+.hide-scrollbars,
+iframe body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
 /* Clip the iframe to show only a specific area */
 .embeddedIframe {
-  clip: rect(0px, 776px, 385px, 0px); /* Adjust the values to specify the visible area */
+  clip: rect(
+    0px,
+    776px,
+    385px,
+    0px
+  ); /* Adjust the values to specify the visible area */
   width: 100%; /* Set the width to match the clipped area width */
   height: 600px; /* Set the height to match the clipped area height */
   object-fit: contain;
 }
-
