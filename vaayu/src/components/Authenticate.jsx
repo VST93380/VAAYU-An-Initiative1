@@ -105,6 +105,7 @@ export default function Authenticate() {
                       className="checkbox"
                       type="checkbox"
                       name="reg-log"
+                      id="reg-log"
                     />
                     <label htmlFor="reg-log"></label>
                     <div className="card-3d-wrap mx-auto">
