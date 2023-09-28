@@ -354,9 +354,6 @@
 }
 
 @media (max-width: 991px) {
-  .aims-card {
-    width: 100%;
-  }
   .homecard {
     width: 100%;
   }
@@ -464,6 +461,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .aims-card {
+    width: 100%;
+  }
   .vaayusoulcont {
     flex-direction: column;
     align-items: center;

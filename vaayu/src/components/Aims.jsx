@@ -20,7 +20,7 @@ export default function Aims() {
 
   // Define the number of cards per slide based on screen size
   useEffect(() => {
-    const perPage = window.innerWidth < 991 ? 1 : 4;
+    const perPage = window.innerWidth < 768 ? 1 : 4;
     setPerPage(perPage)
   });
 
