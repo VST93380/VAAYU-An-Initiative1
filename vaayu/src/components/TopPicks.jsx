@@ -6,10 +6,11 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 const FeaturedDestination = (props) => {
   // Initialize state for filtered places and set it to an empty array.
   const [filteredPlaces, setFilteredPlaces] = useState([]);
+  const [perPage, setPerPage] = useState(null);
 
   const splideOptions = {
     type: "loop",
-    perPage: 4,
+    perPage: perPage,
     autoplay: true,
     focus: "center",
     pauseOnHover: false,
@@ -20,7 +21,10 @@ const FeaturedDestination = (props) => {
       speed: 4,
     },
   };
-
+  useEffect(() => {
+    const perPage = window.innerWidth < 991 ? 1 : 4;
+    setPerPage(perPage);
+  });
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleCardClick = () => {
@@ -40,7 +44,8 @@ const FeaturedDestination = (props) => {
     <>
       <div className="main-homecard">
         <h2 className="featureddestiations">
-          Top Picks <i className="fa-solid fa-wand-magic-sparkles fa-bounce"></i>
+          Top Picks{" "}
+          <i className="fa-solid fa-wand-magic-sparkles fa-bounce"></i>
         </h2>
         <hr />
         <Splide options={splideOptions}>
@@ -64,7 +69,8 @@ const FeaturedDestination = (props) => {
                   <div className="homecard__back">
                     <div className="homecard__back-content">
                       <p className="homecard__description">
-                        <i className="fa-solid fa-map-location-dot fa-bounce"></i><br></br>
+                        <i className="fa-solid fa-map-location-dot fa-bounce"></i>
+                        <br></br>
                         {destination.description}
                       </p>
                     </div>

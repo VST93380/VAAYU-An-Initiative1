@@ -198,9 +198,8 @@
   color: white;
   z-index: 2; /* Ensure the front side is on top initially */
   box-shadow: 0 0 12px black;
-
 }
-.homecard__front img{
+.homecard__front img {
   border-radius: 20px;
 }
 .homecard__image {
@@ -223,15 +222,15 @@
   z-index: 1; /* Make sure the back side is below the front side */
 }
 
-.homecard__description{
+.homecard__description {
   padding: 10px;
   text-align: center;
 }
-.homecard__description p{
+.homecard__description p {
   text-align: justify;
   font-size: 1.5rem;
 }
-.homecard__description i{
+.homecard__description i {
   font-size: 3rem;
   text-align: center;
 }
@@ -287,7 +286,7 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
   border-radius: 12px;
 }
-.socialcard h2{
+.socialcard h2 {
   color: black;
   font-weight: 700;
 }
@@ -302,32 +301,32 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* instagram*/
 .containerOne:hover {
   background-color: #d62976;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* twitter*/
 .containerTwo:hover {
   background-color: #00acee;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 /* Whatsapp*/
 .containerFour:hover {
-  background-color: #128C7E;
-  transition-duration: .3s;
+  background-color: #128c7e;
+  transition-duration: 0.3s;
 }
 
 .socialContainer:active {
   transform: scale(0.9);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .socialSvg {
@@ -355,11 +354,20 @@
 }
 
 @media (max-width: 991px) {
+  .aims-card {
+    width: 100%;
+  }
+  .homecard {
+    width: 100%;
+  }
+  .homecard__image {
+    width: 100%;
+  height: 220px;
+  }
   .explorehome {
     font-size: 1rem;
   }
 }
-
 
 /*aims css */
 .aims-card {
@@ -372,8 +380,8 @@
   padding: 32px;
   overflow: hidden;
   border-radius: 20px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-  min-height:300px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  min-height: 300px;
   max-height: 300px;
   border: 2px solid white;
   backdrop-filter: blur(10px);
@@ -385,7 +393,7 @@
   align-items: flex-start;
   gap: 20px;
   color: #e8e8e8;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .aims-content .aims-heading {
@@ -404,7 +412,7 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -416,9 +424,9 @@
   bottom: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   z-index: -1;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .aims-card:hover::before {
@@ -443,7 +451,6 @@
 .aims-content .aims-btn:active {
   box-shadow: none;
 }
-
 
 /* carbon foot print vaayu soul css*/
 /* CSS for Carbon Footprint Calculator */
@@ -531,7 +538,7 @@
   color: #fff; /* Hover text color */
 }
 /* Add this CSS to your stylesheet */
-.pagination  .page-item {
+.pagination .page-item {
   margin: 0 1.5px; /* Adjust the margin as needed */
   transition: background-color 1s ease, color 1s ease; /* Smooth transition for background and text color */
 }

@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import placesdata from "./Json/Aims.json";
 
 export default function Aims() {
+  const[perPage, setPerPage] = useState(null)
   const splideOptions = {
     type: "loop",
-    perPage: 4,
     autoplay: true,
-    focus: "center",
+    focus: "center", // Center the single card.
     pauseOnHover: false,
     drag: "free",
     pagination: false,
@@ -18,21 +18,25 @@ export default function Aims() {
     },
   };
 
+  // Define the number of cards per slide based on screen size
+  useEffect(() => {
+    const perPage = window.innerWidth < 991 ? 1 : 4;
+    setPerPage(perPage)
+  });
+
   return (
-    <div className='main-homecard'>
-       <h2 className="featureddestiations">
-          Our Aims <i className="fa-solid fa-users"></i>
-        </h2>
-        <hr />
-      <Splide options={splideOptions}>
+    <div className="main-homecard">
+      <h2 className="featureddestiations">
+        Our Aims <i className="fa-solid fa-users"></i>
+      </h2>
+      <hr />
+      <Splide options={{ ...splideOptions, perPage }}>
         {placesdata.map((destination, index) => (
           <SplideSlide key={index}>
             <div className="aims-card">
               <div className="aims-content">
                 <p className="aims-heading">{destination.title}</p>
-                <p className="aims-para">
-                  {destination.description}
-                </p>
+                <p className="aims-para">{destination.description}</p>
               </div>
             </div>
           </SplideSlide>
