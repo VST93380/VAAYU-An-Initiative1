@@ -189,11 +189,8 @@ function BlogButton() {
 
 function Card(props) {
   const words = props.comment.blogmsg.split(" ");
-  // Take the first two words and join them back into a string
   const truncatedMessage = words.slice(0, 2).join(" ");
   const trunmsg = truncatedMessage + " ...";
-
-  // Generate a unique modal ID based on the comment index
   const modalId = `readMore-${props.index}`;
 
   return (
@@ -225,10 +222,9 @@ function Card(props) {
 }
 
 function Community() {
-  const [comments, setComments] = useState([]); // State to store comments
+  const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    // Fetch comments when the component mounts
     axios
       .get("http://localhost:5000/api/getcomments")
       .then((response) => {
@@ -237,7 +233,7 @@ function Community() {
       .catch((err) => {
         console.error(err);
       });
-  }, []);
+  }, [comments]);
 
   return (
     <div className="blog-vaayu-conatiner">
