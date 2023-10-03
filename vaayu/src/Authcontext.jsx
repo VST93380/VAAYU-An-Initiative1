@@ -1,5 +1,8 @@
-import { useState, createContext, useContext, useEffect } from "react";
+// AuthContext.js
+import React, { useState, createContext, useContext, useEffect } from "react";
+import Cookies from "universal-cookie";
 
+const cookies = new Cookies();
 const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
@@ -7,7 +10,6 @@ export const AuthProvider = ({ children }) => {
   const [stateRegion, setStateRegion] = useState(null);
   const [district, setDistrict] = useState(null);
 
-  // function to update state of user
   const location = (state, district) => {
     setStateRegion(state);
     setDistrict(district);
@@ -15,27 +17,28 @@ export const AuthProvider = ({ children }) => {
 
   // Function to handle user login
   const login = (userData) => {
-    localStorage.setItem("user", JSON.stringify(userData));
+    // Store the user data in a cookie
+    cookies.set("user", userData, { path: "/" });
     setUser(userData);
   };
 
   // Function to handle user logout
   const logout = () => {
-    localStorage.removeItem("user");
+    // Remove the user data cookie
+    cookies.remove("user");
     setUser(null);
   };
 
   useEffect(() => {
-    const loggedInUser = JSON.parse(localStorage.getItem("user"));
-    if (loggedInUser) {
-      setUser(loggedInUser);
+    // Check for the user data cookie when the app loads
+    const storedUser = cookies.get("user");
+    if (storedUser) {
+      setUser(storedUser);
     }
   }, []);
 
   return (
-    <AuthContext.Provider
-      value={{ user, login, logout, location, stateRegion, district }}
-    >
+    <AuthContext.Provider value={{ user, login, logout, location, stateRegion, district }}>
       {children}
     </AuthContext.Provider>
   );

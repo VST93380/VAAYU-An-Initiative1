@@ -54,9 +54,19 @@ router.post("/login", async (req, res) => {
     if (!passwordCheck) {
       return res.send("invalid");
     } else {
+      const { username, email, phone, role, date } = user;
+
+      // Create a JSON object with the desired fields
+      const userData = {
+        username,
+        email,
+        phone,
+        role,
+        date,
+      };
       res.status(200).send({
         message: "Login Successful",
-        user: user,
+        user: userData,
       });
     }
   } catch (error) {
