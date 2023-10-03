@@ -15,22 +15,17 @@ export const AuthProvider = ({ children }) => {
     setDistrict(district);
   };
 
-  // Function to handle user login
   const login = (userData) => {
-    // Store the user data in a cookie
-    cookies.set("user", userData, { path: "/" });
+    cookies.set("user", userData, { path: "/", expires: new Date(Date.now() + 1000 * 60 * 10) }); //10minutes
     setUser(userData);
   };
 
-  // Function to handle user logout
   const logout = () => {
-    // Remove the user data cookie
     cookies.remove("user");
     setUser(null);
   };
 
   useEffect(() => {
-    // Check for the user data cookie when the app loads
     const storedUser = cookies.get("user");
     if (storedUser) {
       setUser(storedUser);
