@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ProgressBar from 'progressbar.js';
-import './Profile.css'
-function UserProfile() {
+import './../Styles/Profile.css'
+function Profile() {
     useEffect(() => {
 
         const completedProgress = new ProgressBar.Circle('#completed-progress', {
@@ -139,4 +139,4 @@ function UserProfile() {
     );
 }
 
-export default UserProfile;
+export default Profile;

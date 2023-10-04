@@ -20,7 +20,7 @@ import HotelAttractions from "./components/HotelAttractions";
 import ArVr from "./components/ArVr";
 import Map from "./components/Map";
 import { useAuth } from "./Authcontext";
-import Backvid from "./components/Backvid";
+import Profile from "./components/Profile";
 
 function App() {
   const auth = useAuth();
@@ -81,6 +81,7 @@ function App() {
           <Route path="/hotel" element={<HotelAttractions />} />
           <Route path="/vr" element={<ArVr />} />
           <Route path="/map" element={<Map />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </section>
       <Footer />
