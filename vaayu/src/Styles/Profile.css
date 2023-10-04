@@ -1,0 +1,76 @@
+/* Profile.css */
+.container {
+    margin-top: 20px;
+}
+
+.profile-img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgb(216, 57, 9);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(243, 114, 9);
+}
+
+.card-text {
+    font-size: 14px;
+    color:rgb(223, 223, 4);
+}
+
+.badges {
+    text-align: center;
+}
+
+.badge-img {
+    width: 300px;
+    height: 250px;
+}
+
+.reward-points {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ab0ea8;
+}
+
+.card {
+    padding: 10px;
+    border: 5px solid rgb(230, 86, 3);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.card img{
+    border: 6px solid whitesmoke;
+    border-radius: 12px;
+}
+#completed-progress,
+#canceled-progress,
+#upcoming-progress {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recent-visit-img {
+    max-width: 100%;
+    margin: 5px;
+   
+}
+
+.wishlist-img {
+    max-width: 100%;
+    margin: 5px;
+}
+
+.btn-primary {
+    /* background-color: #007bff; */
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
