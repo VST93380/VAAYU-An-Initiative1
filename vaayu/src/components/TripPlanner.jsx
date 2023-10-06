@@ -125,7 +125,7 @@ function ItineraryItem({
 
   return (
     <div className="col-lg-4 col-md-6 mb-4 d-flex">
-      <div className="card flex-fill bg-white rounded-lg shadow-sm glass">
+      <div className="card flex-fill rounded-lg shadow-sm itedisplayer">
         <div className="card-header bg-transparent border-bottom-0">
           <div className="form-check">
             <input

@@ -199,17 +199,18 @@
 }
 
 .form-container {
-  max-width: 700px;
+  max-width: 900px;
   margin: 30px;
   background-image: linear-gradient(
     to right,
-    #b8cbb8 0%,
-    #b8cbb8 0%,
-    #b465da 0%,
-    #cf6cc9 33%,
-    #ee609c 66%,
-    #ee609c 100%
+    #b8cbb88a 0%,
+    #b8cbb882 0%,
+    #b565da8a 0%,
+    #cf6cc887 33%,
+    #ee609b7f 66%,
+    #ee609b79 100%
   );
+  backdrop-filter: blur(22px);
   border: 1px solid white;
   border-radius: 8px;
   padding: 30px;
@@ -261,24 +262,9 @@
   border-left: 5px solid white;
 }
 
-.form-container .form .button-container {
-  display: flex;
-  gap: 10px;
+.form-container button{
+  min-width: 200px;
+  padding: 12px;
 }
 
-.form-container .form .button-container .send-button {
-  flex-basis: 70%;
-  background: #ad0689;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
-  border: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
-  margin: 0 auto;
-}
 
-.form-container .form .button-container .send-button:hover {
-  background: transparent;
-  border: 1px solid #ff7a01;
-  color: #ff7a01;
-}

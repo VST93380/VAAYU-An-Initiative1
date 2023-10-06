@@ -44,6 +44,8 @@ function Package_App() {
 
             {/* PackageCard - 5 */}
             <PackageCard id="c-5" title="CITY & URBAN EXPLORATION" locations="5+" expenditure="7485" ratings="4.7" />
+            
+            <PackageCard id="c-6" title="Haunted Places" locations="6+" expenditure="12885" ratings="4.9" />
         </div>
     );
 }

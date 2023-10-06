@@ -30,7 +30,7 @@ function BlogModal() {
   return (
     <>
       <div
-        className="modal fade"
+        className="modal fade modal-lg"
         id="blogPostModal"
         data-bs-keyboard="false"
         tabindex="-1"
@@ -42,7 +42,7 @@ function BlogModal() {
             <div className="modal-body">
               <div className="form-container">
                 <form className="form" onSubmit={handleSubmit}>
-                  <span className="heading">Get in touch</span>
+                  <span className="heading"><i class="fa-solid fa-comments"></i>&nbsp;Post your experience</span>
                   <input
                     placeholder="title of the blog"
                     type="text"
@@ -65,8 +65,8 @@ function BlogModal() {
                     className="textarea"
                   ></textarea>
                   <div className="button-container">
-                    <button type="submit" className="send-button loginbtn">
-                      Submit
+                    <button type="submit" className="loginbtn">
+                    <i class="fa-solid fa-paper-plane"></i>&nbsp;Post My Blog
                     </button>
                   </div>
                 </form>
