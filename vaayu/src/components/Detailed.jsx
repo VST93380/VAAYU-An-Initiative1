@@ -1,7 +1,36 @@
 import React from "react";
+import { toast } from "react-toastify";
+import { useAuth } from "./../Authcontext";
+import axios from "axios";
 
 export default function Detailed(props) {
   const details = props.details;
+  const auth = useAuth();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios
+      .post("http://localhost:5000/api/itinerary", {
+        username: auth.user.username,
+        place: details.name,
+        city: details.city,
+        state: details.state,
+        category: details.category,
+        opeingHours: details.open_hours,
+      })
+      .then((response) => {
+        console.log(response.data);
+        if (response.status === 201) {
+          toast.success("BlogPost has been saved");
+        } else {
+          toast.error("error in saving the post");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
     <div
       className="offcanvas offcanvas-start"
@@ -42,6 +71,9 @@ export default function Detailed(props) {
                 ))}
             </ul>
           </div>
+          
+          <button onClick={handleSubmit}>Add to trip</button>
+
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcrypt");
 const regtemp = require("../models/registration");
 const communitytemp = require("../models/community");
+const itenaryModel = require("../models/itenary");
 
 //register
 router.post("/register", async (req, res) => {
@@ -108,6 +109,40 @@ router.get("/getcomments", async (req, res) => {
   } catch (error) {
     console.error(error.message);
     res.status(500).send("Internal Server Error");
+  }
+});
+
+// itenary
+router.post("/itinerary", async (req, res) => {
+  const { username, place, city, state, category, openingHours } = req.body;
+  console.log(req.body);
+
+  try {
+    const itinerary = new itenaryModel({
+      username: username,
+      place: place,
+      city: city,
+      state: state,
+      category: category,
+      openingHours: openingHours,
+    });
+
+    await itinerary.save();
+
+    res.status(201).json({ message: "Itinerary added successfully" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to add itinerary" });
+  }
+});
+
+router.get("/getitinerary", async (req, res) => {
+  try {
+    const itineraries = await itenaryModel.find();
+    res.json(itineraries);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to get itineraries" });
   }
 });
 
