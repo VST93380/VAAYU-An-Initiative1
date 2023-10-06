@@ -559,3 +559,9 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.464);
 }
+
+.offcanvas-body button{
+  border: 2px solid white !important;
+  font-size: 20px;
+  color: white !important;
+}

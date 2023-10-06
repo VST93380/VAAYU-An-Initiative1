@@ -120,10 +120,10 @@ export default function Navbar() {
                   </NavLink>
                 )}
                 {auth.user && (
-                  <NavLink className="nav-link" aria-current="page">
+                  <NavLink to="/profile" className="nav-link" aria-current="page">
                     <button
                       className="loginbtn"
-                      onClick={handleLogout}
+                      // onClick={handleLogout}
                     >
                       <i className="fa-solid fa-user-secret fa-fade"></i>&nbsp;
                       {auth.user.role}

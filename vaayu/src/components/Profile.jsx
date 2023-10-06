@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ProgressBar from 'progressbar.js';
-import './Profile.css'
+import './../Styles/Profile.css'
 function UserProfile() {
     useEffect(() => {
 
@@ -57,6 +57,7 @@ function UserProfile() {
     }, []);
 
     return (
+        <div className='Profile_card'>
         <div className="container mt-5">
             <div className="row">
                 <div className="col-md-4">
@@ -136,6 +137,8 @@ function UserProfile() {
                 </div>
             </div>
         </div>
+        </div>
+
     );
 }
 

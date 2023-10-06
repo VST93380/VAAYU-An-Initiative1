@@ -44,12 +44,9 @@ export default function Detailed(props) {
         <h5 className="offcanvas-title" id="offcanvasExampleLabel">
           {details.name}
         </h5>
-        <button
-          type="button"
-          className="btn-close"
-          data-bs-dismiss="offcanvas"
+        <button data-bs-dismiss="offcanvas"
           aria-label="Close"
-        ></button>
+        ><i class="fa-solid fa-circle-xmark fa-spin"></i></button>
       </div>
       <div className="offcanvas-body">
         <div className="container">
@@ -71,8 +68,8 @@ export default function Detailed(props) {
                 ))}
             </ul>
           </div>
-          
-          <button onClick={handleSubmit}>Add to trip</button>
+
+          <button onClick={handleSubmit} className="loginbtn">Add to trip</button>
 
         </div>
       </div>
