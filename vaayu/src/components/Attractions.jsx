@@ -86,7 +86,7 @@ export default function Attractions() {
         </div>
         <div className="attcontainer">
           {displayedPlaces.map((item, index) => (
-            <div className="card" key={index}>
+            <div className="card puff-in-center" key={index}>
               <div className="first-content">
                 <div className="image-container">
                   <img src={item.image_url} alt={item.name} />

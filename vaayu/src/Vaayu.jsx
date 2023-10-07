@@ -46,7 +46,7 @@ function App() {
     }
 
     fetchLocationData();
-  }, [latitude, longitude]);
+  }, [latitude, longitude, auth]);
 
   const fetchUserLocation = () => {
     if ("geolocation" in navigator) {

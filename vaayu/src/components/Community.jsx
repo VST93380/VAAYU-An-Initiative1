@@ -237,7 +237,7 @@ function Community() {
 
   return (
     <div className="blog-vaayu-conatiner">
-      <div className="Blog_container">
+      <div className="slide-in-elliptic-top-fwd Blog_container">
         <BlogButton />
       </div>
       <div className="container">

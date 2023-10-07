@@ -6,7 +6,7 @@ import { useAuth } from "../Authcontext";
 
 export default function Vaayusoul() {
   const auth = useAuth();
-  const cState = auth.stateRegion?auth.stateRegion:"Hyderabad"
+  const cState = auth.stateRegion
 
   return (
     <div>

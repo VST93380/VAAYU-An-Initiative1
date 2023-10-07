@@ -114,7 +114,7 @@ export default function HotelAttractions() {
         </div>
         <div className="attcontainer">
           {displayedPlaces.map((item, index) => (
-            <div className="card" key={index}>
+            <div className="card puff-in-center" key={index}>
              <div className="first-content">
                 <div className="image-container">
                   <img src={item.image} alt={item.name} />

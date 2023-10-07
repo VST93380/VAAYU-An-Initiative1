@@ -3,7 +3,7 @@ import './../Styles/Package.css';
 
 function PackageCard({ id, title, locations, expenditure, ratings }) {
     return (
-        <div className="Package_card">
+        <div className="Package_card bounce-top">
             <div className="top-section" id={id}>
             </div>
             <div className="bottom-section">

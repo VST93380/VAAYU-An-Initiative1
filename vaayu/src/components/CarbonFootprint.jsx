@@ -97,7 +97,7 @@ export default function CarbonFootprint() {
   };
   return (
     <>
-      <div className="carbon-container">
+      <div className="carbon-container tilt-in-fwd-br">
         <h1 className="carbon-title">Carbon Footprint Calculator</h1>
         <div>
           <label>Distance (in km): </label>

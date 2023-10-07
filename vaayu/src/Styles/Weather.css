@@ -142,3 +142,6 @@
     font-size: 24px;
     font-weight: bold;
 }
+.loading-message{
+    font-size: 2vw;
+}

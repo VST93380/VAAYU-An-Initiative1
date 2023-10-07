@@ -25,7 +25,7 @@ export default function Home(props) {
   return (
     <>
       <Backvid></Backvid>
-      <div className="container homewelcome">
+      <div className="puff-in-center container homewelcome">
         <h1 className="display-2">Welcome to Your Travel Adventure!</h1>
         <p className="lead">
           {greeting}

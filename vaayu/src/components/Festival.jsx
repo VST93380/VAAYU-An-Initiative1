@@ -6,7 +6,7 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 function FestivalCard(props) {
   const { name, famous_place, description, month, image_url } = props;
   return (
-    <div className="festival_card">
+    <div className="festival_card bounce-top">
       <div className="card-image">
         <img src={image_url} alt={name} />
       </div>
