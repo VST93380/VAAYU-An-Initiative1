@@ -40,7 +40,7 @@ function ItineraryForm() {
     auth.user && (
       <div className="container mt-5 tripplanner">
         <h2>Plan Itinerary</h2>
-        <div className="glass p-4">
+        <div className="glass p-4  tilt-in-fwd-br">
           <form onSubmit={handleSubmit}>
             <div className="row mb-3">
               <div className="col-lg-4 col-md-6 mb-3">
@@ -124,7 +124,7 @@ function ItineraryItem({
 
   return (
     <div className="col-lg-4 col-md-6 mb-4 d-flex">
-      <div className="card flex-fill rounded-lg shadow-sm itedisplayer">
+      <div className="itedisplayer card flex-fill rounded-lg shadow-sm tilt-in-fwd-br">
         <div className="card-header bg-transparent border-bottom-0">
           <div className="form-check">
             <input

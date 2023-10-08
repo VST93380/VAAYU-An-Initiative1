@@ -120,7 +120,7 @@ function WeatherComponent(props) {
 
   return (
     <div className="weather-app tilt-in-fwd-br">
-      <div className="weather-card">
+      <div className="weather-card ">
         {weatherData !== null || forecastData !== null ? (
           renderWeatherCard()
         ) : (
