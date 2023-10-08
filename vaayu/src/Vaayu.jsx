@@ -18,6 +18,7 @@ import Vaayusoul from "./components/Vaayusoul";
 import Community from "./components/Community";
 import HotelAttractions from "./components/HotelAttractions";
 import ArVr from "./components/ArVr";
+import Package from "./components/Package";
 import Map from "./components/Map";
 import { useAuth } from "./Authcontext";
 import Profile from "./components/Profile"
@@ -74,8 +75,10 @@ function App() {
       <section>
         <Routes>
           <Route path="/" element={<Home location={userLocation} />} />
+          <Route path="/attractions/:string" element={<Attractions />} />
           <Route path="/attractions" element={<Attractions />} />
           <Route path="/tripplanner" element={<TripPlanner />} />
+          <Route path="/packages" element={<Package />} />
           <Route path="/community" element={<Community />} />
           <Route path="/vaayusoul" element={<Vaayusoul></Vaayusoul>} />
           <Route path="/hotel" element={<HotelAttractions />} />

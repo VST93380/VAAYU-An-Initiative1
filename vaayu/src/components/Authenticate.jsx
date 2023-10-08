@@ -92,7 +92,7 @@ export default function Authenticate() {
         data-bs-backdrop="static"
       >
         <div className="modal-dialog">
-          <div className="modal-content">
+          <div className="modal-content tilt-in-fwd-br">
             <div className="modal-body login">
               <div className="container">
                 <div className="row justify-content-center">

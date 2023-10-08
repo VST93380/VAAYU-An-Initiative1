@@ -72,6 +72,10 @@ input:hover {
   background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
 }
 
+.attcontainer .card:hover img{
+  scale: 1.4;
+}
+
 .attcontainer .first-content {
   height: 100%;
   width: 100%;

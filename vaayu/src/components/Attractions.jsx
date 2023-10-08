@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import locations from "./Json/Places.json";
 import statesData from "./Json/States.json";
 import Detailed from "./Detailed";
+import { useParams } from "react-router-dom";
 
 export default function Attractions() {
+  const { string } = useParams();
+  const [routeCat, setRouteCat] = useState(string);
+
   const [detailedProp, setDetailedProp] = useState([]);
   const originalLoc = locations;
   const [selectedState, setSelectedState] = useState("default");
@@ -11,6 +15,7 @@ export default function Attractions() {
   const [places, setPlaces] = useState(locations);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
+
 
   useEffect(() => {
     handlePro();
@@ -23,6 +28,12 @@ export default function Attractions() {
 
   const handlePro = () => {
     let filteredPlaces = originalLoc;
+
+    if (routeCat) {
+      filteredPlaces = filteredPlaces.filter(
+        (destination) => destination.category === routeCat
+      );
+    }
 
     if (selectedState !== "default") {
       filteredPlaces = filteredPlaces.filter(
@@ -81,7 +92,6 @@ export default function Attractions() {
                 onChange={handleSearchChange}
               />
             </div>
-
           </div>
         </div>
         <div className="attcontainer">
@@ -145,7 +155,9 @@ export default function Attractions() {
           <ul className="pagination justify-content-center">
             {Array.from({ length: totalPages }).map((_, index) => (
               <li
-                className={`page-item ${index + 1 === currentPage ? "active" : ""}`}
+                className={`page-item ${
+                  index + 1 === currentPage ? "active" : ""
+                }`}
                 key={index}
               >
                 <button

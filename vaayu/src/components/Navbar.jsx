@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 import { useAuth } from "../Authcontext";
 import { toast } from "react-toastify";
 
-
 export default function Navbar() {
   const auth = useAuth();
   const handleLogout = () => {
@@ -46,14 +45,31 @@ export default function Navbar() {
                   <i className="fa-solid fa-house"></i>&nbsp;Home
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link"
-                  aria-current="page"
-                  to="/tripplanner"
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  <i className="fa-solid fa-plane-departure"></i>&nbsp;Trip Planner
-                </NavLink>
+                  <i className="fa-solid fa-plane-departure"></i>&nbsp;Trip
+                  Planner
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <NavLink className="dropdown-item" to="/packages">
+                      <i className="fa-solid fa-map-location-dot"></i>
+                      &nbsp;Packages
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="/tripplanner">
+                      <i className="fa-solid fa-map-location-dot"></i>
+                      &nbsp;Itenary
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -68,7 +84,8 @@ export default function Navbar() {
                 <ul className="dropdown-menu">
                   <li>
                     <NavLink className="dropdown-item" to="/attractions">
-                      <i className="fa-solid fa-map-location-dot"></i>&nbsp;Tourism
+                      <i className="fa-solid fa-map-location-dot"></i>
+                      &nbsp;Tourism
                     </NavLink>
                   </li>
                   <li>
@@ -120,7 +137,11 @@ export default function Navbar() {
                   </NavLink>
                 )}
                 {auth.user && (
-                  <NavLink to="/profile" className="nav-link" aria-current="page">
+                  <NavLink
+                    to="/profile"
+                    className="nav-link"
+                    aria-current="page"
+                  >
                     <button
                       className="loginbtn"
                       // onClick={handleLogout}

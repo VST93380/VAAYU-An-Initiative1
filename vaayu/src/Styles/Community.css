@@ -13,6 +13,7 @@
   min-height: 300px;
   box-shadow: 0 8px 32px 0 rgba(29, 39, 177, 0.924);
 }
+
 .original_card .readmorebtn {
   position: absolute;
   bottom: 20px;
@@ -20,8 +21,12 @@
 }
 .original_card img {
   width: 310px;
-  height: 160px;
+  max-height: 160px;
   box-shadow: 0 0 12px black;
+  transition: all ease 0.4s;
+}
+.original_card:hover img{
+  transform: scale(1.07);
 }
 .original_card a {
   text-decoration: none;

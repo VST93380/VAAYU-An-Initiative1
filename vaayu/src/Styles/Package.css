@@ -1,3 +1,7 @@
+.Package_card-container a{
+  text-decoration: none;
+}
+
 .Package_card img {
   height: 200px;
 }
@@ -17,8 +21,7 @@
 
 .Package_card:hover {
   cursor: pointer;
-  filter: brightness(1.15) saturate(1.25);
-  transform: scale(1.02);
+  filter: brightness(1.25) saturate(1.45);
 }
 
 .Package_card .top-section {

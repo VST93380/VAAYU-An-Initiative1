@@ -37,7 +37,7 @@ function BlogModal() {
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog">
+        <div className="modal-dialog bounce-in-top">
           <div className="modal-content">
             <div className="modal-body">
               <div className="form-container">
@@ -196,7 +196,7 @@ function Card(props) {
   return (
     <>
       <div>
-        <div className="original_card">
+        <div className="original_card tilt-in-fwd-tr">
           <div className="image">
             <img src={props.comment.imagelink} alt="Blog Image" />
           </div>

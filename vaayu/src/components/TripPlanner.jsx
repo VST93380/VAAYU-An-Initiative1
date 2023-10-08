@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Package from "./Package";
-import { useAuth } from "./../Authcontext";
-import { toast } from "react-toastify";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import { useAuth } from "./../Authcontext";
 
 function ItineraryForm() {
   const auth = useAuth();
@@ -174,7 +173,6 @@ function TripPlanner() {
 
   return (
     <div className="tripplanner">
-      <Package />
       <ItineraryForm />
       <div className="container">
         <h2 className="my-3">Your Itinerary</h2>
