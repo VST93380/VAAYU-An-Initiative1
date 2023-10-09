@@ -136,6 +136,27 @@ router.post("/itinerary", async (req, res) => {
   }
 });
 
+router.delete("/deleteItem/:id", async (req, res) => {
+  try {
+    const itemId = req.params.id;
+    // Use Mongoose to find and remove the item by its ID
+    const deletedItem = await itenaryModel.findByIdAndRemove(itemId);
+
+    if (!deletedItem) {
+      // If the item with the provided ID is not found, return a 404 response
+      return res.status(404).json({ message: "Item not found" });
+    }
+
+    // If the item was successfully deleted, return a 200 response
+    res.status(200).json({ message: "Item deleted successfully" });
+  } catch (error) {
+    console.error("Error while deleting item:", error);
+    // If there's an error, return a 500 response
+    res.status(500).json({ message: "Internal server error" });
+  }
+});
+
+//checkbox update
 router.post('/updatecheckbox', async (req, res) => {
   try {
     const { _id, isVisited } = req.body;

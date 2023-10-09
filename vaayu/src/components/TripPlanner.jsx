@@ -143,6 +143,26 @@ function ItineraryItem({
       console.error('Error while updating checkbox state:', error);
     }
   };
+  const handleDeleteClick = async () => {
+    try {
+      // Make an API request using Axios to delete the item on the server
+      const response = await axios.delete(`http://localhost:5000/api/deleteItem/${itemid}`);
+
+      if (response.status === 200) {
+        // If the API request is successful, you can handle the deletion on the client-side.
+        // For example, remove the item from the UI or perform any necessary cleanup.
+        // This depends on your specific UI structure and requirements.
+        toast.success("Itinenary Deleted Successfully", {
+          position: "bottom-right",
+        })
+      } else {
+        // Handle the case when the API request fails
+        console.error('Failed to delete item on the server');
+      }
+    } catch (error) {
+      console.error('Error while deleting item:', error);
+    }
+  };
   return (
     <div className="col-lg-4 col-md-6 mb-4 d-flex">
       <div className="itedisplayer card flex-fill rounded-lg shadow-sm tilt-in-fwd-br">
@@ -166,8 +186,9 @@ function ItineraryItem({
           <p className="card-text">{`Added on ${dateAdded}`}</p>
         </div>
         <div className="card-footer bg-transparent border-top-0">
-          <button type="button" className="btn btn-light">
-            <i className="fas fa-edit"></i> Edit
+          <button type="button" className="btn btn-light"
+            onClick={handleDeleteClick}>
+            <i class="fa-solid fa-trash"></i>Delete
           </button>
         </div>
       </div>
@@ -229,7 +250,7 @@ function TripPlanner() {
           ))}
         </div>
       </div>
-      {visitedData.length!==0 &&
+      {visitedData.length !== 0 &&
         <div className="container">
           <h2 className="my-3">Visited</h2>
           <div className="row">
