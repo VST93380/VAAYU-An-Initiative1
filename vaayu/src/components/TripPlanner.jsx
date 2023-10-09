@@ -156,20 +156,24 @@ function ItineraryItem({
 
 function TripPlanner() {
 
+  const auth = useAuth();
+
   const [itineraryData, setItineraryData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/getitinerary", {
-        username: "rajgopalhota",
-      })
-      .then((response) => {
-        setItineraryData(response.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  });
+    if (auth.user) {
+      axios
+        .post("http://localhost:5000/api/getitinerary", {
+          user: auth.user.username,
+        })
+        .then((response) => {
+          setItineraryData(response.data);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    }
+  }, [auth.user]);
 
   return (
     <div className="tripplanner">
