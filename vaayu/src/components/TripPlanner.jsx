@@ -163,8 +163,10 @@ function TripPlanner() {
   useEffect(() => {
     if (auth.user) {
       axios
-        .post("http://localhost:5000/api/getitinerary", {
-          user: auth.user.username,
+        .get("http://localhost:5000/api/getitinerary", {
+          params: {
+            user: auth.user.username,
+          }
         })
         .then((response) => {
           setItineraryData(response.data);

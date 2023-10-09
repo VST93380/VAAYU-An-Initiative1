@@ -136,8 +136,8 @@ router.post("/itinerary", async (req, res) => {
   }
 });
 
-router.post("/getitinerary", async (req, res) => {
-  const user = req.body.user;
+router.get("/getitinerary", async (req, res) => {
+  const user = req.query.user;
   try {
     const itineraries = await itenaryModel.find({ username: user });
     res.json(itineraries);
