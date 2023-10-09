@@ -136,6 +136,29 @@ router.post("/itinerary", async (req, res) => {
   }
 });
 
+router.post('/updatecheckbox', async (req, res) => {
+  try {
+    const { _id, isVisited } = req.body;
+
+    // Update the document with the given _id
+    const updatedItem = await itenaryModel.findByIdAndUpdate(
+      _id,
+      { isVisited },
+      { new: true }
+    );
+
+    if (!updatedItem) {
+      return res.status(404).json({ message: 'Item not found' });
+    }
+
+    return res.status(200).json(updatedItem);
+  } catch (error) {
+    console.error('Error while updating checkbox state:', error);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+
 router.get("/getitinerary", async (req, res) => {
   const user = req.query.user;
   try {
