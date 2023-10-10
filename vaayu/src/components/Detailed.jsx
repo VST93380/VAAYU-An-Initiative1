@@ -1,7 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
 import { useAuth } from "./../Authcontext";
-import urlmap from "./../UrlHelper"
+import urlmap from "./../UrlHelper";
 
 export default function Detailed(props) {
   const details = props.details;
@@ -44,9 +44,9 @@ export default function Detailed(props) {
         <h5 className="offcanvas-title" id="offcanvasExampleLabel">
           {details.name}
         </h5>
-        <button data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ><i class="fa-solid fa-circle-xmark fa-spin"></i></button>
+        <button data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="fa-solid fa-circle-xmark fa-spin"></i>
+        </button>
       </div>
       <div className="offcanvas-body">
         <div className="container">
@@ -68,9 +68,11 @@ export default function Detailed(props) {
                 ))}
             </ul>
           </div>
-
-          <button onClick={handleSubmit} className="loginbtn">Add to trip</button>
-
+          {auth.user && (
+            <button onClick={handleSubmit} className="loginbtn">
+              Add to trip
+            </button>
+          )}
         </div>
       </div>
     </div>

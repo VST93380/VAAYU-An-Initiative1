@@ -91,21 +91,21 @@
 
 /* readmore_card */
 .readmore_card {
-  max-width: 50em;
-  max-height: 80em;
-  background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
   transition: 1s ease-in-out;
+  background-image: url(./../assets/login-bg.png);
+  background-position: center center fixed;
+  background-size: cover;
   border: 2px solid white;
   border-radius: 8px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  display: flex;
-  flex-direction: column;
 }
+
 .readmore_card span {
   font-weight: bold;
-  color: rgb(226, 26, 12);
-  text-align: center;
+  color: rgb(37, 2, 0);
+  text-align: left;
+  margin: 17px;
+  letter-spacing: 1px;
+  font-weight: 900;
   display: block;
   font-size: 1em;
 }
@@ -115,32 +115,40 @@
   color: white;
   display: block;
   text-align: center;
-  margin: 1em;
 }
 
 .readmore_card .read_img {
-  width: 20em;
-  height: 12em;
-  padding: 5px;
-  background-size: cover;
   border-radius: 15px;
+  text-align: center;
   margin: auto;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
 }
 .readmore_card .read_img img {
+  width: 28vw;
   border-radius: 12px;
-  border: 5px solid white;
-  /* width: 20px; */
+  border: 2px solid white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-.readmore_card .share {
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-  gap: 1em;
+.readmore_card .blogmsg{
+  background-image: linear-gradient(rgba(0, 0, 31, 0.747), rgba(0, 0, 0, 0.724));
+  padding: 20px;
+  margin: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.697);
+  border-radius: 12px;
+  color: white;
+  text-transform: capitalize;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
+.readmore_card button{
+  position: absolute;
+  right: 20px;
+  margin: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 2vw;
+}
+.readmore_card .blogmsg p{
+  text-align: justify;
+}
 .readmore_card a {
   color: white;
   transition: 0.4s ease-in-out;

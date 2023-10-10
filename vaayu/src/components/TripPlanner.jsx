@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { useAuth } from "./../Authcontext";
-import urlmap from "./../UrlHelper"
-
+import urlmap from "./../UrlHelper";
 
 function ItineraryForm() {
   const auth = useAuth();
@@ -125,7 +124,7 @@ function ItineraryItem({
   const [isDone, setIsDone] = useState(isVisited);
 
   const handleCheckboxClick = async () => {
-    // console.log('Checkbox clicked'); 
+    // console.log('Checkbox clicked');
     try {
       // Make an API request using Axios to update the server with the new checkbox state
       const response = await urlmap.post("/vaayu/updatecheckbox", {
@@ -138,10 +137,10 @@ function ItineraryItem({
         setIsDone(!isDone);
       } else {
         // Handle the case when the API request fails
-        console.error('Failed to update checkbox state on the server');
+        console.error("Failed to update checkbox state on the server");
       }
     } catch (error) {
-      console.error('Error while updating checkbox state:', error);
+      console.error("Error while updating checkbox state:", error);
     }
   };
   const handleDeleteClick = async () => {
@@ -155,13 +154,13 @@ function ItineraryItem({
         // This depends on your specific UI structure and requirements.
         toast.success("Itinenary Deleted Successfully", {
           position: "bottom-right",
-        })
+        });
       } else {
         // Handle the case when the API request fails
-        console.error('Failed to delete item on the server');
+        console.error("Failed to delete item on the server");
       }
     } catch (error) {
-      console.error('Error while deleting item:', error);
+      console.error("Error while deleting item:", error);
     }
   };
   return (
@@ -187,8 +186,11 @@ function ItineraryItem({
           <p className="card-text">{`Added on ${dateAdded}`}</p>
         </div>
         <div className="card-footer bg-transparent border-top-0">
-          <button type="button" className="btn btn-light"
-            onClick={handleDeleteClick}>
+          <button
+            type="button"
+            className="btn btn-light"
+            onClick={handleDeleteClick}
+          >
             <i class="fa-solid fa-trash"></i>Delete
           </button>
         </div>
@@ -198,7 +200,6 @@ function ItineraryItem({
 }
 
 function TripPlanner() {
-
   const auth = useAuth();
 
   const [visitedData, setVisitedData] = useState([]);
@@ -211,68 +212,75 @@ function TripPlanner() {
         .get("/vaayu/getitinerary", {
           params: {
             user: auth.user.username,
-          }
+          },
         })
         .then((response) => {
-
           setTotalData(response.data);
         })
         .catch((err) => {
           console.error(err);
         });
-      setVisitedData(totaldata.filter(
-        (item) => item.isVisited === true
-      ))
-      setNotVisitedData(totaldata.filter(
-        (item) => item.isVisited === false
-      ))
+      setVisitedData(totaldata.filter((item) => item.isVisited === true));
+      setNotVisitedData(totaldata.filter((item) => item.isVisited === false));
     }
   }, [auth.user, totaldata]);
 
   return (
-    <div className="tripplanner">
-      <ItineraryForm />
-      <div className="container">
-        <h2 className="my-3">Your Itinerary</h2>
-        <div className="row">
-          {notvisitedData.map((item, index) => (
-            <ItineraryItem
-              key={item._id}
-              itemid={item._id}
-              username={item.username}
-              place={item.place}
-              city={item.city}
-              state={item.state}
-              category={item.category}
-              openingHours={item.openingHours}
-              isVisited={item.isVisited}
-              dateAdded={item.dateAdded}
-            />
-          ))}
-        </div>
-      </div>
-      {visitedData.length !== 0 &&
-        <div className="container">
-          <h2 className="my-3">Visited</h2>
-          <div className="row">
-            {visitedData.map((item, index) => (
-              <ItineraryItem
-                key={item._id}
-                itemid={item._id}
-                username={item.username}
-                place={item.place}
-                city={item.city}
-                state={item.state}
-                category={item.category}
-                openingHours={item.openingHours}
-                isVisited={item.isVisited}
-                dateAdded={item.dateAdded}
-              />
-            ))}
+    <>
+      {auth.user && (
+        <div className="tripplanner">
+          <ItineraryForm />
+          <div className="container">
+            <h2 className="my-3">Your Itinerary</h2>
+            <div className="row">
+              {notvisitedData.map((item, index) => (
+                <ItineraryItem
+                  key={item._id}
+                  itemid={item._id}
+                  username={item.username}
+                  place={item.place}
+                  city={item.city}
+                  state={item.state}
+                  category={item.category}
+                  openingHours={item.openingHours}
+                  isVisited={item.isVisited}
+                  dateAdded={item.dateAdded}
+                />
+              ))}
+            </div>
           </div>
+          {visitedData.length !== 0 && (
+            <div className="container">
+              <h2 className="my-3">Visited</h2>
+              <div className="row">
+                {visitedData.map((item, index) => (
+                  <ItineraryItem
+                    key={item._id}
+                    itemid={item._id}
+                    username={item.username}
+                    place={item.place}
+                    city={item.city}
+                    state={item.state}
+                    category={item.category}
+                    openingHours={item.openingHours}
+                    isVisited={item.isVisited}
+                    dateAdded={item.dateAdded}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-      }
-    </div>
+      )}
+      {!auth.user && (
+        <div className="puff-in-center container homewelcome">
+          <h1 className="display-2">Oops! You are not logged in..</h1>
+          <p className="lead">
+            Please Login to experience the speed of Vaayu! Save Itenaries!
+          </p>
+        </div>
+      )}
+    </>
   );
 }
 
