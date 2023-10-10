@@ -16,7 +16,7 @@ function ItineraryForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     urlmap
-      .post("/api/itinerary", {
+      .post("/vaayu/itinerary", {
         username: auth.user.username,
         place: place,
         city: city,
@@ -128,7 +128,7 @@ function ItineraryItem({
     // console.log('Checkbox clicked'); 
     try {
       // Make an API request using Axios to update the server with the new checkbox state
-      const response = await urlmap.post("/api/updatecheckbox", {
+      const response = await urlmap.post("/vaayu/updatecheckbox", {
         _id: itemid, // Send the _id of the item to identify it uniquely
         isVisited: !isDone, // Send the new state
       });
@@ -147,7 +147,7 @@ function ItineraryItem({
   const handleDeleteClick = async () => {
     try {
       // Make an API request using Axios to delete the item on the server
-      const response = await urlmap.delete(`/api/deleteItem/${itemid}`);
+      const response = await urlmap.delete(`/vaayu/deleteItem/${itemid}`);
 
       if (response.status === 200) {
         // If the API request is successful, you can handle the deletion on the client-side.
@@ -208,7 +208,7 @@ function TripPlanner() {
   useEffect(() => {
     if (auth.user) {
       urlmap
-        .get("/api/getitinerary", {
+        .get("/vaayu/getitinerary", {
           params: {
             user: auth.user.username,
           }

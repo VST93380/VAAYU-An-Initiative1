@@ -9,7 +9,7 @@ export default function Authenticate() {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     urlmap
-      .post("/api/register", {
+      .post("/auth/register", {
         username: data.get("reguser").split(" ").join("").toLowerCase(),
         email: data.get("regemail"),
         phone: data.get("regphone"),
@@ -48,7 +48,7 @@ export default function Authenticate() {
     const data = new FormData(e.currentTarget);
 
     try {
-      const response = await urlmap.post("/api/login", {
+      const response = await urlmap.post("/auth/login", {
         phone: data.get("phone"),
         password: data.get("password"),
       });

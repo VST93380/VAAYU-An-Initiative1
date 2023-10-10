@@ -10,7 +10,7 @@ export default function Detailed(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     urlmap
-      .post("/api/itinerary", {
+      .post("/vaayu/itinerary", {
         username: auth.user.username,
         place: details.name,
         city: details.city,

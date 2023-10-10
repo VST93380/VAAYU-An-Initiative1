@@ -5,12 +5,11 @@ const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 
 const authurls = require("./routes/auth");
+const vaayuurls = require("./routes/vaayu");
 
 const app = express();
-//to process env files
 dotenv.config();
 
-// Use async/await to connect to the database
 (async () => {
   try {
     await mongoose.connect(process.env.DATABASE_ACCESS, {
@@ -23,16 +22,13 @@ dotenv.config();
   }
 })();
 
-
-
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 
-app.use("/api", authurls);
+app.use("/auth", authurls);
+app.use("/vaayu", vaayuurls);
 
-
-//listening on port
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);

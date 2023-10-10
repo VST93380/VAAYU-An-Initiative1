@@ -10,7 +10,7 @@ function BlogModal() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     urlmap
-      .post("/api/comment", {
+      .post("/vaayu/comment", {
         username: auth.user.username,
         blogmsg: data.get("blogmsg"),
         title: data.get("title"),
@@ -227,7 +227,7 @@ function Community() {
 
   useEffect(() => {
     urlmap
-      .get("/api/getcomments")
+      .get("/vaayu/getcomments")
       .then((response) => {
         setComments(response.data); // Set comments in state
       })
