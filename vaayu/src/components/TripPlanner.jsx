@@ -112,6 +112,7 @@ function ItineraryForm() {
 }
 
 function ItineraryItem({
+  itemid,
   place,
   city,
   state,
@@ -122,6 +123,46 @@ function ItineraryItem({
 }) {
   const [isDone, setIsDone] = useState(isVisited);
 
+  const handleCheckboxClick = async () => {
+    // console.log('Checkbox clicked'); 
+    try {
+      // Make an API request using Axios to update the server with the new checkbox state
+      const response = await axios.post("http://localhost:5000/api/updatecheckbox", {
+        _id: itemid, // Send the _id of the item to identify it uniquely
+        isVisited: !isDone, // Send the new state
+      });
+
+      if (response.status === 200) {
+        // If the API request is successful, update the local state
+        setIsDone(!isDone);
+      } else {
+        // Handle the case when the API request fails
+        console.error('Failed to update checkbox state on the server');
+      }
+    } catch (error) {
+      console.error('Error while updating checkbox state:', error);
+    }
+  };
+  const handleDeleteClick = async () => {
+    try {
+      // Make an API request using Axios to delete the item on the server
+      const response = await axios.delete(`http://localhost:5000/api/deleteItem/${itemid}`);
+
+      if (response.status === 200) {
+        // If the API request is successful, you can handle the deletion on the client-side.
+        // For example, remove the item from the UI or perform any necessary cleanup.
+        // This depends on your specific UI structure and requirements.
+        toast.success("Itinenary Deleted Successfully", {
+          position: "bottom-right",
+        })
+      } else {
+        // Handle the case when the API request fails
+        console.error('Failed to delete item on the server');
+      }
+    } catch (error) {
+      console.error('Error while deleting item:', error);
+    }
+  };
   return (
     <div className="col-lg-4 col-md-6 mb-4 d-flex">
       <div className="itedisplayer card flex-fill rounded-lg shadow-sm tilt-in-fwd-br">
@@ -131,7 +172,7 @@ function ItineraryItem({
               type="checkbox"
               className="form-check-input"
               checked={isDone}
-              onChange={() => setIsDone(!isDone)}
+              onChange={() => handleCheckboxClick()}
             />
             <label className="form-check-label" htmlFor="doneCheck">
               {place}
@@ -145,8 +186,9 @@ function ItineraryItem({
           <p className="card-text">{`Added on ${dateAdded}`}</p>
         </div>
         <div className="card-footer bg-transparent border-top-0">
-          <button type="button" className="btn btn-light">
-            <i className="fas fa-edit"></i> Edit
+          <button type="button" className="btn btn-light"
+            onClick={handleDeleteClick}>
+            <i class="fa-solid fa-trash"></i>Delete
           </button>
         </div>
       </div>
@@ -156,20 +198,35 @@ function ItineraryItem({
 
 function TripPlanner() {
 
-  const [itineraryData, setItineraryData] = useState([]);
+  const auth = useAuth();
+
+  const [visitedData, setVisitedData] = useState([]);
+  const [notvisitedData, setNotVisitedData] = useState([]);
+  const [totaldata, setTotalData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/getitinerary", {
-        username: "rajgopalhota",
-      })
-      .then((response) => {
-        setItineraryData(response.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  });
+    if (auth.user) {
+      axios
+        .get("http://localhost:5000/api/getitinerary", {
+          params: {
+            user: auth.user.username,
+          }
+        })
+        .then((response) => {
+
+          setTotalData(response.data);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+      setVisitedData(totaldata.filter(
+        (item) => item.isVisited === true
+      ))
+      setNotVisitedData(totaldata.filter(
+        (item) => item.isVisited === false
+      ))
+    }
+  }, [auth.user, totaldata]);
 
   return (
     <div className="tripplanner">
@@ -177,9 +234,10 @@ function TripPlanner() {
       <div className="container">
         <h2 className="my-3">Your Itinerary</h2>
         <div className="row">
-          {itineraryData.map((item, index) => (
+          {notvisitedData.map((item, index) => (
             <ItineraryItem
-              key={index}
+              key={item._id}
+              itemid={item._id}
               username={item.username}
               place={item.place}
               city={item.city}
@@ -192,6 +250,27 @@ function TripPlanner() {
           ))}
         </div>
       </div>
+      {visitedData.length !== 0 &&
+        <div className="container">
+          <h2 className="my-3">Visited</h2>
+          <div className="row">
+            {visitedData.map((item, index) => (
+              <ItineraryItem
+                key={item._id}
+                itemid={item._id}
+                username={item.username}
+                place={item.place}
+                city={item.city}
+                state={item.state}
+                category={item.category}
+                openingHours={item.openingHours}
+                isVisited={item.isVisited}
+                dateAdded={item.dateAdded}
+              />
+            ))}
+          </div>
+        </div>
+      }
     </div>
   );
 }

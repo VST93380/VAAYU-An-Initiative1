@@ -5,12 +5,13 @@ import { useState, useEffect } from "react";
 import { useAuth } from "./../Authcontext";
 
 function BlogModal() {
+  const auth = useAuth();
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     axios
       .post("http://localhost:5000/api/comment", {
-        username: "raajaaaa",
+        username: auth.user.username,
         blogmsg: data.get("blogmsg"),
         title: data.get("title"),
         imagelink: data.get("imagelink"),

@@ -136,9 +136,54 @@ router.post("/itinerary", async (req, res) => {
   }
 });
 
-router.get("/getitinerary", async (req, res) => {
+router.delete("/deleteItem/:id", async (req, res) => {
   try {
-    const itineraries = await itenaryModel.find();
+    const itemId = req.params.id;
+    // Use Mongoose to find and remove the item by its ID
+    const deletedItem = await itenaryModel.findByIdAndRemove(itemId);
+
+    if (!deletedItem) {
+      // If the item with the provided ID is not found, return a 404 response
+      return res.status(404).json({ message: "Item not found" });
+    }
+
+    // If the item was successfully deleted, return a 200 response
+    res.status(200).json({ message: "Item deleted successfully" });
+  } catch (error) {
+    console.error("Error while deleting item:", error);
+    // If there's an error, return a 500 response
+    res.status(500).json({ message: "Internal server error" });
+  }
+});
+
+//checkbox update
+router.post('/updatecheckbox', async (req, res) => {
+  try {
+    const { _id, isVisited } = req.body;
+
+    // Update the document with the given _id
+    const updatedItem = await itenaryModel.findByIdAndUpdate(
+      _id,
+      { isVisited },
+      { new: true }
+    );
+
+    if (!updatedItem) {
+      return res.status(404).json({ message: 'Item not found' });
+    }
+
+    return res.status(200).json(updatedItem);
+  } catch (error) {
+    console.error('Error while updating checkbox state:', error);
+    return res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+
+router.get("/getitinerary", async (req, res) => {
+  const user = req.query.user;
+  try {
+    const itineraries = await itenaryModel.find({ username: user });
     res.json(itineraries);
   } catch (err) {
     console.error(err);
