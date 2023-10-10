@@ -1,7 +1,15 @@
 import React, { useEffect } from 'react';
 import ProgressBar from 'progressbar.js';
+import { useAuth } from '../Authcontext';
 import './../Styles/Profile.css'
 function UserProfile() {
+
+    const auth = useAuth();
+
+    function handleLogout(){
+        auth.logout();
+    }
+
     useEffect(() => {
 
         const completedProgress = new ProgressBar.Circle('#completed-progress', {
@@ -72,6 +80,9 @@ function UserProfile() {
                             <p className="card-text">Location: New York</p>
                             <a href="#" className="btn btn-primary loginbtn">
                                 Edit Profile
+                            </a>
+                            <a onClick={handleLogout} className="btn btn-primary loginbtn mx-3">
+                                Logout
                             </a>
                         </div>
                     </div>

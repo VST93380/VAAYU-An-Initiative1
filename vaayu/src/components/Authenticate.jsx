@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import urlmap from "./../UrlHelper";
 import { toast } from "react-toastify";
-// import { useNavigate } from "react-router-dom";
+import Loader from "./Loader";
 import { useAuth } from "../Authcontext";
 export default function Authenticate() {
   const auth = useAuth();
+
+  const [load, setLoad] = useState(true);
+
   const handleRegister = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
+    setLoad(null);
     urlmap
       .post("/auth/register", {
         username: data.get("reguser").split(" ").join("").toLowerCase(),
@@ -16,6 +20,7 @@ export default function Authenticate() {
         password: data.get("regpassword"),
       })
       .then((response) => {
+        setLoad(true);
         if (response.data === "userexist") {
           toast.info("Username taken", {
             position: "bottom-right",
@@ -35,6 +40,7 @@ export default function Authenticate() {
         }
       })
       .catch((err) => {
+        setLoad(true);
         console.log(err);
         toast.error("Server not started, Please wait", {
           position: "bottom-right",
@@ -45,6 +51,7 @@ export default function Authenticate() {
   //login
   const loginAction = async (e) => {
     e.preventDefault();
+    setLoad(null);
     const data = new FormData(e.currentTarget);
 
     try {
@@ -52,6 +59,7 @@ export default function Authenticate() {
         phone: data.get("phone"),
         password: data.get("password"),
       });
+      setLoad(true);
       if (response.data === "invalid") {
         console.log(response.data);
         toast.info("Enter correct password", { position: "bottom-right" });
@@ -65,7 +73,6 @@ export default function Authenticate() {
           response.data.user.role === "Admin"
         ) {
           auth.login(userData);
-          // $('#loginModal').modal('hide');
           toast.success("Login Successful", {
             position: "bottom-right",
             theme: "dark",
@@ -73,6 +80,7 @@ export default function Authenticate() {
         }
       }
     } catch (error) {
+      setLoad(true);
       console.error("Error during login:", error);
       toast.error("An error occurred during login", {
         position: "bottom-right",
@@ -108,109 +116,122 @@ export default function Authenticate() {
                       id="reg-log"
                     />
                     <label htmlFor="reg-log"></label>
-                    <div className="card-3d-wrap mx-auto">
-                      <div className="card-3d-wrapper">
-                        <div className="card-front">
-                          <form onSubmit={loginAction}>
-                            <div className="center-wrap">
-                              <div className="section text-center">
-                                <h4 className="mb-4 pb-3">Log In</h4>
-                                <div className="form-group mt-2">
-                                  <input
-                                    type="tel"
-                                    name="phone"
-                                    className="form-style"
-                                    placeholder="Your Phone Number"
-                                    autoComplete="off"
-                                    required
-                                  />
-                                  <i className="input-icon uil uil-mobile-android-alt"></i>
+                    {!auth.user && (
+                      <div className="card-3d-wrap mx-auto">
+                        <div className="card-3d-wrapper">
+                          <div className="card-front">
+                            <form onSubmit={loginAction}>
+                              <div className="center-wrap">
+                                <div className="section text-center">
+                                  <h4 className="mb-4 pb-3">Log In</h4>
+                                  <div className="form-group mt-2">
+                                    <input
+                                      type="tel"
+                                      name="phone"
+                                      className="form-style"
+                                      placeholder="Your Phone Number"
+                                      autoComplete="off"
+                                      required
+                                    />
+                                    <i className="input-icon uil uil-mobile-android-alt"></i>
+                                  </div>
+                                  <div className="form-group mt-2">
+                                    <input
+                                      type="password"
+                                      name="password"
+                                      className="form-style"
+                                      placeholder="Your Password"
+                                      autoComplete="off"
+                                      required
+                                    />
+                                    <i className="input-icon uil uil-lock-alt"></i>
+                                  </div>
+                                  {load && (
+                                    <button className="loginbtn loginmb mt-4">
+                                      Log In
+                                    </button>
+                                  )}
+                                  {!load && <Loader />}
+                                  <p className="mb-0 mt-4 text-center">
+                                    <a href="#0" className="link">
+                                      Forgot your password?
+                                    </a>
+                                  </p>
                                 </div>
-                                <div className="form-group mt-2">
-                                  <input
-                                    type="password"
-                                    name="password"
-                                    className="form-style"
-                                    placeholder="Your Password"
-                                    autoComplete="off"
-                                    required
-                                  />
-                                  <i className="input-icon uil uil-lock-alt"></i>
-                                </div>
-                                <button
-                                  className="loginbtn loginmb mt-4"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#loginModal"
-                                >
-                                  Log In
-                                </button>
-                                <p className="mb-0 mt-4 text-center">
-                                  <a href="#0" className="link">
-                                    Forgot your password?
-                                  </a>
-                                </p>
                               </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div className="card-back">
-                          <form onSubmit={handleRegister}>
-                            <div className="center-wrap">
-                              <div className="section text-center">
-                                <h4 className="mb-4 pb-3">Sign Up</h4>
-                                <div className="form-group">
-                                  <input
-                                    type="text"
-                                    name="reguser"
-                                    className="form-style"
-                                    placeholder="Your Full Name"
-                                    autoComplete="off"
-                                    required
-                                  />
-                                  <i className="input-icon uil uil-user"></i>
+                            </form>
+                          </div>
+                          <div className="card-back">
+                            <form onSubmit={handleRegister}>
+                              <div className="center-wrap">
+                                <div className="section text-center">
+                                  <h4 className="mb-4 pb-3">Sign Up</h4>
+                                  <div className="form-group">
+                                    <input
+                                      type="text"
+                                      name="reguser"
+                                      className="form-style"
+                                      placeholder="Your Full Name"
+                                      autoComplete="off"
+                                      required
+                                    />
+                                    <i className="input-icon uil uil-user"></i>
+                                  </div>
+                                  <div className="form-group mt-2">
+                                    <input
+                                      type="tel"
+                                      name="regphone"
+                                      className="form-style"
+                                      placeholder="Your Phone Number"
+                                      autoComplete="off"
+                                      required
+                                    />
+                                    <i className="input-icon uil uil-mobile-android-alt"></i>
+                                  </div>
+                                  <div className="form-group mt-2">
+                                    <input
+                                      type="email"
+                                      name="regemail"
+                                      className="form-style"
+                                      placeholder="Your Email"
+                                      autoComplete="off"
+                                      required
+                                    />
+                                    <i className="input-icon uil uil-at"></i>
+                                  </div>
+                                  <div className="form-group mt-2">
+                                    <input
+                                      type="password"
+                                      name="regpassword"
+                                      className="form-style"
+                                      placeholder="Your Password"
+                                      autoComplete="off"
+                                      required
+                                    />
+                                    <i className="input-icon uil uil-lock-alt"></i>
+                                  </div>
+                                  <button className="loginbtn loginmb mt-4">
+                                    Submit
+                                  </button>
                                 </div>
-                                <div className="form-group mt-2">
-                                  <input
-                                    type="tel"
-                                    name="regphone"
-                                    className="form-style"
-                                    placeholder="Your Phone Number"
-                                    autoComplete="off"
-                                    required
-                                  />
-                                  <i className="input-icon uil uil-mobile-android-alt"></i>
-                                </div>
-                                <div className="form-group mt-2">
-                                  <input
-                                    type="email"
-                                    name="regemail"
-                                    className="form-style"
-                                    placeholder="Your Email"
-                                    autoComplete="off"
-                                    required
-                                  />
-                                  <i className="input-icon uil uil-at"></i>
-                                </div>
-                                <div className="form-group mt-2">
-                                  <input
-                                    type="password"
-                                    name="regpassword"
-                                    className="form-style"
-                                    placeholder="Your Password"
-                                    autoComplete="off"
-                                    required
-                                  />
-                                  <i className="input-icon uil uil-lock-alt"></i>
-                                </div>
-                                <button className="loginbtn loginmb mt-4">
-                                  Submit
-                                </button>
                               </div>
-                            </div>
-                          </form>
+                            </form>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
+                    {auth.user && (
+                      <>
+                        <div
+                          className="welcomelogin"
+                          data-bs-toggle="modal"
+                          data-bs-target="#loginModal"
+                        >
+                          Welcome {auth.user.username}, Explore Vaayu
+                          &nbsp;<i class="fa-solid fa-route"></i>
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
