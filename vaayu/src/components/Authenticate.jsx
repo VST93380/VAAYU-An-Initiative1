@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import urlmap from "./../UrlHelper";
 import { toast } from "react-toastify";
 // import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Authcontext";
@@ -8,8 +8,8 @@ export default function Authenticate() {
   const handleRegister = (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    axios
-      .post("http://localhost:5000/api/register", {
+    urlmap
+      .post("/api/register", {
         username: data.get("reguser").split(" ").join("").toLowerCase(),
         email: data.get("regemail"),
         phone: data.get("regphone"),
@@ -48,7 +48,7 @@ export default function Authenticate() {
     const data = new FormData(e.currentTarget);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/login", {
+      const response = await urlmap.post("/api/login", {
         phone: data.get("phone"),
         password: data.get("password"),
       });

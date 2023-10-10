@@ -1,7 +1,8 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { useAuth } from "./../Authcontext";
+import urlmap from "./../UrlHelper"
+
 
 function ItineraryForm() {
   const auth = useAuth();
@@ -14,8 +15,8 @@ function ItineraryForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
-      .post("http://localhost:5000/api/itinerary", {
+    urlmap
+      .post("/api/itinerary", {
         username: auth.user.username,
         place: place,
         city: city,
@@ -127,7 +128,7 @@ function ItineraryItem({
     // console.log('Checkbox clicked'); 
     try {
       // Make an API request using Axios to update the server with the new checkbox state
-      const response = await axios.post("http://localhost:5000/api/updatecheckbox", {
+      const response = await urlmap.post("/api/updatecheckbox", {
         _id: itemid, // Send the _id of the item to identify it uniquely
         isVisited: !isDone, // Send the new state
       });
@@ -146,7 +147,7 @@ function ItineraryItem({
   const handleDeleteClick = async () => {
     try {
       // Make an API request using Axios to delete the item on the server
-      const response = await axios.delete(`http://localhost:5000/api/deleteItem/${itemid}`);
+      const response = await urlmap.delete(`/api/deleteItem/${itemid}`);
 
       if (response.status === 200) {
         // If the API request is successful, you can handle the deletion on the client-side.
@@ -206,8 +207,8 @@ function TripPlanner() {
 
   useEffect(() => {
     if (auth.user) {
-      axios
-        .get("http://localhost:5000/api/getitinerary", {
+      urlmap
+        .get("/api/getitinerary", {
           params: {
             user: auth.user.username,
           }

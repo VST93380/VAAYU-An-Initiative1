@@ -1,7 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
 import { useAuth } from "./../Authcontext";
-import axios from "axios";
+import urlmap from "./../UrlHelper"
 
 export default function Detailed(props) {
   const details = props.details;
@@ -9,8 +9,8 @@ export default function Detailed(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios
-      .post("http://localhost:5000/api/itinerary", {
+    urlmap
+      .post("/api/itinerary", {
         username: auth.user.username,
         place: details.name,
         city: details.city,

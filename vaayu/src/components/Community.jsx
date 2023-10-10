@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import urlmap from "./../UrlHelper"
 import { toast } from "react-toastify";
 import { useState, useEffect } from "react";
 import { useAuth } from "./../Authcontext";
@@ -9,8 +9,8 @@ function BlogModal() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    axios
-      .post("http://localhost:5000/api/comment", {
+    urlmap
+      .post("/api/comment", {
         username: auth.user.username,
         blogmsg: data.get("blogmsg"),
         title: data.get("title"),
@@ -226,8 +226,8 @@ function Community() {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/getcomments")
+    urlmap
+      .get("/api/getcomments")
       .then((response) => {
         setComments(response.data); // Set comments in state
       })
