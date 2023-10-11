@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .attractions .container {
   max-width: 95vw;
   margin-bottom: 3%;
@@ -10,6 +17,8 @@
   font-size: 1.2rem;
   margin: 10px;
   border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fad0c4), to(#ffd1ff));
+  background-image: -o-linear-gradient(bottom, #fad0c4 0%, #ffd1ff 100%);
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 
@@ -20,6 +29,8 @@
   font-size: 1.2rem;
   /* margin: 10px; */
   border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fad0c4), to(#ffd1ff));
+  background-image: -o-linear-gradient(bottom, #fad0c4 0%, #ffd1ff 100%);
   background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   margin-top: 9px;
 }
@@ -42,10 +53,17 @@ input:hover {
 }
 
 .attcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 15px;
   margin-bottom: 5%;
 }
@@ -53,10 +71,14 @@ input:hover {
 .attcontainer .card {
   width: 400px;
   height: 300px;
+  background-image: -o-linear-gradient(330deg, #f093fb 0%, #f5576c 100%);
   background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
   font-size: 30px;
   font-weight: 900;
   margin-left: 30px;
@@ -67,8 +89,12 @@ input:hover {
 .attcontainer .card:hover {
   border-radius: 15px;
   cursor: pointer;
-  transform: scale(1.05);
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+          box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: -o-linear-gradient(315deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
   background-image: linear-gradient(-225deg, #FFE29F 0%, #FFA99F 48%, #FF719A 100%);
 }
 
@@ -79,10 +105,18 @@ input:hover {
 .attcontainer .first-content {
   height: 100%;
   width: 100%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 1;
   border-radius: 15px;
   padding: 2px;
@@ -92,7 +126,8 @@ input:hover {
   height: 270px;
   width: 100%;
   border-radius: 15px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .attcontainer .card:hover .first-content {
@@ -108,12 +143,20 @@ input:hover {
   height: 0%;
   width: 100%;
   opacity: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 15px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
   font-size: 0px;
-  transform: rotate(90deg) scale(-1);
+  -webkit-transform: rotate(90deg) scale(-1);
+      -ms-transform: rotate(90deg) scale(-1);
+          transform: rotate(90deg) scale(-1);
   margin-left: 20px;
   margin-top: 20px;
 }
@@ -122,7 +165,9 @@ input:hover {
   opacity: 1;
   height: 100%;
   font-size: 1.3rem;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 /* CSS for images begins*/
@@ -154,9 +199,11 @@ input:hover {
   left: 10px;
   /* Adjust the text's position from the left */
   background-color: rgba(0, 0, 0, 0.498);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
   border-radius: 12px;
-  box-shadow: 0 0 8px rgb(162, 63, 255);
+  -webkit-box-shadow: 0 0 8px rgb(162, 63, 255);
+          box-shadow: 0 0 8px rgb(162, 63, 255);
   border: 1px solid white;
   /* Semi-transparent background */
   color: white;
@@ -171,8 +218,12 @@ input:hover {
 .attcontainer .button {
   line-height: 1;
   text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.75rem;
   background-color: var(--clr);
   color: #fff;
@@ -181,20 +232,26 @@ input:hover {
   padding: 0.35rem 0.7rem;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
   font-size: 12px;
-  box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+          box-shadow: 0 0 12px black;
 }
 
 .attcontainer .button__icon-wrapper {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 35px;
   height: 35px;
   position: relative;
   color: var(--clr);
   background-color: #fff;
   border-radius: 50%;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -214,17 +271,31 @@ input:hover {
 
 .attcontainer .button__icon-svg--copy {
   position: absolute;
-  transform: translate(-150%, 150%);
+  -webkit-transform: translate(-150%, 150%);
+      -ms-transform: translate(-150%, 150%);
+          transform: translate(-150%, 150%);
 }
 
 .attcontainer .button:hover .button__icon-svg:first-child {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transform: translate(150%, -150%);
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: translate(150%, -150%);
+      -ms-transform: translate(150%, -150%);
+          transform: translate(150%, -150%);
 }
 
 .attcontainer .button:hover .button__icon-svg--copy {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;
+  transition: -webkit-transform 0.3s ease-in-out 0.1s;
+  -o-transition: transform 0.3s ease-in-out 0.1s;
   transition: transform 0.3s ease-in-out 0.1s;
-  transform: translate(0);
+  transition: transform 0.3s ease-in-out 0.1s, -webkit-transform 0.3s ease-in-out 0.1s;
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
 }
 
 .attcontainer .button__text {

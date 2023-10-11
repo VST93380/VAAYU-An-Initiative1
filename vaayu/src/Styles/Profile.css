@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Profile.css */
 .Profile_card .container {
   margin-top: 20px;
@@ -39,8 +46,11 @@
   padding: 10px;
   border: 5px solid rgb(230, 86, 3);
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 .Profile_card .card img {

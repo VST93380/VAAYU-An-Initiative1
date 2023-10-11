@@ -1,13 +1,27 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Weather.css */
 
 .weather-app {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 .weather-app{
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
 
 }
 .weather-app .weather-card {
@@ -15,7 +29,8 @@
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.755);
+    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.755);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.755);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -33,10 +48,18 @@
     position: absolute;
     right: -35px;
     top: -50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0.7);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
 }
 
 .weather-app .cloud {
@@ -49,16 +72,20 @@
     display: inline;
     position: absolute;
     z-index: 11;
-    animation: clouds 8s infinite;
-    animation-timing-function: ease-in-out;
+    -webkit-animation: clouds 8s infinite;
+            animation: clouds 8s infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
 }
 
 .weather-app .back {
     margin-top: -30px;
     margin-left: 150px;
     z-index: 12;
-    animation: clouds 12s infinite;
-    animation-timing-function: ease-in-out;
+    -webkit-animation: clouds 12s infinite;
+            animation: clouds 12s infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
 }
 
 .weather-app .right-front {
@@ -102,7 +129,8 @@
 .weather-app .sun {
     width: 120px;
     height: 120px;
-    background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+    background: -webkit-gradient(linear, left top, right top, from(#fcbb04), to(#fffc00));
+    background: -o-linear-gradient(left, #fcbb04, #fffc00);
     background: linear-gradient(to right, #fcbb04, #fffc00);
     border-radius: 60px;
     display: inline;
@@ -110,12 +138,17 @@
 }
 
 .weather-app .sunshine {
-    animation: sunshines 2s infinite;
+    -webkit-animation: sunshines 2s infinite;
+            animation: sunshines 2s infinite;
 }
 
 .weather-app .card-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: bold;

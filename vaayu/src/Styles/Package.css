@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .Package_card-container a{
   text-decoration: none;
 }
@@ -10,25 +17,39 @@
   width: 330px;
   height: 360px;
   border-radius: 20px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#20accc4d), to(#d2661347));
+  background-image: -o-linear-gradient(bottom, #20accc4d 0%, #d2661347 100%);
   background-image: linear-gradient(to top, #20accc4d 0%, #d2661347 100%);
   padding: 5px;
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
   overflow: hidden;
-  box-shadow: 0 8px 18px 0 rgba(50, 116, 173, 0.405);
+  -webkit-box-shadow: 0 8px 18px 0 rgba(50, 116, 173, 0.405);
+          box-shadow: 0 8px 18px 0 rgba(50, 116, 173, 0.405);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border: 1px solid rgba(255, 255, 255, 0.685);
 }
 
 .Package_card:hover {
   cursor: pointer;
-  filter: brightness(1.25) saturate(1.45);
+  -webkit-filter: brightness(1.25) saturate(1.45);
+          filter: brightness(1.25) saturate(1.45);
 }
 
 .Package_card .top-section {
   height: 220px;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   background-size: contain;
 }
@@ -38,8 +59,12 @@
   top: 0;
   width: 100%;
   height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .Package_card .top-section .icons .logo {
@@ -55,6 +80,8 @@
 .Package_card .top-section .icons .social-media {
   height: 100%;
   padding: 8px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 7px;
 }
@@ -82,13 +109,19 @@
 }
 
 .Package_card .bottom-section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
 }
 
 .Package_card .bottom-section .row .item {
-  flex: 30%;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
   text-align: center;
   padding: 5px;
   color: rgba(170, 222, 243, 0.721);
@@ -113,10 +146,14 @@
 /* Flex container */
 .Package_card-container {
   margin: 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
   gap: 25px;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #c-1 {

@@ -38,6 +38,7 @@ export default function Authenticate() {
             position: "bottom-right",
           });
         }
+        e.target.reset();
       })
       .catch((err) => {
         setLoad(true);
@@ -210,9 +211,12 @@ export default function Authenticate() {
                                     />
                                     <i className="input-icon uil uil-lock-alt"></i>
                                   </div>
-                                  <button className="loginbtn loginmb mt-4">
-                                    Submit
-                                  </button>
+                                  {load && (
+                                    <button className="loginbtn loginmb mt-4">
+                                      Log In
+                                    </button>
+                                  )}
+                                  {!load && <Loader />}
                                 </div>
                               </div>
                             </form>
@@ -227,8 +231,8 @@ export default function Authenticate() {
                           data-bs-toggle="modal"
                           data-bs-target="#loginModal"
                         >
-                          Welcome {auth.user.username}, Explore Vaayu
-                          &nbsp;<i class="fa-solid fa-route"></i>
+                          Welcome {auth.user.username}, Explore Vaayu &nbsp;
+                          <i class="fa-solid fa-route"></i>
                         </div>
                       </>
                     )}
