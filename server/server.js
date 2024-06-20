@@ -1,18 +1,16 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 
 const authurls = require("./routes/auth");
-const vaayuurls = require("./routes/vaayu");
-
 const app = express();
-dotenv.config();
+
+const mongoURL = "mongodb://localhost:27017/mydatabase"; // Replace with your actual database name
 
 (async () => {
   try {
-    await mongoose.connect(process.env.DATABASE_ACCESS, {
+    await mongoose.connect(mongoURL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -29,7 +27,7 @@ app.use(cors());
 app.use("/auth", authurls);
 app.use("/vaayu", vaayuurls);
 
-const port = process.env.PORT || 5000;
+const port =  5000;
 app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);
 });
