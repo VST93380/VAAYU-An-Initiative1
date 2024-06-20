@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 
 const authurls = require("./routes/auth");
 const app = express();
-
 const mongoURL = "mongodb://localhost:27017/mydatabase"; // Replace with your actual database name
 
 (async () => {
